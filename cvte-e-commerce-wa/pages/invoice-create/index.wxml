@@ -1,0 +1,48 @@
+<view class="p-invoice-create">
+    <view class="pic-content">
+
+        <view class="pic-block">
+            <my-active-form
+                id="form1"
+                meta="{{ formMeta1$ }}"
+                bindchange="onFormChange"
+            />
+        </view>
+
+        <view 
+            class="pic-block"
+            wx:if="{{ type === 'ENTERPRISE' }}"
+        >
+            <my-active-form
+                id="form2"
+                meta="{{ formMeta2$ }}"
+            />
+        </view>
+
+        <view 
+            class="pic-block"
+            wx:if="{{ type !== 'NO_TICKETS' && inited }}"
+        >
+            <view class="pic-shoupiao">
+                收票地址
+            </view>
+            <my-address-selector
+                icon="{{ false }}"
+                refresh="{{ refresh }}"
+                transfer="{{ true }}"
+                setDefault="{{ true }}"
+                placeholder="请选择收票地址"
+                selectedId="{{ addressId }}"
+                bindchange="onAddressChange"
+            />
+        </view>
+    </view>
+
+    <view 
+        class="pic-btn {{ isIPhoneX ? 'upper' : '' }}"
+        bindtap="onSubmit"
+    >
+        保存
+    </view>
+
+</view>

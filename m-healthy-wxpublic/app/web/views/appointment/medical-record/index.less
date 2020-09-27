@@ -1,0 +1,189 @@
+
+.tips-line-mixin {
+    top: 50%;
+    content: '';
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.12);
+    transform: translateY( -50% ) scaleY( 0.5 );
+}
+
+.con-booking-record-bodycheck {
+    .c-skeleton-list{
+        .skt-list{
+            padding-left: 15px !important;
+        }
+    }
+    
+    .container-block {
+
+        padding: 0px 15px 10px;
+
+        /** 记录列表 */
+        .record-list {
+
+            margin: 0;
+            padding: 0;
+
+            li {
+                
+                list-style: none;
+                background: #fff;
+                border-radius: 6px;
+                padding: 10px 15px;
+                margin-bottom: 15px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05 );
+
+                .inline-container {
+                    padding: 12px 0;
+                    color: #666;
+                    font-size: 14px;
+                    line-height: 22px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .inline-container.small {
+                    padding: 5px 0;
+                }
+
+                .header {
+                    position: relative;
+                    .m-title{
+                        position: relative;
+                        display: inline-block;
+                        .m-icon-hospital{
+                            position: absolute;
+                            top:-1.5px;
+                            .material-icons {
+                                color: #26BB9F !important;
+                            }
+                            
+                        }
+                        .m-text-hospital{
+                            margin-left: 25px;
+                        }
+                    }
+                }
+
+                .header:after {
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 1px;
+                    content: '';
+                    position: absolute;
+                    border-top: 1px dotted rgba(0, 0, 0, 0.22);
+                }
+
+                .content {
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+                // .content:after {
+                //     left: 0;
+                //     bottom: 0;
+                //     width: 100%;
+                //     height: 1px;
+                //     content: '';
+                //     position: absolute;
+                //     border-top: 1px dotted rgba(0, 0, 0, 0.22);
+                // }
+
+                .big {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+
+                .active {
+                    color: #4caf50;
+                }
+
+                .btn {
+                    color: #666;
+                    font-size: 14px;
+                    line-height: 22px;
+                    text-align: center;
+                    position: relative;
+                    padding: 10px 0 3px;
+                    border-top: 1px dotted rgba(0, 0, 0, 0.12);
+                }
+                
+                .audit-btns{
+                    padding:  10px 0 6px 0;
+                    color: #666;
+                    font-size: 14px;
+                    line-height: 22px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    align-items: center;
+                    .money{
+                        font-weight: bold;
+                        color: #00D0B9;
+                    }
+                    .operation{
+                        button{
+                            border: 1px solid #00D0B9;
+                            background: white;
+                            color: #00D0B9;
+                            padding: 0 15px;
+                            outline: none;
+                        }
+                    }
+                }
+                .btn-group{
+                    position: relative;
+                }
+                .btn-group::before {
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 1px;
+                    content: '';
+                    position: absolute;
+                    border-top: 1px dotted rgba(0, 0, 0, 0.22);
+                }
+
+            }
+        }
+
+        /** 提示文字 */
+        .tips {
+            color: #999;
+            font-size: 12px;
+            margin-top: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .tips:before {
+            left: 30px;
+            .tips-line-mixin( );
+        } 
+        
+        .tips:after {
+            right: 30px;
+            .tips-line-mixin( );
+        } 
+
+    }
+
+
+}
+
+.booking-list-dialog {
+
+    .mu-input {
+
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .mu-dialog-body {
+        padding-bottom: 0;
+    }
+
+}

@@ -1,0 +1,111 @@
+.con-evaluation-hall-all {
+
+    background: #fafafa;
+    box-sizing: border-box;
+    padding: 10px 15px 20px 15px;
+    min-height: calc( 100vh - 48px );
+
+
+    .serch-block {
+
+        display: flex;
+        background: #fff;
+        padding: 5px 15px;
+        border-radius: 30px;
+        margin-bottom: 15px;
+        box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.1);
+
+        .search-container {
+
+            flex: 1;
+            display: flex;
+
+            input {
+                flex: 1;
+                color: #666;
+                font-size: 14px;
+                border: none;
+                outline: none;
+                outline:medium;
+                background:transparent;
+                padding: 0 20px;
+                letter-spacing: 0.02em;
+            }
+
+            input:focus { 
+                outline: none;
+                background-color: transparent;
+            }
+        }
+
+        .search-btn {
+            line-height: 24px;
+            color: rgb(26, 188, 156);
+        }
+        
+    }
+
+    .result-list {
+
+        .list-item {
+
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 3px 3px 25px rgba( 0, 0, 0, 0.1 );
+
+            .item-cover {
+
+                position: relative;
+                border-radius: 5px 5px 0 0;
+
+                .cover-img {
+                    width: 100%;
+                    display: block;
+                    height: 28vh;
+                    border-radius: 5px 5px 0 0;
+                }
+
+                .cover-tips {
+                    right: 0px;
+                    bottom: 0px;
+                    color: #fff;
+                    font-size: 14px;
+                    padding: 2px 8px;
+                    position: absolute;
+                    background: rgba( 0, 0, 0, 0.4 );
+                }
+            }
+
+            .info-block {
+
+                background: #fff;
+                padding: 5px 20px 10px;
+                box-sizing: border-box;
+                border-radius: 0 0 5px 5px;
+
+                .info-title {
+                    color: #333;
+                    font-size: 18px;
+                    font-weight: bold;
+                    line-height: 30px;
+                    margin-bottom: 5px;
+                }
+
+                .info-params {
+                    color: #999;
+                    line-height: 22px;
+                    font-size: 14px;
+                    letter-spacing: 0.02em;
+                    overflow: hidden; 
+                    display: -webkit-box; 
+                    -webkit-line-clamp: 1;
+                    word-break: break-all;
+                    text-overflow: ellipsis;
+                    -webkit-box-orient: vertical;
+                }
+
+            }
+        }
+    }
+
+}

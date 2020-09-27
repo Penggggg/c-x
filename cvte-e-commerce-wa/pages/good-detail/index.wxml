@@ -1,0 +1,219 @@
+<view class="p-good-detail {{ isIPhoneX ? 'upper' : '' }}">
+    
+    <view
+        wx:if="{{ !detail }}"
+        class="page-loading"
+    >
+        加载中...
+    </view>
+
+    <view
+        wx:else
+        class="pgd-container"
+    >
+        <!-- 图片swipper， 此处也是sku的照片 -->
+        <my-swipper-img
+            imgs="{{ banner }}"
+            wx:if="{{ banner.length > 0 }}"
+        />
+
+        <!-- 价格 -->
+        <view class="pgd-price-block">
+
+            <!-- 此处都是sku的价格、下划线价格 -->
+            <view
+                wx:if="{{ selectedSku }}"
+            >
+                <!-- 价格 -->
+                <view class="pgd-price">
+                    ¥{{ selectedSku.price }}<view class="pgd-price-tips">/{{ selectedSku.unit }}</view>
+                </view>
+                <!-- 假的价格 -->
+                <!-- <view class="pgd-fade-price">
+                    ¥{{ selectedSku.fadePrice }}
+                </view> -->
+            </view>
+
+            <!-- 提示 -->
+            <!-- <view 
+                class="pgd-fade-buyer"
+                wx:if="{{ selectedSku.saled }}"
+            >
+                {{ selectedSku.saled }}+用户买过
+            </view> -->
+        </view>
+
+        <!-- 标题 -->
+        <view class="pgd-title">
+            {{ detail.title }} {{ selectedSku.title }}
+        </view>
+
+        <!-- 推荐理由 -->
+        <view class="pgd-recommand">
+            <view class="pgd-recommand-title">
+                推荐理由
+            </view>
+            <view class="pgd-recommand-block">
+                <view 
+                    wx:key="{{ index }}"
+                    class="pgd-recommand-tips"
+                    wx:if="{{ selectedSku.recommandTips }}"
+                    wx:for="{{ selectedSku.recommandTips }}"
+                >
+                    <view class="pgd-recommand-tips-icon">
+                        {{ index + 1}}
+                    </view>
+                    <view>
+                        {{ item }}
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <!-- 选择栏 -->
+        <view class="pgd-info-block">
+            <view 
+                bindtap="onShowCoupon"
+                class="pgd-info-item line"
+            >
+                <view class="pgd-info-label">
+                    优惠券
+                </view>
+                <view class="pgd-coupon-block">
+                    <my-coupon-inline
+                        wx:key="{{ index }}"
+                        bg="{{ item.bg }}"
+                        label="{{ item.label }}"
+                        wx:for="{{ smallCoupons$ }}"
+                    />
+                </view>
+                <image
+                    class='pgd-icon'
+                    mode="aspectFill"
+                    lazy-load="{{ true }}"
+                    src="cloud://dev-cz0o8.6465-dev-cz0o8-1300106651/icon/icon_order_more@3x.png"
+                />
+            </view>
+            <view
+                bindtap="onShowSku"
+                class="pgd-info-item line"
+            >
+                <view 
+                    wx:if="{{ !comfirmSku }}"
+                    class="pgd-info-label"
+                >
+                    请选择规格数量
+                </view>
+                <view 
+                    wx:else
+                    class="pgd-info-label"
+                >
+                    已选择：{{ comfirmSku.title }} {{ comfirmSku.count$ }}{{ comfirmSku.unit }}
+                </view>
+                <image
+                    class='pgd-icon'
+                    mode="aspectFill"
+                    lazy-load="{{ true }}"
+                    src="cloud://dev-cz0o8.6465-dev-cz0o8-1300106651/icon/icon_order_more@3x.png"
+                />
+            </view>
+            <view 
+                wx:if="{{ detail.promiseTips }}"
+                class="pgd-info-item"
+            >
+                <view class="pgd-info-label">
+                    服务承诺
+                </view>
+                <view class="pgd-promise-block">
+                    <view
+                        wx:key="{{ index }}"
+                        wx:for="{{ selectedSku.promiseTips }}"
+                        class="pgd-promise-item"
+                    >
+                        <image
+                            mode="aspectFill"
+                            lazy-load="{{ true }}"
+                            class="pgd-promise-icon"
+                            src="cloud://dev-cz0o8.6465-dev-cz0o8/icon/icon_home_committed@3x.png"
+                        />
+                        <view class="pgd-promise-label">{{ item }}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <!-- 底下操作栏 -->
+        <view class="pgd-action-bar" style="bottom:  {{ isIPhoneX? '38rpx': '0' }}">
+
+            <form
+                class="pgd-share-form"
+                report-submit="{{ true }}"
+            >
+                <button
+                    data-type="{{ !!detail.isHavingShareableCoupon ? '1' : '0' }}"
+                    open-type="share"
+                    form-type="submit"
+                    class="fix-btn pgd-action-btn share"
+                >   
+                    {{ !!detail.isHavingShareableCoupon ? '分享赠券' : '分享商品' }}
+                </button>
+            </form>
+
+            <view
+                bindtap="onShowSku"
+                class="pgd-action-btn buy {{ !!detail && detail.disabled ? 'disabled' : '' }}"
+            >
+                {{ !!detail && detail.disabled ? '已下架' : '立即购买' }}
+            </view>
+        </view>
+
+        <!-- 详情图片 -->
+        <view
+            wx:key="{{ index }}"
+            wx:for="{{ selectedSku.descriptionImgs }}"
+        >
+            <image
+                mode="aspectFit"
+                src="{{ item }}"
+                data-img="{{ item }}"
+                bindtap='previewImg'
+                class="pgd-detail-img"
+                lazy-load="{{ true }}"
+                data-imgs="{{ selectedSku.descriptionImgs }}"
+            />
+        </view>
+
+        
+        <!-- sku弹框 -->
+        <my-sku-selector
+            id="sku"
+            skus="{{ skus }}"
+            bindchange="onChangeSku"
+            bindconfirm="onConfirmSku"
+        />
+
+        <!-- 优惠券弹框 -->
+        <my-coupon-good
+            id="coupon"
+            coupons="{{ coupons }}"
+        />
+
+        <!-- icon 主页 -->
+        <image
+            wx:if="{{ showHome }}"
+            mode="aspectFill"
+            lazy-load="{{ true }}"
+            class="pgd-top-icon right"
+            bindtap="goHome"
+            src="cloud://dev-cz0o8.6465-dev-cz0o8/icon/icon_home@3x.png"
+        />
+        
+        <button class="pgd-top-button" open-type="contact" ><image
+            mode="aspectFill"
+            lazy-load="{{ true }}"
+            src="cloud://dev-cz0o8.6465-dev-cz0o8/icon/service_contact@3x.png"
+        /></button>
+        
+    </view>
+
+</view>

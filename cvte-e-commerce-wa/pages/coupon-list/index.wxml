@@ -1,0 +1,31 @@
+<view 
+    class="p-coupons-list"
+>
+
+    <view class="pcl-header">
+        <my-tab
+            tabs="{{ tabs }}"
+            bindchange="onTabChange"
+        />
+    </view>
+
+    <scroll-view 
+        scroll-y
+        class="pcl-content"
+    > 
+        <view 
+            wx:key="{{ index }}"
+            class="pcl-coupon-item"
+            wx:for="{{ coupons }}"
+        >
+            <my-coupon-block
+                data="{{ item }}"
+            />
+        </view>
+        <my-empty-block
+            wx:if="{{ coupons.length === 0 }}"
+            tips="咨询客服领取优惠券，即享商品优惠~"
+        />
+    </scroll-view>
+
+</view>

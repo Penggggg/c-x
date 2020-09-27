@@ -1,0 +1,45 @@
+
+.cas-text {
+    font-size: 28rpx;
+    line-height: 38rpx;
+    letter-spacing: 0.03em;
+    color: rgba(51,51,51,1);
+}
+
+.cas-empty-block {
+    display: flex;
+    align-items: center;
+    /* padding: 40rpx 20rpx 40rpx 45rpx; */
+    padding: 30rpx 32rpx;
+}
+
+.cas-tips {
+    flex: 1;
+}
+
+.cas-tips.ml {
+    margin-left: 20rpx;
+}
+
+.cas-icon {
+    width: 60rpx;
+    height: 60rpx;
+}
+
+.cas-icon.small {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.cas-selecting-content {
+    flex: 1;
+}
+
+.cas-selecting-address {
+    overflow: hidden; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 1;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}

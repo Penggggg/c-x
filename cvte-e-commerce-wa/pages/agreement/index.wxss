@@ -1,0 +1,47 @@
+/* pages/agreement/index.wxss */
+rich-text {
+    width: 700rpx;
+    padding: 25rpx 0;
+  }
+  
+  .rich-text-wrp {
+    padding: 0 25rpx;
+    background-color: #fff;
+  }
+  
+  .page-section{
+    width: 100%;
+    margin-bottom: 60rpx;
+  }
+  
+  .page-section:last-child{
+    margin-bottom: 0;
+  }
+ 
+  .page-section-title{
+    font-size: 28rpx;
+    color: #999999;
+    margin-bottom: 10rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+  }
+
+  .image-warper{
+    transform:  scale(1); 
+  }
+
+  .back-img{
+    text-align: center;
+    width: 100vw;
+    transform:  scale(1); 
+  }
+
+ table{
+   border: 1px solid black !important;
+   height: 200rpx;
+   width: 100rpx;
+ }
+ td{
+   border: 1px solid black;
+ }
+  

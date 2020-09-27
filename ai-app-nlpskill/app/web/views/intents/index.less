@@ -1,0 +1,233 @@
+.intents-wrapper {
+  background-color: #fff;
+  .skill {
+    margin-right: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .05);
+    .ant-divider-horizontal {
+      margin: 0;
+      margin-bottom: -1px;
+    }
+
+    .skill-content {
+      min-height: 300px;
+      max-height: 74vh;
+      overflow: auto;
+    }
+
+    &-item {
+      position: relative;
+      border: 1px solid rgba(0, 0, 0, .1);
+      padding: 10px 0 6px;
+      border-top: none;
+      cursor: pointer;
+
+      &:hover, &-active {
+        color: #1890ff;
+        background-color: #e6f7ff;
+      }
+
+      &-title {
+        width: 100%;
+        padding: 0 20px 0 10px;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 7px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background-color: rgba(0,0,0,.5);
+      -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+    }
+  }
+
+  .intents {
+    height: 100%;
+    overflow-y: auto;
+
+    .icon-tools {
+      float: right;
+      display: flex;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .anticon {
+      padding: 0 6px;
+    }
+  }
+
+  .filter-tools {
+    margin-bottom: 20px;
+  }
+
+}
+
+.form-item {
+  margin-bottom: 20px;
+
+  .item-title {
+    font-size: 16px;
+    font-weight: bold;
+
+    &::before {
+      content: '|';
+      color: #1890ff;
+      font-size: 20px;
+      padding-right: 4px;
+    }
+
+    span {
+      color: rgba(0, 0, 0, .35);
+      font-weight: normal;
+      font-size: 14px;
+      padding-left: 10px;
+    }
+  }
+
+  .item-wrapper {
+    padding: 10px 0 10px 20px;
+    margin-bottom: 20px;
+    background-color: rgba(128, 128, 128, 0.07);
+  }
+}
+
+.intent-modal {
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+  }
+
+  .ant-input[disabled] {
+    color: rgba(0, 0, 0, .65);
+  }
+}
+
+.dialog-table {
+  position: relative;
+  margin-top: 10px;
+  width: 1000px;
+  .segment-word {
+    padding: 0 5px;
+    display: inline-block;
+    margin-right: 2px;
+    cursor: pointer;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: visible;
+
+    &-active::before {
+      content: "[ ";
+      left: 0;
+    }
+
+    &-active::after {
+      content: " ]";
+      right: 0;
+    }
+
+    &:hover::before {
+      content: "[ ";
+      color:rgba(0, 0, 0, .35);
+      left: 0;
+    }
+
+    &:hover::after {
+      content: " ]";
+      color:rgba(0, 0, 0, .35);
+      right: 0;
+    }
+
+    &-active::before, &-active::after, &:hover::before, &:hover::after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .is-disabled {
+    color: #999;
+    cursor: not-allowed;
+  }
+
+  .has-slot {
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0 4px;
+  }
+
+  .is-active:before {
+    content: "[ ";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+
+  .is-active:after {
+    content: " ]";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+}
+
+.auto-similar {
+  .checkbox-wrapper {
+    border-bottom: 1px solid #E9E9E9;
+    padding: 8px 12px;
+    background-color: #f5f4f4;
+    font-weight: bold;
+  }
+
+  .check-group {
+    padding: 12px;
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+  }
+
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+  }
+}
+
+.slot-item {
+  position: relative;
+  padding: 4px 0 4px 20px;
+  cursor: pointer;
+
+  &:hover, &-active {
+    color: #1890ff;
+    background-color: #e6f7ff;
+    // color: #fff;
+    // background-color: #1890ff;
+  }
+}

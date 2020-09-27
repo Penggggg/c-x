@@ -1,0 +1,27 @@
+# 指定我们的基础镜像是node
+FROM node:12.14.0
+
+# cd到app文件夹下
+WORKDIR /app
+
+# 缓存更新，如果 package.json 没有更新，就会使用原来缓存
+ADD package.json package-lock.json /app/
+
+# 安装项目依赖包
+RUN npm config set registry http://registry.npm.taobao.org
+RUN npm config set @cvte:registry https://npm.gz.cvte.cn
+RUN npm install
+
+# 将根目录下的文件都copy到container（运行此镜像的容器）文件系统的app文件夹下
+ADD . /app/
+
+# 构建
+RUN npm run build:prod
+
+# 设置+8时区
+RUN ln -snf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo Asia/Shanghai > /etc/timezone
+RUN dpkg-reconfigure --frontend noninteractive tzdata
+
+#定义程序默认端口
+EXPOSE 3001
+

@@ -1,0 +1,64 @@
+<view class="con-coupon-selector">
+
+    <!-- sku背景 -->
+    <view
+        bindtap="close"
+        class="coupon-bg {{ !open ? 'hide' : ''  }}"
+        animation="{{ animationSkuBg }}"
+    >
+    </view>
+
+    <!-- 弹窗 -->
+    <!-- catchtouchmove="preventTouchMove" -->
+    <view
+        class="coupon-contaienr-bg"
+        animation="{{ animationSku }}"
+    >
+        <view
+            class="coupon-container-block"
+        >
+
+            <!-- 内容层 -->
+            <view class="coupon-content-block">
+
+                <my-empty-block
+                    tips="咨询客服领取优惠券，即享商品优惠~"
+                    wx:if="{{ coupons.length === 0 }}"
+                    img="cloud://dev-cz0o8.6465-dev-cz0o8/background/empty_1@3x.png"
+                />
+
+                <view 
+                    wx:key="{{ index }}"
+                    class="coupon-item"
+                    wx:for="{{ coupons }}"
+                >
+                    <my-coupon-block
+                        data="{{ item }}"
+                    />
+                </view>
+
+                <my-no-more />
+
+            </view>
+            
+            <!-- 确认按钮 -->
+            <view class="coupon-btn-block">
+                
+                <!-- 拿到 form_id -->
+                <form
+                    report-submit="{{ true }}"
+                    bindsubmit="confirmSelect"
+                >
+                    <button
+                        class="coupon-btn lh"
+                        form-type="submit"
+                    >
+                        确定
+                    </button>
+                </form>
+            </view>
+
+        </view>
+    </view>
+
+</view>

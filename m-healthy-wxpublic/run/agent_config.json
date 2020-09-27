@@ -1,0 +1,536 @@
+{
+  "config": {
+    "session": {
+      "maxAge": 86400000,
+      "key": "EGG_SESS",
+      "httpOnly": true,
+      "encrypt": true
+    },
+    "security": {
+      "domainWhiteList": [],
+      "protocolWhiteList": [],
+      "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
+      "csrf": {
+        "enable": false,
+        "useSession": false,
+        "ignoreJSON": false,
+        "cookieName": "csrfToken",
+        "sessionName": "csrfToken",
+        "headerName": "x-csrf-token",
+        "bodyName": "_csrf",
+        "queryName": "_csrf"
+      },
+      "xframe": {
+        "enable": true,
+        "value": "SAMEORIGIN"
+      },
+      "hsts": {
+        "enable": false,
+        "maxAge": 31536000,
+        "includeSubdomains": false
+      },
+      "dta": {
+        "enable": true
+      },
+      "methodnoallow": {
+        "enable": true
+      },
+      "noopen": {
+        "enable": true
+      },
+      "nosniff": {
+        "enable": true
+      },
+      "referrerPolicy": {
+        "enable": false,
+        "value": "no-referrer-when-downgrade"
+      },
+      "xssProtection": {
+        "enable": true,
+        "value": "1; mode=block"
+      },
+      "csp": {
+        "enable": false,
+        "policy": {}
+      },
+      "ssrf": {
+        "ipBlackList": null,
+        "checkAddress": null
+      }
+    },
+    "helper": {
+      "shtml": {}
+    },
+    "jsonp": {
+      "limit": 50,
+      "callback": [
+        "_callback",
+        "callback"
+      ],
+      "csrf": false
+    },
+    "onerror": {
+      "errorPageUrl": "",
+      "appErrorFilter": null,
+      "templatePath": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-onerror/lib/onerror_page.mustache"
+    },
+    "i18n": {
+      "defaultLocale": "en_US",
+      "dirs": [],
+      "queryField": "locale",
+      "cookieField": "locale",
+      "cookieMaxAge": "1y"
+    },
+    "watcher": {
+      "type": "development",
+      "eventSources": {
+        "default": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-watcher/lib/event-sources/default",
+        "development": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-watcher/lib/event-sources/development"
+      }
+    },
+    "multipart": {
+      "autoFields": false,
+      "defaultCharset": "utf8",
+      "fieldNameSize": 100,
+      "fieldSize": "100kb",
+      "fields": 10,
+      "fileSize": "10mb",
+      "files": 10,
+      "fileExtensions": [],
+      "whitelist": null
+    },
+    "development": {
+      "watchDirs": [],
+      "ignoreDirs": [],
+      "fastReady": false,
+      "reloadOnDebug": true,
+      "overrideDefault": false
+    },
+    "customLogger": {
+      "scheduleLogger": {
+        "consoleLevel": "NONE",
+        "file": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-health-wx/egg-schedule.log"
+      }
+    },
+    "logrotator": {
+      "filesRotateByHour": null,
+      "hourDelimiter": "-",
+      "filesRotateBySize": null,
+      "maxFileSize": 52428800,
+      "maxFiles": 10,
+      "rotateDuration": 60000,
+      "maxDays": 31
+    },
+    "static": {
+      "prefix": "/public/",
+      "dir": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public",
+      "dynamic": true,
+      "preload": false,
+      "buffer": false,
+      "maxFiles": 1000
+    },
+    "view": {
+      "root": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/app/view",
+      "cache": false,
+      "defaultExtension": ".html",
+      "defaultViewEngine": "",
+      "mapping": {}
+    },
+    "env": "local",
+    "name": "m-health-wx",
+    "keys": "<String len: 29>",
+    "proxy": false,
+    "protocolHeaders": "x-forwarded-proto",
+    "ipHeaders": "x-forwarded-for",
+    "hostHeaders": "",
+    "pkg": {
+      "name": "m-health-wx",
+      "version": "1.0.0",
+      "description": "",
+      "private": true,
+      "egg": {
+        "typescript": true
+      },
+      "scripts": {
+        "start": "egg-scripts start --port=8766 --title=m-health-wx",
+        "start:test": "egg-scripts start --port=7000 --ignore-stderr --env=test",
+        "stop": "egg-scripts stop --title=m-health-wx",
+        "dev": "egg-bin dev -r egg-ts-helper/register",
+        "sw": "node service-worker/write.js",
+        "debug": "egg-bin debug -r egg-ts-helper/register",
+        "test-local": "egg-bin test -r egg-ts-helper/register",
+        "test": "npm run lint -- --fix && npm run test-local",
+        "cov": "egg-bin cov -r egg-ts-helper/register",
+        "tsc": "ets && tsc -p tsconfig.json",
+        "ci": "npm run lint && npm run cov && npm run tsc",
+        "autod": "autod",
+        "lint": "tslint --project . -c tslint.json",
+        "clean": "ets clean",
+        "dev:client": "npm run dev:tsc && (npm run dev:c & npm run dev:s & npm run dev:ts )",
+        "dev:tsc": "tsc -p ./app/web",
+        "dev:ts": "tsc -p ./app/web -w",
+        "fix": "node fix.js",
+        "dev:c": "NODE_ENV=dev webpack --colors --progress --mode development --config ./config/webpack.client.conf.js --watch",
+        "dev:s": "NODE_ENV=dev webpack --colors --progress --mode development --config ./config/webpack.server.conf.js --watch",
+        "build": "npm run dev:tsc && npm run build:c && npm run build:s && npm run fix && npm run sw",
+        "build:prod": "npm run dev:tsc && npm run build:c && npm run build:s && npm run fix && npm run sw",
+        "build:test": "npm run dev:tsc && npm run build:cdev && npm run build:sdev && npm run fix && npm run sw",
+        "build:cdev": "NODE_ENV=dev webpack --colors --progress --mode development --config ./config/webpack.client.conf.js",
+        "build:sdev": "NODE_ENV=dev webpack --colors --progress --mode development --config ./config/webpack.server.conf.js",
+        "build:c": "NODE_ENV=production webpack --colors --progress --mode development --config ./config/webpack.client.conf.js",
+        "build:s": "NODE_ENV=production webpack --colors --progress --mode development --config ./config/webpack.server.conf.js"
+      },
+      "dependencies": {
+        "@cvte/ciac": "1.0.2",
+        "@cvte/wuli-tools": "1.4.1",
+        "axios": "^0.18.0",
+        "body-parser": "^1.18.3",
+        "echarts": "^4.1.0",
+        "egg": "^2.8.1",
+        "egg-scripts": "^2.6.0",
+        "fast-xml-parser": "^3.12.10",
+        "form-data": "^2.3.3",
+        "formstream": "^1.1.0",
+        "html2canvas": "^1.0.0-alpha.12",
+        "jsonwebtoken": "^8.3.0",
+        "mobx": "4.0.0",
+        "mobx-vue": "2.0.7",
+        "muse-ui": "3.0.1",
+        "muse-ui-loading": "0.2.0",
+        "muse-ui-toast": "0.3.0",
+        "vant": "1.4.2",
+        "vconsole": "3.2.0",
+        "vue": "2.5.17",
+        "vue-event-calendar": "1.5.2",
+        "vue-property-decorator": "7.0.0",
+        "vue-router": "3.0.1",
+        "xml2js": "^0.4.19"
+      },
+      "devDependencies": {
+        "@types/mocha": "2.2.40",
+        "@types/node": "8.10.58",
+        "@types/supertest": "2.0.0",
+        "autod": "3.0.1",
+        "autod-egg": "1.1.0",
+        "babel-core": "6.26.3",
+        "babel-loader": "8.0.4",
+        "babel-plugin-transform-remove-strict-mode": "0.0.2",
+        "css-loader": "1.0.0",
+        "egg-bin": "4.6.2",
+        "egg-ci": "1.8.0",
+        "egg-mock": "3.16.0",
+        "egg-ts-helper": "1.4.2",
+        "file-loader": "1.1.11",
+        "gulp-remove-use-strict": "0.0.2",
+        "less": "3.8.0",
+        "less-loader": "4.1.0",
+        "ts-loader": "4.4.2",
+        "tslib": "^1.10.0",
+        "tslint": "4.0.0",
+        "typescript": "^3.0.1",
+        "uglifyjs-webpack-plugin": "1.2.7",
+        "vue-loader": "15.2.7",
+        "vue-server-renderer": "2.5.17",
+        "vue-style-loader": "4.1.1",
+        "vue-template-compiler": "2.5.17",
+        "webpack": "4.16.5",
+        "webpack-bundle-analyzer": "^3.6.0",
+        "webpack-cli": "3.1.0",
+        "webpack-merge": "4.1.4",
+        "webpack-node-externals": "1.7.2",
+        "yargs": "^12.0.1"
+      },
+      "engines": {
+        "node": ">=8.9.0"
+      },
+      "ci": {
+        "version": "8"
+      },
+      "repository": {
+        "type": "git",
+        "url": ""
+      },
+      "eslintIgnore": [
+        "coverage"
+      ],
+      "author": "",
+      "license": "MIT"
+    },
+    "baseDir": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic",
+    "HOME": "/Users/hezhuopeng",
+    "rundir": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/run",
+    "dump": {
+      "ignore": "<Set>"
+    },
+    "confusedConfigurations": {
+      "bodyparser": "bodyParser",
+      "notFound": "notfound",
+      "sitefile": "siteFile",
+      "middlewares": "middleware",
+      "httpClient": "httpclient"
+    },
+    "notfound": {
+      "pageUrl": ""
+    },
+    "siteFile": {
+      "/favicon.ico": "<Buffer len: 6463>"
+    },
+    "bodyParser": {
+      "enable": true,
+      "encoding": "utf8",
+      "formLimit": "100kb",
+      "jsonLimit": "100kb",
+      "strict": true,
+      "queryString": {
+        "arrayLimit": 100,
+        "depth": 5,
+        "parameterLimit": 1000
+      }
+    },
+    "logger": {
+      "dir": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-health-wx",
+      "encoding": "utf8",
+      "env": "local",
+      "level": "INFO",
+      "consoleLevel": "INFO",
+      "disableConsoleAfterReady": false,
+      "outputJSON": false,
+      "buffer": true,
+      "appLogName": "m-health-wx-web.log",
+      "coreLogName": "egg-web.log",
+      "agentLogName": "egg-agent.log",
+      "errorLogName": "common-error.log",
+      "coreLogger": {
+        "consoleLevel": "WARN"
+      },
+      "allowDebugAtProd": false,
+      "type": "agent"
+    },
+    "httpclient": {
+      "enableDNSCache": false,
+      "dnsCacheMaxLength": 1000,
+      "dnsCacheMaxAge": 10000,
+      "request": {
+        "timeout": 5000
+      },
+      "httpAgent": {
+        "keepAlive": true,
+        "freeSocketKeepAliveTimeout": 4000,
+        "maxSockets": 9007199254740991,
+        "maxFreeSockets": 256
+      },
+      "httpsAgent": {
+        "keepAlive": true,
+        "freeSocketKeepAliveTimeout": 4000,
+        "maxSockets": 9007199254740991,
+        "maxFreeSockets": 256
+      }
+    },
+    "meta": {
+      "enable": true,
+      "logging": false
+    },
+    "coreMiddleware": [
+      "meta",
+      "siteFile",
+      "notfound",
+      "bodyParser",
+      "overrideMethod"
+    ],
+    "workerStartTimeout": 600000,
+    "cluster": {
+      "listen": {
+        "path": "",
+        "port": 7001,
+        "hostname": ""
+      }
+    },
+    "clusterClient": {
+      "maxWaitTime": 60000,
+      "responseTimeout": 60000
+    },
+    "onClientError": null,
+    "sourceUrl": "https://github.com/eggjs/examples/tree/master/m-health-wx",
+    "photoPath": "https://itapis.cvte.com/cfile/c69e6168-d231-4e2a-b0e1-580263f3f77b/v1/download/",
+    "appTitle": "视源健康公众号",
+    "middleware": [
+      "access",
+      "qyAuth",
+      "bodysignBindAuth",
+      "bodysignEntry",
+      "active",
+      "javaAuth",
+      "bindAuth",
+      "transfer"
+    ],
+    "wmp": {
+      "qyOauth": false,
+      "wxOauth": false,
+      "local": "http://192.168.0.113:7001",
+      "host": "https://wmp.cvte.com",
+      "appId": "c4003c0c-f522-45b3-a2ce-8e0cd382c656"
+    },
+    "host": {
+      "node": "http://192.168.0.113:7001",
+      "jwtServer": "https://csb-api.gz.cvte.cn",
+      "qiyeServer": "http://10.10.16.187:8081",
+      "verify": "https://itapis.cvte.com/verification-code",
+      "push": "https://itapis.cvte.com/wopush-platform",
+      "server": "https://hmstest-wx-api.gz.cvte.cn/hms-wx",
+      "localHost": "http://localhost:7001/"
+    },
+    "iac": {
+      "appid": "8c956ded-2d18-436b-98bc-6477be2a5c9e",
+      "secret": "<String len: 36>"
+    },
+    "coreMiddlewares": "~config~coreMiddleware",
+    "appMiddlewares": "~config~middleware",
+    "appMiddleware": "~config~middleware"
+  },
+  "plugins": {
+    "session": {
+      "enable": true,
+      "package": "egg-session",
+      "name": "session",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/plugin.js",
+      "path": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-session",
+      "version": "3.1.0"
+    },
+    "security": {
+      "enable": true,
+      "package": "egg-security",
+      "name": "security",
+      "dependencies": [],
+      "optionalDependencies": [
+        "session"
+      ],
+      "env": [],
+      "from": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/plugin.js",
+      "path": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security",
+      "version": "2.2.3"
+    },
+    "jsonp": {
+      "enable": true,
+      "package": "egg-jsonp",
+      "name": "jsonp",
+      "dependencies": [],
+      "optionalDependencies": [
+        "security"
+      ],
+      "env": [],
+      "from": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/plugin.js",
+      "path": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-jsonp",
+      "version": "2.0.0"
+    },
+    "onerror": {
+      "enable": true,
+      "package": "egg-onerror",
+      "name": "onerror",
+      "dependencies": [],
+      "optionalDependencies": [
+        "jsonp"
+      ],
+      "env": [],
+      "from": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/plugin.js",
+      "path": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-onerror",
+      "version": "2.1.0"
+    },
+    "i18n": {
+      "enable": true,
+      "package": "egg-i18n",
+      "name": "i18n",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/plugin.js",
+      "path": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-i18n",
+      "version": "2.0.0"
+    },
+    "watcher": {
+      "enable": true,
+      "package": "egg-watcher",
+      "name": "watcher",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/plugin.js",
+      "path": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-watcher",
+      "version": "3.0.0"
+    },
+    "multipart": {
+      "enable": true,
+      "package": "egg-multipart",
+      "name": "multipart",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/plugin.js",
+      "path": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-multipart",
+      "version": "2.0.0"
+    },
+    "development": {
+      "enable": true,
+      "package": "egg-development",
+      "name": "development",
+      "dependencies": [
+        "watcher"
+      ],
+      "optionalDependencies": [],
+      "env": [
+        "local"
+      ],
+      "from": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/plugin.js",
+      "path": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-development",
+      "version": "2.4.1"
+    },
+    "schedule": {
+      "enable": true,
+      "package": "egg-schedule",
+      "name": "schedule",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/plugin.js",
+      "path": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-schedule",
+      "version": "3.3.0"
+    },
+    "logrotator": {
+      "enable": true,
+      "package": "egg-logrotator",
+      "name": "logrotator",
+      "dependencies": [
+        "schedule"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/plugin.js",
+      "path": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator",
+      "version": "3.0.3"
+    },
+    "static": {
+      "enable": true,
+      "package": "egg-static",
+      "name": "static",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/plugin.js",
+      "path": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-static",
+      "version": "2.1.1"
+    },
+    "view": {
+      "enable": true,
+      "package": "egg-view",
+      "name": "view",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/plugin.js",
+      "path": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-view",
+      "version": "2.1.0"
+    }
+  }
+}

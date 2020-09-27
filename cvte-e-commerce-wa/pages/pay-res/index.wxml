@@ -1,0 +1,38 @@
+<!--pages/pay-res/index.wxml-->
+<view class="pay-result">
+    <view class="bank-card" wx:if="{{false}}" wx:if="{{page_state === dic.WAIT_REMIT}}">
+        <view class="title">
+            <view class="tips">请汇款至银行账户</view>
+            <view class="copy" bindtap="onCopyCard">复制信息</view>
+        </view>
+        <view class="info-item">
+            <view class="key">开户行</view>
+            <view class="label">{{ bank_info.name }}</view>
+        </view>
+        <view class="info-item">
+            <view class="key">公司名称</view>
+            <view class="label">{{ bank_info.company }}</view>
+        </view>
+        <view class="info-item">
+            <view class="key">账户</view>
+            <view class="label">{{ bank_info.number }}</view>
+        </view>
+    </view>
+    <view class="pay-upload-warper" hidden="{{page_state !== 'WAIT_UPLOAD'}}">
+        <oms-img-upload bindchange="onImgChange" omsCode="{{omsCode}}" class="pay-upload" max="{{5}}" />
+        <view class="upload-tips">上传银行流水号照片/截图</view>
+    </view>
+    <view class="wait-check"  hidden="{{page_state !== 'WAIT_CHECK'}}" >
+        <image src="cloud://dev-cz0o8.6465-dev-cz0o8/icon/icon_pay_wait@3x.png" />
+        <view class="main">凭证上传成功</view>
+        <view class="tips">我司核实后，将在24小时内发货</view>
+    </view>
+
+    <view class="btns-group">
+        <view class="button" wx:if="{{page_state === dic.WAIT_REMIT}}" bindtap="onNavToOrderList">还没完成汇款，稍后再付</view>
+        <view class="button done" wx:if="{{page_state === 'WAIT_REMIT'}}" bindtap="onRemit">已汇款，填写汇款单</view>
+        <view class="button done" wx:if="{{page_state === 'WAIT_UPLOAD'}}" bindtap="onSubmit">提交</view>
+        <view class="button" wx:if="{{page_state === 'WAIT_CHECK'}}" bindtap="onNavToOrderList">查看订单</view>
+        <view class="button done" wx:if="{{page_state === 'WAIT_CHECK'}}" bindtap="onGoHome">继续逛逛</view>
+    </view>
+</view>

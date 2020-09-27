@@ -1,0 +1,41 @@
+<view class="con-address-item">
+
+    <view class="cai-content">
+
+        <view class="cai-line">
+            <view class="cai-name">
+                {{ data.name }}
+            </view>
+            <view class="cai-text">
+                {{ data.phone }}
+            </view>
+            <view 
+                class="cai-text cai-default"
+                wx:if="{{ data.default }}"
+            >
+                (默认地址)
+            </view>
+        </view>
+
+        <view class="cai-line mt">
+            <view class="cai-text">
+                {{ data.provinceName }}{{ data.cityName }}{{ data.areaName }} {{ data.address }}
+            </view>
+        </view>
+
+    </view>
+    
+    <image
+        catchtap="goEdit"
+        mode="aspectFill"
+        class="cai-img"
+        lazy-load="{{ true }}"
+        src="cloud://dev-cz0o8.6465-dev-cz0o8/icon/icon_order_Logistics_fill@3x.png"
+    />
+
+    <view
+        wx:if="{{ line }}"
+        class="cai-item-line"
+    >
+    </view>
+</view>

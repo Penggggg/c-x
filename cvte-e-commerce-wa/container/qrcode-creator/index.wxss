@@ -1,0 +1,39 @@
+.con-qrcode-creator {
+
+}
+
+.page-loading {
+    color: #999;
+    font-size: 26rpx;
+    text-align: center;
+    padding-top: 200rpx;
+}
+
+.cqc-canvas-con {
+    flex: 1;
+    display: flex;
+    overflow-y: scroll;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30rpx;
+    justify-content: center;
+}
+.cqc-canvas {
+    margin-top: 35rpx;
+}
+
+.cqc-canvas.shadow {
+    box-shadow: 0px 0px 20px rgba( 0, 0, 0, 0.1 );
+}
+
+.cqc-counter {
+    display: flex;
+    margin-top: 50rpx;
+}
+
+.cqc-tips {
+    color: #333;
+    display: inline;
+    font-size: 36rpx;
+    letter-spacing: 0.05em;
+}

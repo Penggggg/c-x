@@ -1,0 +1,53 @@
+.com-empty-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.emb-img {
+    height: 420rpx;
+    width: 500rpx;
+    margin-bottom: 20rpx;
+}
+
+.emb-tips {
+    color: #666;
+    font-size: 26rpx;
+    text-align: center;
+    letter-spacing: 0.05;
+    line-height: 40rpx;
+    overflow: hidden; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 1;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: flex;
+}
+
+.emb-text {
+    color: #666;
+    font-size: 26rpx;
+    display: inline;
+}
+
+.emb-text.bold {
+    color: #333;
+    font-weight: bold;
+}
+
+.fix-btn {
+    outline:none;
+    border:none;
+    list-style: none;
+    padding: 0;
+    line-height: normal;
+    overflow: visible;
+    text-align: left;
+    background: transparent;
+}
+
+.fix-btn:after {
+    border:none;
+}

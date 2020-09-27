@@ -1,0 +1,25 @@
+.p-user-setting {
+    min-height: 100vw;
+}
+
+.pus-list {
+    /* padding-top: 30rpx; */
+}
+
+.pus-item {
+    display: flex;
+    align-items: center;
+    padding: 25rpx 30rpx 25rpx 50rpx;
+    box-sizing: border-box;
+    justify-content: space-between;
+    color: #666;
+    font-size: 26rpx;
+    letter-spacing: 0.05em;
+    box-shadow: 0 0 15px rgba( 0, 0, 0, 0.1 );
+    margin: 30rpx 0;
+}
+
+.pus-img {
+    width: 35rpx;
+    height: 35rpx;
+}

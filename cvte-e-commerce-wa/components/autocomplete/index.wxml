@@ -1,0 +1,41 @@
+<view class="com-autocomplete">
+    <input
+        value="{{ value }}"
+        bindinput="onInput"
+        bindblur="onBlur"
+        bindfocus="onFocus"
+        class="ca-input"
+        disabled="{{ disabled }}"
+        placeholder="{{ placeholder || '' }}"
+    />
+    <view 
+        class="ca-result-list"
+        wx:if="{{ resultList.length > 0 && isShow }}"
+    >
+        <view
+            bindtap="onChoice"
+            data-item="{{ item }}"
+            wx:key="{{ index }}"
+            wx:for="{{ resultList$ }}"
+            class="ca-result-item"
+        >
+            <view 
+                wx:key="{{ kk }}"
+                wx:for-index="kk"
+                wx:for-item="textArr"
+                wx:for="{{ item.showKeyArr$ }}"
+                class="ca-result-text"
+            >
+                <view 
+                    wx:key="{{ k }}"
+                    wx:for-index="k"
+                    wx:for-item="textItem"
+                    wx:for="{{ textArr }}"
+                    class="ca-text {{ textItem.type === 'bold' ? 'bold' : '' }}"
+                >
+                    {{ textItem.text }}
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

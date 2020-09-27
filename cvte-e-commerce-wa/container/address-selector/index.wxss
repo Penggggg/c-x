@@ -1,0 +1,111 @@
+.con-address-selector {
+    background: #fff;
+}
+
+.cas-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cas-text {
+    color: #666;
+    font-size: 26rpx;
+    line-height: 38rpx;
+    letter-spacing: 0.03em;
+}
+
+.cas-selecting-tips {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 25rpx;
+}
+
+.cas-selecting-default {
+    color: #fff;
+    padding: 3rpx 12rpx;
+    font-size: 22rpx;
+    background: #DDB97B;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 8rpx;
+}
+
+.cas-selecting-name {
+    color: #333;
+    font-size: 26rpx;
+    font-weight: bold;
+}
+
+.cas-list {
+    flex: 1;
+    overflow-y: scroll;
+}
+
+.cas-btn {
+    width: 100vw;
+    color: #fff;
+    padding: 25rpx 0;
+    font-size: 32rpx;
+    text-align: center;
+    background: #DDB97B;
+    letter-spacing: 0.05em;
+}
+
+.cas-empty-block {
+    display: flex;
+    align-items: center;
+    padding: 40rpx 20rpx 40rpx 45rpx;
+}
+
+.cas-selecting-address {
+    overflow: hidden; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 1;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+
+.cas-selecting-content {
+    flex: 1;
+}
+
+.cas-icon {
+    width: 60rpx;
+    height: 60rpx;
+}
+
+.cas-icon.small {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.cas-tips {
+    flex: 1;
+}
+
+.cas-tips.ml {
+    margin-left: 20rpx;
+}
+
+.cas-address-item {
+    display: flex;
+    align-items: center;
+    padding-left: 30rpx;
+    box-sizing: border-box;
+}
+
+.cas-address-item-radio {
+    margin-right: 0rpx;
+}
+
+.cas-address-meta {
+    flex: 1;
+}
+
+.cas-radio {
+    transform: scale( 0.65 );
+    display: inline-block;
+}

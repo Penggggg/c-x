@@ -1,0 +1,16 @@
+<view
+    class="c-tag-selector"
+>
+    <!-- 可选标签列表 -->
+    <view class="cts-list">
+        <view
+            wx:key="{{ index }}"
+            wx:for="{{ tags$ }}"
+            data-tag="{{ item }}"
+            bindtap="onSelect"
+            class="cts-tag {{ item.selected ? 'selected' : '' }}"
+        >
+            {{ item.label }}
+        </view>
+    </view>
+</view>

@@ -1,0 +1,123 @@
+@item_height: 43px;
+.position-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.question-res-title{
+  div{
+    margin: 8px 0;
+  }
+  padding: 10px 15px;
+  .main{
+    width:100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .time{
+    width:100%;
+    text-align: center;
+    color:#5f5f6b;
+  }
+  .des{
+    margin-bottom: 0;
+    p{
+      margin: 0;
+    }
+    .tips{
+      position: relative;
+      .icon{
+        position: absolute;
+        top:-2px;
+      }
+      span{
+        font-weight: bold;
+        display: inline-block;
+        margin-left: 28px;
+      }
+    }
+    .text{
+      margin-top: 6px;
+      margin-left: 28px;
+    }
+  }
+}
+.success-result{
+  padding: 10px 15px;
+  text-align: center;
+  p{
+    color: #141418
+  }
+}
+.question-res-warper{
+  div{
+    margin: 0;
+  }
+  padding: 10px 15px;
+  .header{
+    display: flex;
+    justify-content: flex-start;
+    .item{
+      height: @item_height;
+      width:30%;
+      border-left: .5px solid #97979f;
+      border-top: .5px solid #97979f;
+      .position-center()
+    }
+    .more-width{
+      width: 50%;
+    }
+    .less-width{
+      width: 10%;
+    }
+    .item:last-child{
+      border-right: .5px solid #97979f;
+    }
+  }
+  .content{
+    border-bottom: .5px solid #97979f;
+    .row{
+      width:100%;
+      display: flex;
+      justify-content: flex-start;
+      .item{
+        min-height: @item_height;
+        text-align: center;
+        width:30%;
+        border-left: .5px solid #97979f;
+        border-top: .5px solid #97979f;
+        .res-assess{
+          color: #ff2e2e;
+          font-weight: bold;
+        }
+        .position-center()
+      }
+      .more-width{
+        width: 50%;
+      }
+      .less-width{
+        width: 10%;
+      }
+      .item:last-child{
+        border-right: .5px solid #97979f;
+      }
+      .col-warper{
+        display: flex;
+        flex-direction:column;
+        .col{
+          border-bottom: .5px solid #97979f;
+          display: flex;
+          flex: auto;
+          text-align: center;
+          min-height: @item_height;
+          width: 100%;
+          .position-center()
+        }
+        .col:last-child{
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

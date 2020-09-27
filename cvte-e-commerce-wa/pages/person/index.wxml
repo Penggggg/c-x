@@ -1,0 +1,85 @@
+<view class="main-person">  
+    <view class="header" wx:if="{{isDistributor}}">
+        <view class="header-float" >
+            <image src="cloud://dev-cz0o8.6465-dev-cz0o8/background/image_personal@3x.png"/>
+        </view>
+        <view class="user" >
+            <view class="avatar">
+                <image src="cloud://dev-cz0o8.6465-dev-cz0o8/icon/avatar@3x.png"/>
+            </view>
+            <view class="name" >{{username}}</view>
+            <view class="level">{{dlevel.level.name}}</view>
+        </view>
+        <view class="score">
+            <view bindtap="goto" data-item="{{couponRedirect}}">
+                <image src="cloud://dev-cz0o8.6465-dev-cz0o8/icon/icon_personal_coupon@3x.png"/>
+                <text class="name">优惠券：</text>
+                <text class="number" >{{couponCount}}</text>
+            </view>
+            <view bindtap="goto" data-item="{{integralRedirect}}">
+                <image src="cloud://dev-cz0o8.6465-dev-cz0o8/icon/icon_personal_integral@3x.png"/>
+                <text class="name">积分：</text>
+                <text class="number">{{dlevel.score.distributorTotalScore}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="no_vip_header" wx:if="{{!isDistributor}}">
+        <view class="header-float">
+            <image src="cloud://dev-cz0o8.6465-dev-cz0o8/background/un_vip_background@3x.png"/>
+        </view>
+        <view class="user" bindtap="gotoReg">
+            <view class="avatar">
+                <image src="cloud://dev-cz0o8.6465-dev-cz0o8/icon/avatar@3x.png"/>
+            </view>
+            <view class="name">{{username}}</view>
+        </view>
+    </view>
+    <view class="power">
+        <view class="title">
+            <view class="name">我的订单</view>
+            <!-- <view class="action">查看全部<image src="cloud://dev-cz0o8.6465-dev-cz0o8/icon/icon_order_more@3x.png"/></view> -->
+        </view>
+        <view class="group">
+            <view
+                class="item"
+                wx:key="{{ index }}"
+                wx:for="{{ orderNav }}"
+                data-state="{{ item.state }}"
+                bindtap="onNavToOrderList"
+            >
+                <image src="{{ item.icon }}" />
+                <view>{{ item.label }}</view>
+            </view>
+        </view>
+    </view>
+    <view class="ad" bindtap="goto" data-item="{{integralRedirect}}">
+        <image src="cloud://dev-cz0o8.6465-dev-cz0o8/background/integral_shop@3x.png"/>
+    </view>
+    <view class="services">
+        <text class="title">常用服务</text>
+        <view class="list">
+            <button 
+                wx:if="{{item.openType}}"
+                class="item"
+                open-type="{{item.openType}}"
+                data-item="{{ item }}"
+                wx:for="{{ serverNav }}"
+                wx:key="{{ index }}"
+            >
+                <image src="{{ item.icon }}" />
+                <view>{{ item.label }}</view>
+            </button>
+            <view
+                wx:if="{{!item.openType}}"
+                class="item"
+                bindtap="goto"
+                data-item="{{ item }}"
+                wx:for="{{ serverNav }}"
+                wx:key="{{ index }}"
+            >
+                <image src="{{ item.icon }}" />
+                <view>{{ item.label }}</view>
+            </view>
+        </view>
+    </view>
+</view>

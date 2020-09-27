@@ -1,0 +1,27 @@
+.com-my-tabs {
+    display: flex;
+    background: #fff;
+    box-shadow:0rpx 8rpx 20rpx 0rpx rgba(0,0,0,0.05);
+}
+
+.cmt-tab {
+    flex: 1;
+    color: #333;
+    padding: 15rpx;
+    font-size: 28rpx;
+    text-align: center;
+    position: relative;
+    letter-spacing: 0.05em;
+
+}
+
+.cmt-tab.active:after {
+    left: 50%;
+    bottom: 0;
+    content: '';
+    width: 2.8em;
+    height: 2px;
+    position: absolute;
+    background: #DDB97B;
+    transform: translate( -50%, 0 );
+}

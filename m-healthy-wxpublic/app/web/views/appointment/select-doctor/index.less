@@ -1,0 +1,161 @@
+// @global_padding: 0 0.3em;
+@global_border_radius: 5px;
+@global_margin: 0.5em 0.3em;
+@px: 16rem;
+
+.class-list{
+  position: relative;
+  &:after{
+    content: '>>';
+    position: absolute;
+    right: 8/@px;
+    width: 20/@px;
+    height: 120%;
+    // background: white;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #97979f;
+    // box-shadow: -7px 0px 16px -2px #212121
+  }
+}
+
+.tips-line-mixin {
+  top: 50%;
+  content: '';
+  width: 80px;
+  height: 1px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.12);
+  transform: translateY( -50% ) scaleY( 0.5 );
+}
+
+ /** 提示文字 */
+ .empty-tips {
+  color: #999;
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+}
+.empty-tips:before {
+  left: 30px;
+  .tips-line-mixin( );
+} 
+
+.empty-tips:after {
+  right: 30px;
+  .tips-line-mixin( );
+} 
+.doctor-list {
+  color: #141418;
+  margin: 10px 0.4em 0;
+  box-shadow: none;
+  ul {
+    padding: 0;
+    background: #f5f5f5;
+    li {
+      position: relative;
+      margin: 0.4em 0;
+      background: white;
+      border-radius: 4px;
+      border: 1px solid #f2f2f2;
+      .mu-item-action  {
+        padding-top: 10px;
+        margin-right: 10px;
+      }
+      .mu-item-title {
+        font-weight: bold;
+
+      }
+      .mu-item-sub-title{
+        line-height: 1;
+        div{
+          font-size: 12px;
+        }
+        .date-list{
+          font-size: 13px;
+          width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin: 6px 0;
+          display: inline-block;
+        }
+        .medical-list{
+          display: flex;
+          justify-content: flex-start;
+          span{
+            display: inline-block;
+            margin-right: 10px;
+            background: #f4f6fa;
+            border-radius: 6px;
+            padding: 4px 8px;
+          }
+        }
+      }
+      .detial-info {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        p {
+          margin: 0;
+        }
+        .name {
+          // span {
+            display: inline-block;
+            border-radius: 2px;
+            font-weight: 500;
+            font-size: 15/@px !important;
+            color: #5f5f6b;
+            // margin-left: 0.2em;
+          // }
+        }
+      }
+      // .date-list {
+      //   width: 100%;
+      //   white-space: nowrap;
+      //   overflow: hidden;
+      //   text-overflow: ellipsis;
+      // }
+      .date {
+        display: inline-block;
+        margin: 0 2px;
+        font-size: 0.75em;
+
+        background: #00D0B9;
+        color: white;
+        padding: 0 0.3em;
+        border-radius: 2px;
+      }
+      .confirm {
+        position: absolute;
+        top: 10%;
+        right:2%;
+        font-weight: bold;
+        .mu-button-wrapper {
+          // background: #00D0B9;
+          // color:white;
+          font-size: 11px;
+          font-weight: 400;
+        }
+        .canOrder , .notOrder{
+          min-width:0 !important;
+          div{padding: 0 !important;
+            width: 68px !important;}
+          
+        }
+        .canOrder{
+          font-size: 1.06em;
+          background: #00D0B9;
+          color:white;
+        }
+        .notOrder{
+          background: #888888;
+          color:white;
+        }
+      }
+    }
+  }
+}

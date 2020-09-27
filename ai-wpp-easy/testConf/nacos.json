@@ -1,0 +1,12 @@
+{
+    "wpp": {
+        "sw": {
+            "jsPath": "./testDist",
+            "imgPath": "./testDist/img",
+            "env": "test",
+            "app": "来自于构建",
+            "adm": "hezhuopeng",
+            "prefix": "/car"
+        }
+    }
+}

@@ -1,0 +1,125 @@
+
+@border: .5px solid #e7eaf0;
+@border-radius: .4em;
+.p-chemical-examination-detail {
+    font-size: 16px;
+    padding: 0 .6em;
+    position: relative;
+    color: #141418;
+
+    .warning{
+        padding: .4em .6em;
+        font-size: 14px;
+        color: #ff2e2e;
+    }
+
+    .person-info, .suggestion, .result, .position{
+        background: #fff;
+        width: 100%;
+        border: @border;
+        border-radius: @border-radius;
+        padding: .4em .6em;
+        margin:.6em 0 ;
+        .header{
+            position: relative;
+            font-weight: bold;
+            line-height: 2em;
+            .icon{
+                position: absolute;
+                top:3px;
+            }
+            .text{
+                display: inline-block;
+                margin-left: 28px;
+            }
+        }
+        .content{
+            font-size: .9em;
+            margin: 0 .6em;
+            color: #3e3e3e;
+            .item{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .text{
+                text-indent: 32px;
+            }
+            
+            div{
+                margin: .3em 0;
+            }
+            }
+        }
+    }
+
+    .unusual-examination,.all-examination{
+        .mu-expansion-panel-header{
+            padding-left: 0.6em;
+        }
+        margin:.6em 0 ;
+        .header{
+           font-weight: bold;
+           color: #141418 !important;
+           position: relative;
+           .icons{
+               position: absolute;
+               top:-2px;
+           }
+           .text{
+               display: inline-block;
+               margin-left: 28px;
+           }
+        }
+        .check-item{
+            display: flex;
+            justify-content: space-between;
+            // line-height: 2.5em;
+            border-bottom: @border;
+            font-size: .9em;
+            padding: 4px 0;
+            .drugs{
+                p{
+                    margin:0;
+                }
+                .name{
+                    
+                }
+                .range{
+                    font-size: .8em;
+                    color: #97979f;
+                }
+            }
+            .value{
+                display: flex;
+                justify-content: space-between;
+                .up,.down{
+                    color: #ff2e2e;
+                }
+            }
+        }
+        .mu-expansion-panel-header{
+            border: @border;
+            border-radius: .4em  .4em 0  0;
+            min-height: 0 !important;
+        }
+    }
+
+    .download-btn {
+        display: block;
+        color: #fff;
+        right: 8%;
+        opacity: 0.9;
+        bottom: 80px;
+        height: 65px;
+        width: 65px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        border-radius: 50%;
+        background: #19a218;
+        justify-content: center;
+        box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.25);
+        align-items: center;
+    }
+}

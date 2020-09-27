@@ -1,0 +1,44 @@
+.p-address-create {
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-bottom: 100rpx;
+}
+
+.pac-content {
+    padding: 25rpx 25rpx 0;
+}
+
+.pac-form {
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.pac-btn {
+    left: 0;
+    width: 100vw;
+    color: #fff;
+    padding: 25rpx 0;
+    font-size: 32rpx;
+    text-align: center;
+    background: #DDB97B;
+    letter-spacing: 0.05em;
+    position: fixed;
+}
+
+.pac-btn.one {
+    bottom: 0;
+}
+
+.pac-btn.one.upper {
+    bottom: 30rpx;
+}
+
+.pac-btn.two {
+    bottom: 100rpx;
+    color: #f5222d;
+    background: #fff;
+}
+
+.pac-btn.two.upper {
+    bottom: 130rpx;
+}

@@ -1,0 +1,60 @@
+
+.my-entity {
+
+  .icon-tools {
+    float: right;
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .anticon {
+    padding: 0 6px;
+  }
+}
+
+.entity-form-item {
+  margin-bottom: 20px;
+
+  .item-title {
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+
+    &::before {
+      content: '|';
+      color: #1890ff;
+      font-size: 20px;
+      padding-right: 4px;
+    }
+  }
+
+  .item-wrapper {
+    padding: 10px 0 10px 20px;
+    margin-bottom: 20px;
+    background-color: rgba(128, 128, 128, 0.07);
+  }
+
+  .ant-input[disabled] {
+    color: rgba(0, 0, 0, .65);
+  }
+}
+
+.swicth-btn {
+  position: absolute;
+  right: 0;
+  top: 4px
+}
+
+.entity-modal {
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+  }
+}

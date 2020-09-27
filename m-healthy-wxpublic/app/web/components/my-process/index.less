@@ -1,0 +1,83 @@
+.com-my-process {
+
+    .my-icon {
+
+        width: 40px;
+        height: 40px;
+    }
+
+    .process-block {
+
+        display: flex;
+        padding: 10px 15px;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+
+        .process-option {
+
+            flex: 1;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+            flex-direction: column;
+
+            .process-status,
+            .process-text {
+                margin: 0;
+                font-size: 14px;
+                line-height: 22px;
+                color: rgb(102, 102, 102);
+            }
+
+            .process-status.mt {
+                margin-top: 10px;
+            }
+
+            .process-status.grey {
+                color: #bfbfbf;
+            }
+
+            .process-text {
+                color: #ccc;
+            }
+
+            .icon-block {
+                position: relative;
+            }
+        }
+
+        .process-option:not(:last-child):after {
+            top: 20px;
+            right: 0%;
+            height: 3px;
+            width: 30%;
+            content: '';
+            background: #ccc;
+            position: absolute;
+            transform: translate( 0, -50% );
+        }
+
+        .process-option.active:after {
+            background: #16CCB9;
+        }
+
+        .process-option:not(:first-child):before {
+            top: 20px;
+            left: 0%;
+            height: 3px;
+            width: 30%;
+            content: '';
+            background: #ccc;
+            position: absolute;
+            transform: translate( 0, -50% );
+        }
+
+        .process-option.active:before {
+            background: #16CCB9;
+        }
+    }
+
+}

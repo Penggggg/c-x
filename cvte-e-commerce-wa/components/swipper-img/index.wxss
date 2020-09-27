@@ -1,0 +1,23 @@
+.com-swiper-img {
+    position: relative;
+}
+
+.csi-swiper {
+    height: 600rpx;
+}
+
+.csi-img {
+    width: 100vw;
+    height: 100%;
+}
+
+.csi-tips {
+    right: 10rpx;
+    bottom: 10rpx;
+    color: #fff;
+    font-size: 22rpx;
+    position: absolute;
+    padding: 5rpx 20rpx;
+    border-radius: 20rpx;
+    background: rgba(0, 0, 0, 0.4);
+}

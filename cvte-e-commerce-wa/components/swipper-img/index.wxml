@@ -1,0 +1,29 @@
+<view class="com-swiper-img">
+    <swiper
+        current="{{ current }}"
+        autoplay="{{ false }}"
+        interval="{{ interval }}"
+        circular="{{ true }}"
+        class="csi-swiper"
+        bindchange="onSwipper"
+    >
+        <block
+            wx:key="{{ index }}"
+            wx:for="{{ imgs }}"
+        >
+            <swiper-item>
+                <image
+                    mode="aspectFill"
+                    src="{{ item }}"
+                    data-img="{{ item }}"
+                    class="csi-img"
+                    bindtap='previewImg'
+                    lazy-load="{{ true }}"
+                />
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="csi-tips">
+        {{ current + 1 }} / {{ imgs.length }}
+    </view>
+</view>

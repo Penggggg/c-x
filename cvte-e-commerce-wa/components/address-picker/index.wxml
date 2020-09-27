@@ -1,0 +1,16 @@
+<view class="con-address-picker">
+    <picker 
+        mode="multiSelector" 
+        bindchange="onPickerChange" 
+        bindcolumnchange="onColumnChange" 
+        value="{{ answerArr }}" 
+        range="{{ optArr }}"
+        range-key="label"
+    >
+        <view 
+            class="cap-text"
+        >
+            {{ answerText$ || placeholder }}
+        </view>
+    </picker>
+</view>

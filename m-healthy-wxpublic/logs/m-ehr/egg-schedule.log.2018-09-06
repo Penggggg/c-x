@@ -1,0 +1,10 @@
+2018-09-07 00:04:41,103 INFO 54990 [153624988108086491164192217] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js task received by app
+2018-09-07 00:04:41,108 INFO 54990 [153624988108086491164192217] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js executing by app
+2018-09-07 00:04:41,122 INFO 54990 [153624988108086491164192217] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js execute succeed, used 13ms
+2018-09-07 00:04:41,084 INFO 78522 [153624988108086491164192217] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js triggered, send random by agent
+2018-09-07 00:04:41,104 INFO 78522 [Timer] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-09-08 00:00:00.000
+2018-09-07 00:04:42,076 INFO 54990 [153624988207386491255891813] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js task received by app
+2018-09-07 00:04:42,077 INFO 54990 [153624988207386491255891813] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js executing by app
+2018-09-07 00:04:42,086 INFO 54990 [153624988207386491255891813] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js execute succeed, used 9ms
+2018-09-07 00:04:42,073 INFO 78522 [153624988207386491255891813] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js triggered, send random by agent
+2018-09-07 00:04:42,079 INFO 78522 [Timer] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-09-08 00:00:01.000

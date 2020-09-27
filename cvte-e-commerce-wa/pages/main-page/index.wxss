@@ -1,0 +1,203 @@
+.main-page{
+    background:rgba(250,250,250,1);
+    height: calc(100vh - 38rpx);
+}
+
+.main-page .goods-item{
+    position: relative;
+    width: 702rpx;
+    height: 776rpx;
+    border-radius: 10rpx;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    background:linear-gradient(137deg,rgba(250,251,255,1) 0%,rgba(255,253,250,1) 100%);
+    margin-bottom: 40rpx;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.main-page .deputy-goods-item{
+    position: relative;
+    width:344rpx;
+    height:366rpx;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 0px 20rpx 0rpx rgba(0,0,0,0.1);
+    border-radius:12rpx;
+}
+
+.deputy-goods-item .img image{
+    width:146rpx;
+    height:222rpx;
+    padding: 20rpx 98rpx 0 100rpx;
+}
+.deputy-goods-item .name{
+    margin: 16rpx auto 0;
+    width:182rpx;
+    height:40rpx;
+    font-size:28rpx;
+    font-family:PingFangSC;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:40rpx;
+}
+.deputy-goods-item .desc{
+    margin: 0 auto;
+    width:144rpx;
+    height:34rpx;
+    font-size:24rpx;
+    font-family:PingFangSC;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    line-height:34rpx;
+}
+
+.main-page .list{
+    padding: 0 24rpx;
+    margin-top: 54rpx;
+}
+
+.main-page .deputy-list{
+    padding: 0 24rpx;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main-page .deputy-list .deputy-goods-item{
+    margin-bottom: 14rpx;
+}
+.main-page .list .list-item{
+    margin-bottom: 40rpx;
+}
+
+.goods-item .tag{
+    width:160rpx;
+    height:52rpx;
+    background:rgba(221,185,123,1);
+    border-radius:0px 4rpx 4rpx 0px;
+    position: absolute;
+    top: 30rpx;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goods-item .title{
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width:496rpx;
+    height:66rpx;
+    font-size:48rpx;
+    font-family:PingFangSC;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:66rpx;
+    padding: 112rpx 102rpx 0 104rpx;
+}
+.goods-item .introduce, .goods-item .price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.goods-item .img{
+    width:496rpx;
+    height:308rpx;
+    padding: 30rpx 102rpx 0 104rpx;
+    /* background: red; */
+    /* border: 1px solid red; */
+}
+.goods-item .btn button{
+
+    margin: 34rpx auto 0;
+    width:242rpx;
+    height:68rpx;
+    font-size:28rpx;
+    font-family:PingFang-SC;
+    font-weight:bold;
+    color:rgba(255,255,255,1);
+    background:rgba(49,50,52,1) ;
+    box-shadow:8rpx 8rpx 8rpx 0px rgba(0,0,0,0.1);
+    border-radius:4rpx;
+}
+.goods-item .img image{
+    width:496rpx;
+    height:308rpx;
+    /* background: red; */
+    /* border: 1px solid red; */
+}
+
+.goods-item .price .origin{
+    width:76rpx;
+    height:22rpx;
+    font-size:20rpx;
+    font-family:Gotham;
+    font-weight:normal;
+    color:rgba(153,153,153,1);
+    line-height:26rpx;
+    margin-top: 36rpx;
+    text-decoration:line-through;
+}
+.goods-item .price .final{
+    width:78rpx;
+    height:30rpx;
+    font-size:28rpx;
+    font-family:Gotham;
+    font-weight:900;
+    color:rgba(49,50,52,1);
+    line-height:30rpx;
+    margin-left: 14rpx;
+    margin-top: 36rpx;
+}
+.goods-item .introduce .name{
+    width:496rpx;
+    height:44rpx;
+    font-size:32rpx;
+    font-family:PingFangSC;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:44rpx;
+    margin-top: 14rpx;
+    text-align: center;
+    padding: 0rpx 102rpx 0 104rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* .goods-item .introduce .memo{
+    width:202rpx;
+    height:40rpx;
+    font-size:28rpx;
+    font-family:PingFang-SC;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:40rpx;
+    margin-top: 12rpx;
+    margin-left: 12rpx;
+} */
+.goods-item .tag text{
+    width:96rpx;
+    height:34rpx;
+    font-size:24rpx;
+    font-family:PingFangSC;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:34rpx;
+}
+.tool-bar{
+    width: 87rpx;
+    height: 87rpx;
+    position: fixed;
+    bottom: 40rpx;
+    right:24rpx;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8rpx;
+}
+
+.tool-bar image, .customer image{
+    width: 55rpx;
+    height: 55rpx;
+}

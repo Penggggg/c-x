@@ -1,0 +1,74 @@
+
+@border: .5px solid #e7eaf0;
+@border-radius: .4em;
+.p-chemical-examination-detail {
+    font-size: 16px;
+    padding: 0 .6em;
+    position: relative;
+    color: #141418;
+
+    .person-info, .suggestion, .result, .position{
+        background: #fff;
+        width: 100%;
+        border: @border;
+        border-radius: @border-radius;
+        padding: .4em .6em;
+        margin:.6em 0 ;
+        .header{
+            position: relative;
+            font-weight: bold;
+            line-height: 2em;
+            .icon{
+                position: absolute;
+                top:3px;
+            }
+            .text{
+                display: inline-block;
+                margin-left: 28px;
+            }
+        }
+        .content{
+            color: #3e3e3e;
+            font-size: .9em;
+            margin: 0 .6em;
+            .item{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .label{
+                margin-right: 4px;
+            }
+            div{
+                margin: .3em 0;
+                
+            }
+            }
+        }
+        .advice{
+            .title{
+                font-weight: bold;
+            }
+            .body{
+                text-indent: 1.5em;
+            }
+        }
+    }
+
+}
+.download-btn {
+    display: block;
+    color: #fff;
+    right: 8%;
+    opacity: 0.9;
+    bottom: 80px;
+    height: 65px;
+    width: 65px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    border-radius: 50%;
+    background: #19a218;
+    justify-content: center;
+    box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.25);
+    align-items: center;
+}

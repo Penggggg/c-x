@@ -1,0 +1,41 @@
+<view>
+
+    <view
+        bindtap="open"     
+    >
+        优惠券选择
+    </view>
+    <my-coupon-selector
+        id="coupon"
+        sku="{{ skuItem }}"
+        bindchange="onCouponChange"
+    />
+
+    <view    
+    >
+        地址选择
+    </view>
+    <my-address-selector
+        refresh="{{ refresh }}"
+        placeholder="请选择收票地址"
+        bindchange="onAddressChange"
+    />
+
+    <view    
+    >
+        订单开票
+    </view>
+    <my-order-invoice-create/>
+
+    <view    
+    >
+        自动完成
+    </view>
+    <my-autocomplete
+        query="name"
+        showKey="kpName"
+        fillKey="kpName"
+        url="{{ searchUrl }}"
+    />
+    
+</view>

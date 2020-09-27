@@ -1,0 +1,203 @@
+
+.container-block-minxin {
+    padding: 0 20px;
+    background: #fff;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+};
+
+.inline-text-container-mixin {
+    padding: 12px 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.con-booking-bodycheck {
+
+    .red {
+        color: red;
+    }
+
+    .red.mr {
+        margin-right: 10px;
+    }
+    
+    /** 基本体检信息 */
+    .base-info {
+
+        .container-block-minxin( );
+
+        .no-border {
+
+            .mu-input-line {
+                display: none;
+            }
+        }
+
+        .tips {
+
+            margin: 0;
+            .inline-text-container-mixin( );
+
+            .placeholder {
+                color: #999;
+            }
+        }
+
+        .tips.small {
+            color: #999;
+            padding: 5px 0;
+            font-size: 12px;
+        }
+
+        .tips.time {
+            position: relative;
+            padding: 0px 0 5px;
+        }
+
+        .tips.xx {
+            height: 32px;
+        }
+
+        .tips.time:after {
+            left: 0;
+            bottom: 0;
+            content: '';
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            background: rgba(0,0,0,.12);
+        }
+
+        .multiinput-block {
+            
+            .mu-text-field:after {
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                content: '';
+                height: 1px;
+                position: absolute;
+                background: rgba( 0, 0, 0, 0.12 );
+            }
+        }
+
+    }
+
+    /** 就诊人 */
+    .Visiting-person-block {
+
+        .container-block-minxin( );
+
+        .title {
+
+            .inline-text-container-mixin( );
+
+            .green {
+                color: #4caf50;
+            }
+        }
+
+        .info {
+
+            .inline-text-container-mixin( );
+
+            .item {
+                display: flex;
+            }
+
+        }
+    }
+
+    /** 图片上传 */ 
+    .my-upload-block {
+
+        .container-block-minxin( );
+        padding-bottom: 10px;
+
+        p {
+            margin: 0;
+            .inline-text-container-mixin( );
+        }
+
+        p.tips {
+            color: #999;
+            padding-top: 0;
+            font-size: 12px;
+        }
+
+    }
+
+    /** 按钮 */
+    .btn-block {
+        padding: 20px 20px 0;
+    }
+
+}
+
+/** 日历控件 */
+.events-wrapper {
+    display: none;
+}
+
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item {
+    position: relative;
+}
+
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.cannot-select:after {
+    left: 50%;
+    bottom: -5px;
+    content: '';
+    font-size: 12px;
+    color: #d9d9d9;
+    position: absolute;
+    transform: translateX( -50% );
+}
+
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.cannot-select.pass:after {
+    width: 200%;
+    content: '已过期';
+}
+
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.cannot-select.unconfigured:after {
+    width: 200%;
+    content: '未开放';
+}
+
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.cannot-select.unavailable:after {
+    content: '已满';
+}
+
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.cannot-select .date-num {
+    color: #d9d9d9 !important;
+}
+
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.can-select .date-num {
+    color: #666 !important;
+}
+
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.active .date-num {
+    color: #fff !important;
+}
+
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.cannot-select.active .date-num {
+    color: #d9d9d9 !important;
+}
+
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item .is-event {
+    display: none;
+}
+
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.active .is-event {
+    display: inline-block;
+    border-color: rgb(242, 149, 67) !important;
+    background-color: rgb(242, 149, 67) !important;
+}
+
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.cannot-select.active .is-event {
+    display: none;
+}

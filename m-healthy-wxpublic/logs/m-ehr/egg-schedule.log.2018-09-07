@@ -1,0 +1,12 @@
+2018-09-07 12:25:40,657 INFO 28413 [Timer] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-09-08 00:00:00.000
+2018-09-07 12:25:40,659 INFO 28413 [Timer] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-09-08 00:00:01.000
+2018-09-08 00:00:00,248 INFO 28413 [1536336000234951029732950352] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js triggered, send random by agent
+2018-09-08 00:00:00,320 INFO 28413 [Timer] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-09-09 00:00:00.000
+2018-09-08 00:00:00,329 INFO 48230 [1536336000234951029732950352] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js task received by app
+2018-09-08 00:00:00,343 INFO 48230 [1536336000234951029732950352] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js executing by app
+2018-09-08 00:00:00,367 INFO 48230 [1536336000234951029732950352] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js execute succeed, used 21ms
+2018-09-08 00:00:01,211 INFO 48230 [1536336001208951030702645596] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js task received by app
+2018-09-08 00:00:01,212 INFO 48230 [1536336001208951030702645596] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js executing by app
+2018-09-08 00:00:01,229 INFO 48230 [1536336001208951030702645596] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js execute succeed, used 17ms
+2018-09-08 00:00:01,208 INFO 28413 [1536336001208951030702645596] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js triggered, send random by agent
+2018-09-08 00:00:01,212 INFO 28413 [Timer] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-09-09 00:00:01.000

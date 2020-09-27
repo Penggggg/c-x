@@ -1,0 +1,91 @@
+// @global_padding: 0 0.3em;
+@global_border_radius: 5px;
+@global_margin: 0.5em 0.3em;
+
+.p-record-bodycheck{
+
+/** 记录列表 */
+.record-list {
+
+  margin: 0;
+  padding: 10px 15px;
+
+  li {
+      
+      color: #666;
+      display: flex;
+      list-style: none;
+      background: #fff;
+      align-items: center;
+      border-radius: 6px;
+      padding: 10px 15px;
+      margin-bottom: 15px;
+      position: relative;
+      justify-content: space-between;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05 );
+    //   background:linear-gradient(-135deg, #36c67d 11%, #fff 0) !important;
+
+      .identity{
+          position: absolute;
+          right:0px;;
+          top:5px;
+          color:white;
+          margin:0;
+          font-weight: bold;
+      }
+
+      /** 信息栏 */
+      .info {
+
+          display: flex;
+          align-items: center;
+
+          /** 基本栏 */
+          .base {
+
+              // .list-item-meta-mixin( );
+              width: 69px;
+
+              .name {
+                  font-size: 16px;
+                  line-height: 22px;
+                  font-weight: bold;
+                  // white-space: pre-wrap;
+              }
+
+              .tips {
+                  color: #999;
+              }
+
+          }
+
+          .base:after {
+              top: 0;
+              right: 0;
+              width: 1px;
+              height: 100%;
+              content: '';
+              position: absolute;
+              transform: scaleX( 0.5);
+              background: rgba(0, 0, 0, 0.12 );
+          }
+
+          /** 详情栏 */
+          .detail {
+
+              // .list-item-meta-mixin( );
+              align-items: start;
+
+          }
+      }
+
+      .btn {
+          font-size: 14px;
+          color: #4caf50;
+          line-height: 20px;
+      }
+
+  }
+}
+
+}

@@ -1,0 +1,330 @@
+.p-bodysign-device-bind-v2 {
+
+    min-height: 100vh;
+    background: #fafafa;
+
+    .my-icon {
+
+        width: 40px;
+        height: 40px;
+    }
+
+    .add-btn-block {
+
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .add-btn {
+
+            font-size: 14px;
+            line-height: 22px;
+            padding: 6px 12px;
+            border-radius: 5px;
+            color: rgba(26, 188, 156, 1);
+            border: 1px solid rgba(26, 188, 156, 1);
+
+            .add-icon {
+                font-size: 20px;
+                font-weight: bold;
+                display: inline;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .user-opt-list {
+
+        box-sizing: border-box;
+        margin-bottom: 8px;
+        
+        .user-opt {
+
+            display: flex;
+            color: #4d4d4d;
+            padding: 12px 20px;
+            align-items: center;
+            background: #fff;
+            margin-bottom: 8px;
+            justify-content: space-between;
+
+            .bian {
+                display: flex;
+                align-items: center;
+            }
+
+            .user-name {
+                font-size: 14px;
+                color: #4d4d4d;
+            }
+
+            .user-bound {
+                color: red;
+                font-size: 12px;
+                margin-right: 10px;
+            }
+
+            .user-edit {
+                display: flex;
+                align-items: center;
+                color: rgb(153, 153, 153);
+            }
+
+            .edit-icon {
+                margin-right: 5px;
+            }
+        }
+
+    }
+
+    .bind-btn-block-block {
+
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+
+        .bind-btn-block {
+            color: #fff;
+            width: 150px;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 8px 10px;
+            text-align: center;
+            background: rgba(26, 188, 156, 1);
+        }
+    }
+
+    .edit-block {
+
+        min-height: 100vh;
+        background: #fafafa;
+        padding-top: 60px;
+        box-sizing: border-box;
+
+        .edit-item {
+
+            display: flex;
+            padding: 12px 20px;
+            font-size: 14px;
+            align-items: center;
+            background: #fff;
+            box-sizing: border-box;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba( 0, 0, 0, 0.05 );
+    
+            .edit-label {
+                color: #666;
+            }
+    
+            .edit-value {
+                color: #666;
+            }
+    
+        }
+
+        .edit-item:first-child {
+            border-top: 1px solid rgba( 0, 0, 0, 0.05 );
+        }
+
+    }
+
+    .tips {
+        text-align: center;
+        color: #4d4d4d;
+        padding: 12px 20px;
+        background: #fff;
+        margin-bottom: 8px;
+    }
+
+    .success-block {
+
+        display: flex;
+        margin-top: 20px;
+        background: #fff;
+        align-items: center;
+        padding: 20px 18%;
+        justify-content: center;
+        box-sizing: border-box;
+
+        .icon-block {
+
+            margin-right: 15px;
+
+            .my-icon {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        .success-info-block {
+
+            flex: 1;
+
+            .info-title {
+                color: #333;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            p {
+                margin: 0;
+                color: #666;
+                line-height: 22px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .success-btn-block {
+        padding: 30px 30px;
+        box-sizing: border-box;
+
+        .btn {
+            color: #fff;
+            padding: 8px;
+            margin-top: 15px;
+            font-weight: bold;
+            border-radius: 5px;
+            text-align: center;
+            background: #16CCB9;
+            border: 1px solid #16CCB9;
+        }
+
+        .btn.invert {
+            color: #16CCB9;
+            background: #fff;
+        }
+    }
+
+    .my-process-block {
+        margin-top: 20px;
+    }
+
+    .follow-block {
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000;
+        position: fixed;
+        box-sizing: border-box;
+        padding: 50px 20px 0 35px ;
+        background: rgba( 0, 0, 0, 0.8 );
+
+        .title {
+            color: #fff;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: bold;
+            letter-spacing: 0.02em;
+        }
+
+        .param {
+            color: #fff;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+        }
+
+        .btn-block {
+
+            margin: 40px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .btn {
+                background: transparent;
+                color: #fff;
+                border-radius: 3px;
+                padding: 10px 20px;
+                border: 1px solid #fff;
+            }
+
+            .follow-img {
+                width: 40vw;
+            }
+        }
+    }
+
+    .add-modal {
+        padding: 70px 20px;
+    }
+
+    .show-add-suc {
+
+        height: 100vh;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 200;
+        position: fixed;
+        overflow-y: scroll;
+        padding-bottom: 30px;
+        box-sizing: border-box;
+        background: white;
+    
+   
+    .add-user-success{
+        position: relative;
+        padding: 20px;
+        text-align: center;
+        
+        .info{
+            .tips{
+                text-align: left;
+                color: #36c67d;
+                margin: 0;
+                background: white;
+            }
+        }
+        .btn{
+            position: fixed;
+            bottom: 15px;
+            width: 100%;
+            right: 0px;
+            padding: 0 20px;
+        }
+        }
+    }
+
+    .edit-btn-block {
+
+        display: flex;
+        padding: 10px 25px;
+        box-sizing: border-box;
+
+        .edit-btn {
+            flex: 1;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 8px;
+            text-align: center;
+            background: #16CCB9;
+            border: 1px solid #16CCB9;
+        }
+
+        .edit-btn.mr {
+            margin-right: 15px;
+        }
+
+        .edit-btn.invert {
+            color: #16CCB9;
+            background: #fff;
+        }
+    }
+
+    .edit-btn-block.mt {
+        margin-top: 100px;
+    }
+
+    .edit-btn-block.np {
+        padding: 0;
+    }
+
+}
+

@@ -1,0 +1,59 @@
+.con-address-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 30rpx 25rpx 30rpx 45rpx;
+}
+
+.cai-content {
+    flex: 1;
+    position: relative;
+    align-items: center;
+}
+
+.cai-item-line {
+    left: 3%;
+    bottom: 0;
+    width: 94%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    transform: scaleY( 0.5 );
+}
+
+.cai-sub {
+
+}
+
+.cai-img {
+    width: 35rpx;
+    height: 35rpx;
+    margin-left: 20rpx;
+}
+
+.cai-line {
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.02em;
+}
+
+.cai-line.mt {
+    margin-top: 15rpx;
+}
+
+.cai-name {
+    color: #333;
+    font-size: 26rpx;
+    font-weight: bold;
+    margin-right: 20rpx;
+}
+
+.cai-text {
+    color: #666;
+    font-size: 24rpx;
+    margin-right: 25rpx;
+}
+
+.cai-default {
+    color: #DDB97B;
+}

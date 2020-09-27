@@ -1,0 +1,68 @@
+<view class="con-coupon-selector">
+    <!-- 弹框选择 -->
+    <my-pop-up
+        id="pop"
+    >
+        <view
+            class="ccs-container"
+        >
+            <view 
+                class="ccs-header"
+            >
+                <view 
+                    class="ccs-title-block"
+                >
+                    <view class="ccs-title">
+                        优惠券
+                    </view>
+                    <view 
+                        class="ccs-use-tips"
+                        bindtap="go"
+                    >
+                        使用说明
+                    </view>
+                </view>
+                <view
+                    class="ccs-tips"
+                >
+                    已选中推荐优惠，使用优惠券{{ checkList.length }}张
+                </view>
+            </view>
+            <view class="ccs-body">
+
+                <my-empty-block
+                    tips="咨询客服领取优惠券，即享商品优惠~"
+                    wx:if="{{ coupons$.length === 0 }}"
+                    img="cloud://dev-cz0o8.6465-dev-cz0o8/background/empty_1@3x.png"
+                />
+    
+                <view 
+                    wx:key="{{ index }}"
+                    wx:for="{{ coupons$ }}"
+                    class="ccs-coupon-block"
+                    bindtap="onSelect"
+                    data-data="{{ item }}"
+                >
+                    <my-coupon-block
+                        data="{{ item }}"
+                        showAllTips="{{ false }}"
+                    />
+                    <checkbox 
+                        color='#DDB97B'
+                        class="checkbox"
+                        value="{{ item.id }}" 
+                        class="ccs-coupon-checkbox" 
+                        checked="{{ item.checked$ }}"
+                        wx:if="{{ !item.passed && !item.used }}"
+                    />
+                </view>
+            </view>
+            <view 
+                class="ccs-btn"
+                bindtap="onComfirm"
+            >
+                确定
+            </view>
+        </view>
+    </my-pop-up>
+</view>

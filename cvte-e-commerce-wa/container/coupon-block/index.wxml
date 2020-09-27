@@ -1,0 +1,79 @@
+<view
+    wx:if="{{ meta }}"
+    class="con-coupon-block"
+>
+    <view
+        class="ccb-header"
+        style="{{ headColor ? 'background:' + headColor : '' }}"
+    >
+        <wxc-price
+            icon="sub"
+            decimal="small"
+            symbol="{{ meta.symbol }}"
+            class="ccb-price text-shadow text-over"
+        > 
+            {{ meta.value }}
+        </wxc-price>
+        
+        <view
+            class="cbb-tips-block"
+        >
+            <view 
+                wx:key="{{ index }}"
+                class="ccb-tips"
+                wx:for="{{ meta.tips$ }}"
+            >
+                {{ item }}
+            </view>
+        </view>
+
+        <view class="ccb-round one"></view>
+        <view class="ccb-round two"></view>
+        <view class="ccb-round three"></view>
+        <view class="ccb-round four"></view>
+        <view class="ccb-round five"></view>
+        <view class="ccb-round six"></view>
+        <view class="ccb-round seven"></view>
+        <view class="ccb-round eight"></view>
+        <view class="ccb-round nine"></view>
+        <view class="ccb-round ten"></view>
+        <view class="ccb-round eleven"></view>
+        <view class="ccb-round tleve"></view>
+        <view class="ccb-round thirdteen"></view>
+    </view>
+
+    <view
+        class="ccb-content"
+    >
+        <view class="ccb-con {{ line ? 'border' : '' }}">
+            <view class="ccb-title text-over">
+                {{ meta.title }}
+            </view>
+            <view class="ccb-small-tips" wx:if="{{ meta.start$ && meta.end$ }}">
+                {{ meta.start$ }} - {{ meta.end$ }}
+            </view>
+            <view class="ccb-small-tips pr {{ showAllTips ? '' : 'hide' }}" wx:if="{{ !!meta.useTips || !!meta.userTips }}">
+                {{ meta.useTips || meta.userTips }}
+            </view>
+        </view> 
+        <view 
+            class="ccb-type-label"
+            wx:if="{{  meta.typeLabel }}"
+            style="{{ labelColor ? 'background:' + labelColor : '' }}"
+        >
+            {{ meta.typeLabel }}
+        </view>
+    </view>
+
+    <view 
+        wx:if="{{ meta.used || meta.passed }}"
+        class="ccb-used-cover"
+    > 
+        <image
+            class='ccb-icon'
+            mode="aspectFill"
+            lazy-load="{{ true }}"
+            src="{{ meta.used ? 'cloud://dev-cz0o8.6465-dev-cz0o8/icon/icon_Personal _coupon_use@3x.png' : 'cloud://dev-cz0o8.6465-dev-cz0o8/icon/icon_Personal _coupon_expired@3x.png' }}"
+        />
+    </view>
+</view>

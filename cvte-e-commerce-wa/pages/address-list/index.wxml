@@ -1,0 +1,29 @@
+<view class="p-address-list">
+
+    <view
+        class="pal-content"
+    >
+        <my-empty-block
+            tips="暂无地址～"
+            wx:if="{{ loading && list.length === 0 }}"
+        />
+
+        <view
+            wx:key="{{ index }}"
+            wx:for="{{ list }}"
+        >
+            <my-address-item
+                data="{{ item }}"
+                line="{{ index < list.length - 1 }}"
+            />
+        </view>
+    </view>
+
+    <view 
+        class="pal-btn {{ isIPhoneX ? 'upper' : '' }}"
+        bindtap="go"
+    >
+        新建地址信息
+    </view>
+
+</view>

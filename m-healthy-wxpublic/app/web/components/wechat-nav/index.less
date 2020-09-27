@@ -1,0 +1,110 @@
+
+.c-wechat-nav {
+
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    position: fixed;
+    align-items: center;
+    
+
+    .level-one {
+
+        display: flex;
+        background: #fff;
+
+        .nav-item {
+            flex: 1;
+            color: #666;
+            padding: 15px 0;
+            position: relative;
+            text-align: center;
+        }
+    
+        .nav-item:not(:last-child):after {
+            top: 0;
+            right: 0;
+            width: 1px;
+            height: 100%;
+            content: '';
+            position: absolute;
+            transform: scaleX( 0.5 );
+            background: rgba( 0, 0, 0, 0.15 );
+        }
+
+    }
+
+    .level-two {
+
+        top: 0;
+        left: 0;
+        width: 100vw;
+        display: flex;
+        position: absolute;
+
+        .nav-item2 {
+
+            flex: 1;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+
+            .nav-item-child {
+                color: #666;
+                padding: 15px 0;
+                background: #fff;
+                text-align: center;
+            }
+
+            .nav-item-child:not(:last-child) {
+                border-bottom: 1px solid rgba( 0, 0, 0, 0.15 );
+            }
+        }
+
+        .nav-item2.line {
+            border-top: 1px solid rgba( 0, 0, 0, 0.1 );
+        }
+
+        .nav-item2.hide {
+            height: 0px;
+            overflow: hidden;
+            margin-top: 0px;
+            border-top: none;
+        }
+
+        .nav-item2.line:before {
+            top: 0;
+            left: -1px;
+            width: 1px;
+            height: 100%;
+            content: '';
+            position: absolute;
+            transform: scaleX( 0.5 );
+            background: rgba( 0, 0, 0, 0.15 );
+        }
+
+        .nav-item2.line:after {
+            top: 0;
+            right: -0px;
+            width: 1px;
+            height: 100%;
+            content: '';
+            position: absolute;
+            transform: scaleX( 0.5 );
+            background: rgba( 0, 0, 0, 0.15 );
+        }
+
+    }
+    
+}
+
+.c-wechat-nav:before {
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    content: '';
+    position: absolute;
+    transform: scaleY( 0.5 );
+    background: rgba( 0, 0, 0, 0.15 );
+}

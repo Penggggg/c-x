@@ -1,0 +1,10 @@
+2018-09-10 00:00:00,491 INFO 12780 [1536508800488112382961302048] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js triggered, send random by agent
+2018-09-10 00:00:00,500 INFO 12780 [Timer] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-09-11 00:00:00.000
+2018-09-10 00:00:01,480 INFO 12780 [1536508801480112383053309696] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js triggered, send random by agent
+2018-09-10 00:00:01,485 INFO 12780 [Timer] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-09-11 00:00:01.000
+2018-09-10 00:00:00,501 INFO 12823 [1536508800488112382961302048] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js task received by app
+2018-09-10 00:00:00,502 INFO 12823 [1536508800488112382961302048] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js executing by app
+2018-09-10 00:00:00,510 INFO 12823 [1536508800488112382961302048] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js execute succeed, used 7ms
+2018-09-10 00:00:01,481 INFO 12823 [1536508801480112383053309696] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js task received by app
+2018-09-10 00:00:01,481 INFO 12823 [1536508801480112383053309696] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js executing by app
+2018-09-10 00:00:01,484 INFO 12823 [1536508801480112383053309696] /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js execute succeed, used 3ms

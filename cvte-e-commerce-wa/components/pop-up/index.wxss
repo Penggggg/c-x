@@ -1,0 +1,36 @@
+.coupon-bg {
+    left: 0;
+    opacity: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    background: rgba( 0, 0, 0, 0.5 );
+}
+
+.coupon-bg.hide {
+    bottom: -100vh;
+}
+
+.coupon-contaienr-bg {
+    left: 0;
+    opacity: 0;
+    bottom: -70vh;
+    width: 100vw;
+    height: 70vh;
+    position: fixed;
+    z-index: 10000;
+    background: rgba( 0, 0, 0, 0 );
+}
+
+.coupon-container-block {
+    display: flex;
+    height: 100%;
+    position: relative;
+    background: #fff;
+    padding: 20rpx 0rpx 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    border-radius: 2px 2px 0 0;
+}

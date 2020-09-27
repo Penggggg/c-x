@@ -1,0 +1,12 @@
+<view class="com-my-tabs">
+    <view
+        wx:for="{{ tabs }}"
+        wx:key="{{ index }}"
+        bindtap="onTab"
+        data-active="{{ index }}"
+        data-key="{{ item.key }}"
+        class="cmt-tab {{ index === current ? 'active' : '' }}"
+    >
+        {{ item.label }}
+    </view>
+</view>

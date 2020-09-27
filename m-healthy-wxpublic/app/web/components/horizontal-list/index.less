@@ -1,0 +1,37 @@
+@px: 16rem;
+.horizontal-list {
+    position: relative;
+    height:48/@px;
+    overflow-x: auto;
+    .list{
+        position: absolute;
+        top: 50%;
+        left:0;
+        transform: translate(0, -50%);
+        display: flex;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+        li{
+            list-style-type: none;
+            // min-width: 5em;
+            min-width: calc((100vw - 48px)/4);
+            word-break: keep-all;
+            height:2em;
+            // margin: 0 .4em;
+            margin: 0 6/@px;
+            border: 1px solid #16CCB9;
+            border-radius: 4px;
+            color:#16CCB9;
+            padding: 0 4px ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .selected{
+            background: #16CCB9;
+            color: white;
+        }
+    }
+}
+

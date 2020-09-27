@@ -1,0 +1,18 @@
+<!--pages/order-list/index.wxml-->
+<view>
+    <view class="order-list-tab">
+    <my-tab
+            tabs="{{ tabs }}"
+            bindchange="onTabChange"
+            active="{{current}}"
+    /> 
+    </view>
+    <view class="order-comp">
+        <view class="order-item" wx:for="{{orderList}}" wx:key="{{item.id}}">
+            <my-order-list  detail="{{ item }}"></my-order-list>
+        </view>
+        <view wx:if="{{!orderList.length}}">
+            <my-empty-block tips="咨询客服领取优惠，一起畅享高效会议。"></my-empty-block>
+        </view>
+    </view>
+</view>

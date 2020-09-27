@@ -1,0 +1,70 @@
+.p-login {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pi-img {
+    width: 45vw;
+    margin-bottom: 200rpx;
+}
+
+.pi-img-btn {
+    /* width: 100vw;
+    height: 550rpx; */
+}
+
+.pi-btn-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pi-btn {
+    width: 55vw;
+    color: #fff;
+    padding: 25rpx 0;
+    font-size: 32rpx;
+    text-align: center;
+    background: #DDB97B;
+    letter-spacing: 0.05em;
+    border-radius: 30px;
+}
+
+.pi-btn.small {
+    padding: 5rpx 0;
+}
+
+.pi-tips {
+    width: 100vw;
+    display: flex;
+    margin-top: 50rpx;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.pi-radio {
+    transform: scale( 0.65 );
+}
+
+.pi-text {
+    color: #999;
+    font-size: 26rpx;
+    letter-spacing: 0.05em;
+}
+
+.pi-blue {
+    display: inline;
+    color: #3f82d0;
+}
+
+.pi-action {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 130rpx;
+}

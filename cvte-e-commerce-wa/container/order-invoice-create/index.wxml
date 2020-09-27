@@ -1,0 +1,71 @@
+<view class="con-order-invoice-create">
+
+    <view 
+        bindtap="goEdit"
+    >
+
+        <!-- 为空的时候 -->
+        <view 
+            wx:if="{{ !selecting }}"
+            class="cas-empty-block"
+        >
+            <view class="cas-text cas-tips">
+                {{ placeholder }}
+            </view>
+            <view
+                class="cas-text"
+            >
+                请选择
+            </view>
+            <image
+                class='cas-icon small'
+                mode="aspectFill"
+                lazy-load="{{ true }}"
+                src="cloud://dev-cz0o8.6465-dev-cz0o8-1300106651/icon/icon_order_more@3x.png"
+            />
+        </view>
+
+        <!-- 已经选择了的时候 -->
+        <view 
+            wx:else
+            class="cas-empty-block"
+        >
+            <view class="cas-selecting-content">
+                <!-- <view class="cas-text cas-selecting-address">
+                    {{ selecting.type$ }}{{ selecting.type === 'ENTERPRISE' ? ' · ' + selecting.invoiceType$ : '' }}
+                </view>
+                <view
+                    class="cas-text"
+                    wx:if="{{ selecting.type !== 'NO_TICKETS' }}"
+                >
+                    {{ selecting.invoiceTitle }}
+                </view> -->
+                 <view
+                    class="cas-text"
+                >
+                    {{ placeholder }}
+                </view>
+            </view>
+            <view
+                class="cas-text"
+                wx:if="{{ selecting.type !== 'NO_TICKETS' }}"
+            >
+                {{ selecting.invoiceTitle }}
+            </view>
+            <view
+                wx:else
+                class="cas-text"
+            >
+                无需
+            </view>
+            <image
+                class='cas-icon small'
+                mode="aspectFill"
+                lazy-load="{{ true }}"
+                src="cloud://dev-cz0o8.6465-dev-cz0o8-1300106651/icon/icon_order_more@3x.png"
+            />
+        </view>
+
+    </view>
+
+</view>

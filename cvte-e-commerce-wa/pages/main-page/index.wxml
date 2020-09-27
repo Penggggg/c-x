@@ -1,0 +1,54 @@
+<view class="main-page">
+    <template name="main-goods">
+        <!-- <image src="http://tmp/wx4be0f7d28976a05b.o6zAJs2GDwfd-_VfTIH_O_X6yoRQ.xZD6h7zQMlHD86acb40a6f154e30fa2121b336ffeba9.jpeg"/> -->
+        <view class="goods-item">
+                <view class="tag" wx-if="{{tags}}">
+                    <text>{{tags[0]}}</text>
+                </view>
+                <view class="title">{{bigTitle}}</view>
+                <view class="introduce">
+                    <view class="name">{{title}}</view>
+                    <!-- <view class="memo">{{title}}</view> -->
+                </view>
+                <view class="img">
+                    <image  src="{{mainImg}}"></image>
+                </view>
+                <view class="price">
+                    <!-- <view class="origin">¥{{fadePrice}}</view> -->
+                    <view class="final">¥{{price}}</view>
+                </view>
+                <view class="btn">
+                    <button type="default"
+                     > 立即购买</button>
+                </view>
+        </view>
+    </template>
+
+    <template name="deputy-goods">
+        <view class="deputy-goods-item">
+                <view class="tag" wx-if="{{tag}}">
+                    <text>{{tag}}</text>
+                </view>
+                <view class="img">
+                    <image  src="{{image}}"></image>
+                </view>
+                <view class="name">{{name}}</view>
+                <view class="desc">{{desc}}</view>
+        </view>
+    </template>
+
+    <view class="list">
+        <view bindtap="goTo" wx:for="{{mainGoods}}" wx:key="{{index}}" data-key="{{item.id}}">
+            <template is="main-goods" data="{{...item}}"/>
+        </view>
+    </view>
+    <view class="tool-bar" bindtap="onNavToPerson">
+        <image src="cloud://dev-cz0o8.6465-dev-cz0o8-1300106651/icon/icon_home_personal@3x.png"/>
+    </view>
+    <!-- <view class="deputy-list">
+        <view bindtap="goTo" wx:for="{{deputyGoods}}" wx:key="{{index}}">
+            <template is="deputy-goods" data="{{...item}}"></template>
+        </view>
+    </view> -->
+    
+</view>

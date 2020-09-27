@@ -1,0 +1,9 @@
+<view
+    class="con-coupon-inline"
+    style="background-color: {{ bg || '#DDB97B' }}"
+>
+    {{ label }}
+    <view class="cci-round one"></view>
+    <view class="cci-round two"></view>
+    <view class="cci-round three"></view>
+</view>

@@ -1,0 +1,24 @@
+<view class="p-user-setting">
+    <view
+        class="pus-list"
+    >
+        <view
+            bindtap="go"
+            class="pus-item"
+            wx:index="{{ key }}"
+            data-data="{{ item }}"
+            wx:for="{{ settingList }}"
+            wx:key="{{ index }}"
+        >
+            <view>
+                {{ item.label }}
+            </view>
+            <image
+                mode="aspectFill"
+                class="pus-img"
+                lazy-load="{{ true }}"
+                src="cloud://dev-cz0o8.6465-dev-cz0o8-1300106651/icon/icon_order_more@3x.png"
+            />
+        </view>
+    </view>
+</view>

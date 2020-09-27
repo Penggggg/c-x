@@ -1,0 +1,29 @@
+<view class="con-qrcode-creator">
+    <view class="cqc-canvas-con">
+        <view
+            wx:if="{{ loading }}"
+            class="page-loading"
+        >
+            加载中...
+        </view>
+        <canvas
+            id="c1"
+            canvas-id='c1'
+            class="cqc-canvas {{ shadow ? 'shadow' : '' }}"
+            style="height: {{ canvasHeight }}px;width: {{ canvasWidth }}px;"
+        />
+        <view 
+            class="cqc-counter"
+            wx:if="{{ !loading && countdown }}"
+        >
+            <wxc-countdown
+                format="hh:mm:ss"
+                countdown="{{ countdown }}"
+                num-style="font-size: 38rpx; color: #333; margin-right: 10rpx;"
+            />
+            <view class="cqc-tips">
+                后过期
+            </view>
+        </view>
+    </view>
+</view>

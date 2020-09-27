@@ -1,0 +1,167 @@
+<view class="con-sku-selector">
+
+    <!-- sku背景 -->
+            <!-- style="bottom:  {{ isIPhoneX? '38rpx': '0' }}" -->
+    <view
+        bindtap="close"
+        class="sku-bg {{ !open ? 'hide' : ''  }}"
+        animation="{{ animationSkuBg }}"
+    >
+    </view>
+
+    <!-- sku弹窗 -->
+    <view
+        class="sku-contaienr-bg"
+        animation="{{ animationSku }}"
+        catchtouchmove="preventTouchMove"
+    >
+        <view
+            class="sku-container-block"
+        >
+
+            <!-- 关闭按钮 -->
+            <view
+                class="sku-close-btn"
+            >
+                <wxc-icon
+                    size="40"
+                    type="no"
+                    color="#e8e8e8"
+                    bindtap="close"
+                />
+            </view>
+
+            <!-- 头部栏 图片、价格、库存 -->
+            <view class="sku-header">
+
+                <!-- 图片 -->
+                <view
+                    class="sku-img-block {{ open ? '' : 'hide' }}"
+                    wx:if="{{ selectedSku }}"
+                >
+                    <image
+                        class="sku-img {{ open ? '' : 'hide' }}"
+                        mode="aspectFill"
+                        bindtap='previewImg'
+                        src="{{ selectedSku.bannerImgs[0] }}"
+                        data-img="{{ selectedSku.bannerImgs[0] }}"
+                    />
+                </view>
+
+                <!-- 价格 -->
+                <view class="sku-price-block" wx:if="{{ selectedSku }}">
+
+                    <!-- 价格 -->
+                    <view class="sku-price-set">
+                        价格:<wxc-price
+                            decimal="small"
+                            class="sku-price"
+                        > 
+                            {{ selectedSku.price }}
+                        </wxc-price>
+                        <!-- <view class="sku-fade-price">
+                            ¥{{ selectedSku.fadePrice }}
+                        </view> -->
+                    </view>
+
+                    <!-- 库存 -->
+                    <!-- <view
+                        class="sku-stock"
+                        wx:if="{{ selectedSku.stock || selectedSku.limit }}"
+                    >
+                        {{ selectedSku.stock ? '库存' + selectedSku.stock + '件' : '' }}<text>{{ selectedSku.limit ? '限购' + selectedSku.limit + '件' : '' }}</text>
+                    </view> -->
+
+                    <!-- 已选择 -->
+                    <view
+                        class="sku-title"
+                    >
+                        已选择：{{ selectedSku.title }}
+                    </view>
+
+                </view>
+
+            </view>
+
+            <!-- 型号、购买数量 -->
+            <scroll-view
+                scroll-y
+                class="sku-standards-and-buy-block"
+            >
+
+                <!-- 型号 -->
+                <view class="sku-standards-block">
+                    <view
+                        class="sku-info-title"
+                        wx:if="{{ skus.length > 0 }}"
+                    >
+                        型号
+                    </view>
+                    <view class="sku-standards" wx:if="{{ selectedSku }}">
+                        <view
+                            wx:for="{{ skus }}"
+                            wx:key="{{ index }}"
+                            data-standard="{{ item }}"
+                            bindtap="onSelectSku"
+                            class="sku-standards-item {{ item.canSelect ? '' : 'out_select' }} {{ item.id === selectedSku.id ? 'selecting' : '' }} "
+                        >
+                            {{ item.title }}
+                        </view>
+                    </view>
+                </view>
+
+                <!-- 购买数量 -->
+                <view class="sku-count-block sku-standards-block">
+                    <view class="sku-info-title sku-count-title">
+                        数量
+                    </view>
+                    <view class="sku-count-meta">
+                        <wxc-counter
+                            min="{{ 1 }}"
+                            color="#333"
+                            number="{{ selectdSkuCount }}"
+                            max="{{ selectedSku.limit || selectedSku.stock || 99999999 }}"
+                            bind:changenumber="onSkuCount"
+                        />
+                    </view>
+                </view>
+
+            </scroll-view>
+
+            <!-- 确认按钮 -->
+            <view class="sku-btn-block">
+        
+                <!-- 用户电话按钮 -->
+                <form
+                    wx:if="{{ isUserAuth }}"
+                    report-submit="{{ true }}"
+                >
+                    <button
+                        class="sku-btn lh"
+                        open-type="getPhoneNumber"
+                        report-submit="{{ true }}"
+                        bindgetphonenumber="getPhoneAuth"
+                    >
+                        立即购买
+                    </button>
+                </form>
+                
+                <!-- 拿到 form_id -->
+                <form
+                    wx:else
+                    report-submit="{{ true }}"
+                    bindsubmit="confirmSelect"
+                >
+                    <button
+                        class="sku-btn lh"
+                        form-type="submit"
+                    >
+                        立即购买
+                    </button>
+                </form>
+            </view>
+
+        </view>
+    </view>
+
+</view>

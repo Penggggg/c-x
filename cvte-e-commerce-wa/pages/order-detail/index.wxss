@@ -1,0 +1,251 @@
+/* pages/order-detail/index.wxss */
+.order-detail{
+    min-height: 100vh;
+    background: #fafafa;
+}
+
+.order-detail .header{
+    position: relative;
+    height: 188rpx;
+    width:750rpx;
+}
+
+.inline-text {
+    display: inline;
+    font-size: 28rpx;
+    color: rgba(119,119,119,1);
+}
+
+.pay-btn {
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    font-size: 32rpx;
+    font-family: PingFang-SC;
+    font-weight: bold;
+    color: rgba(255,255,255,1);
+    background: rgba(221,185,123,1);
+    text-align: center;
+    padding: 30rpx 0;
+    position: fixed;
+}
+
+.order-detail .btns-group{
+    padding-bottom: 100rpx;
+}
+
+.order-detail .btns-group .cancel{
+    width:750rpx;
+    height:96rpx;
+    font-size:32rpx;
+    font-family:PingFangSC;
+    font-weight:400;
+    color:rgba(221,25,34,1);
+    background:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-detail .btns-group .pay{
+    width:750rpx;
+    height:96rpx;
+    font-size:32rpx;
+    font-family:PingFang-SC;
+    font-weight:bold;
+    color:rgba(255,255,255,1);
+    background:rgba(221,185,123,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-detail .header image{
+    height: 188rpx;
+    width:750rpx;
+}
+.order-detail .header .content {
+    top: 50rpx;
+    left: 156rpx;
+    position: absolute;
+    color:rgba(255,255,255,1);
+    height: 86rpx;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* height: 86rpx; */
+    /* display: table-cell;
+    display: table-row;
+
+    vertical-align: middle; */
+}
+
+.order-detail .header .content.t {
+    top: 70rpx
+}
+
+.order-detail .header .content .title{
+    height:56rpx;
+    font-size:40rpx;
+    font-family:PingFang-SC;
+    font-weight:800;
+    width: 200rpx;
+    line-height:56rpx;
+}
+
+.center{
+    margin-top: 14rpx;
+}
+
+.order-detail .header .content .time{
+    height:34rpx;
+    font-size:24rpx;
+    font-family:PingFang-SC;
+    font-weight:800;
+    line-height:34rpx;
+}
+
+.time.flex {
+    display: flex;
+}
+
+.order-detail .goods-detail .info{
+    font-size:28rpx;
+    font-family:PingFangSC;
+    font-weight:400;
+    color:rgba(68,68,68,1);
+    line-height:40rpx;
+    padding: 40rpx 0 32rpx;
+}
+
+.order-detail .goods-detail .address{
+    margin-bottom: 20rpx;
+}
+
+.order-detail .goods-detail .tips{
+    position: relative;
+    display: flex;
+    margin-top: 20rpx;
+    padding-bottom: 50rpx;
+}
+
+.order-detail .goods-detail .tips image{
+    width:640rpx;
+    height:184rpx;
+    background:linear-gradient(133deg,rgba(221,193,137,1) 0%,rgba(227,203,153,1) 100%);
+    border-radius:12rpx;
+    margin-left: 20rpx;
+}
+
+.order-detail .goods-detail .tips .text{
+    position: absolute;
+    width:640rpx;
+    height:184rpx;
+    top: 28rpx;
+    left:46rpx;
+}
+
+.order-detail .goods-detail .tips .title{
+    height:40rpx;
+    font-size:28rpx;
+    font-family:PingFang-SC;
+    font-weight:bold;
+    color:rgba(255,255,255,1);
+    line-height:40rpx;
+}
+.order-detail .goods-detail .tips .content{
+    width:600rpx;
+    font-size:24rpx;
+    font-family:PingFang-SC;
+    font-weight:bold;
+    color:rgba(255,255,255,1);
+    line-height:34rpx;
+}
+
+
+/* special */
+.order-detail .goods-detail{
+    background: white;
+    padding: 26rpx 36rpx 0;
+    margin-bottom: 30rpx;
+}
+
+.order-detail .goods-detail .content{
+    border-top: 2rpx solid rgba(229,229,229,1);
+    padding-top: 30rpx;
+}
+
+.order-detail .goods-detail .content .text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20rpx;
+}
+.order-detail .goods-detail .content .text image{
+    width:24rpx;
+    height:24rpx;
+}
+.order-detail .goods-detail .content .text .key{
+    width: 400rpx;
+    min-height:40rpx;
+    font-size:28rpx;
+    font-family:PingFangSC;
+    font-weight:400;
+    color:rgba(119,119,119,1);
+    /* line-height:40rpx; */
+}
+.order-detail .goods-detail .content .text .label{
+    text-align: right;
+    min-height:40rpx;
+    font-size:28rpx;
+    font-family:PingFangSC;
+    font-weight:400;
+    color:rgba(102,102,102,1);
+    width: 1240rpx;
+    /* line-height:40rpx; */
+}
+
+.order-detail .goods-detail .content .text .fat{
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+}
+
+.order-detail .goods-detail .content .text .btn{
+    width:142rpx;
+    height:44rpx;
+    /* border-radius:4rpx; */
+    border:2rpx solid rgba(221,185,123,1);
+    color:rgba(221,185,123,1);
+    text-align: center;
+    padding: 0;
+    line-height: 44rpx;
+    background: white;
+    display: inline-block;
+    margin: 0;
+}
+.order-detail .goods-detail .content .text .money{
+    height:56rpx;
+    font-size:40rpx;
+    font-family:PingFang-SC;
+    font-weight:bold;
+    color:rgba(221,25,34,1);
+    line-height:56rpx;
+}
+
+.order-detail .goods-detail .no-border{
+    border-top: none;
+}
+
+.invoice{
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 200;
+    position: fixed;
+    overflow-y: scroll;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    background: #fafafa;
+}

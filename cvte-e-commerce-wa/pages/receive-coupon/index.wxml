@@ -1,0 +1,62 @@
+<!--pages/receive-coupon/index.wxml-->
+<view class="receive-coupon">
+    <view class="header">
+        <image class="back-img" src="cloud://dev-cz0o8.6465-dev-cz0o8/background/image_forward@3x.png" lazy-load="{{ true }}"/>
+        <image class="avatar" src="cloud://dev-cz0o8.6465-dev-cz0o8/icon/avatar@3x.png" lazy-load="{{ true }}"/>
+        <!-- <text class="text title" wx:if="{{coupons.length > 0}}">您的好友送您{{coupons[0].title}}</text> -->
+        <!-- <text class="text" >您的好友送您CVTOUCH专属优惠券</text> -->
+        <view
+            class="cr-header"
+            wx:if="{{ coupons[0] }}"
+        >
+            <view
+                class="cr-header-title {{ coupons[0].title.length > 12 ? 'small' : '' }}"
+            >
+                您的好友送您{{coupons[0].title}}
+            </view>
+
+            <view
+                class="cr-header-tips"
+                wx:if="{{ coupons.length }}"
+            >
+                {{ coupons.length }}张
+            </view>
+        </view>
+    </view>
+    <view class="coupon-list">
+    <view 
+                    wx:key="{{ index }}"
+                    class="coupon-item"
+                    wx:for="{{ coupons }}"
+                >
+                    <my-coupon-block
+                        data="{{ item }}"
+                    />
+                </view>
+    </view>
+    <!-- 过期了 -->
+    <view class="expired"  wx:if="{{!coupons.length}}">
+            <!-- <my-empty-block tips="空空如也"></my-empty-block> -->
+            <view class="empty">
+            <image
+                class='emb-img'
+                mode="aspectFit"
+                lazy-load="{{ true }}"
+                src="cloud://dev-cz0o8.6465-dev-cz0o8/background/image_illustration@3x.png"
+            />
+            </view>
+            <text class="emptyTips">{{emptyTips}}</text>
+    </view>
+    <!-- <view class="button back" bindtap="onBack" wx:if="{{coupons.length}}">返回首页</view>
+    <view class="button " bindtap="onBack" wx:if="{{!coupons.length}}">返回首页</view> -->
+    <view class="button red" bindtap="onReceive" wx:if="{{coupons.length}}">一键领取</view>
+
+    <!-- icon 主页 -->
+    <image
+        mode="aspectFill"
+        lazy-load="{{ true }}"
+        bindtap="goHome"
+        class="pgd-top-icon right"
+        src="cloud://dev-cz0o8.6465-dev-cz0o8/icon/icon_home@3x.png"
+    />
+</view>

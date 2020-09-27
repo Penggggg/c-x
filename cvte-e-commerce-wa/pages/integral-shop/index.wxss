@@ -1,0 +1,80 @@
+/* pages/integral-shop/index.wxss */
+.warper{
+    /* position: relative;
+    min-height: 100vh; */
+    height: 100vh;
+    overflow: hidden;
+}
+.back-img{
+    width: 100vw;
+    height: 100vh;
+}
+.content{
+    position: absolute;
+    top: 134rpx;
+}
+.content .header{
+    margin-left: 80rpx;
+    width:180rpx;
+    height:50rpx;
+    font-size:36rpx;
+    font-family:PingFang-SC;
+    font-weight:bold;
+    color:white;
+    line-height:50rpx;
+}
+
+.content .detail{
+    margin-top: 56rpx;
+    width:682rpx;
+    height:520rpx;
+    border-radius:20rpx;
+    margin-left: 36rpx;
+    color: white;
+    /* padding-top: 54rpx; */
+}
+
+.content .detail .title{
+    padding-top: 54rpx;
+    margin-left: 44rpx;
+    width:360rpx;
+    height:50rpx;
+    font-size:36rpx;
+    font-family:PingFang-SC;
+    font-weight:bold;
+    color:rgba(255,255,255,1);
+    line-height:50rpx;
+}
+.content .detail .text{
+    margin-left: 44rpx;
+    margin-top: 16rpx;
+    width:592rpx;
+    height:378rpx;
+    font-size:24rpx;
+    font-family:PingFangSC;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:46rpx;
+}
+.content .detail text{
+    color: #BFA263;
+}
+
+.button{
+    box-shadow:0rpx 0rpx 20rpx 0rpx rgba(0,0,0,0.2);
+    position: fixed;
+    bottom:140rpx;
+    /* left: 10vw; */
+    width:598rpx;
+    height:84rpx;
+    border-radius:48rpx;
+    font-size:32rpx;
+    font-family:PingFangSC;
+    font-weight:400;
+    line-height:84rpx;
+    text-align: center;
+    margin-left: 78rpx;
+    margin-top: 40rpx;
+    color: white;
+    background:rgba(217,51,63,1);
+}

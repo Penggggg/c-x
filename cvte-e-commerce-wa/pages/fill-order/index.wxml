@@ -1,0 +1,89 @@
+<!--pages/fill-order/index.wxml--> 
+<view class="fill-order">
+
+    <!-- <view class="addresss-fill">
+        <view class="user">
+            <view class="name text-overflow">好好</view>
+            <view class="isdefault">默认</view>
+        </view>
+        <view class="contact">
+            <view class="pos text-overflow">广州市黄埔区云埔四路6号 CVTE第二产业园</view>
+            <view class="phone">176****2197</view>
+        </view>
+        <view class="icon">
+            <image src="cloud://dev-cz0o8.6465-dev-cz0o8/icon/icon_order_more@3x.png"/>
+        </view>
+    </view>
+    <view class="addresss-not-fill">
+        <view class="tips">
+             <image src="cloud://dev-cz0o8.6465-dev-cz0o8/icon/icon_order_Logistics@3x.png"/>
+             <text> 请设置收货地址信息</text>
+        </view>
+        <view class="icon">
+            <image src="cloud://dev-cz0o8.6465-dev-cz0o8/icon/icon_order_more@3x.png"/>
+        </view>
+    </view> -->
+
+    <my-address-selector
+        setDefault="{{ true }}"
+        refresh="{{ refresh }}"
+        bindchange="onAddressChange"
+        transfer="{{ true }}"
+    />
+
+    <view class="good-list">
+        <my-card title="购买商品">
+                <goods-item detail="{{item}}" wx:key="{{index}}" wx:for="{{goodsItems}}"></goods-item>
+        </my-card>
+    </view>
+    <view class="form">
+                    <!-- <view class="form-item" bindtap="navToInvoice">
+                        <view class="key">
+                            发票开具
+                        </view> 
+                        <view class="label">
+                            {{invoiceType}} <image src="cloud://dev-cz0o8.6465-dev-cz0o8/icon/icon_order_more@3x.png"/>
+                        </view>
+                    </view> -->
+                    <view class="bottom-line">
+                        <my-order-invoice-create 
+                            bindchange="onInvoiceChange"
+                            defaultAddress="{{ selectedAddressId }}"
+                        />
+                    </view>
+                    <picker class="warper" bindchange="onPickPay" value="{{index}}" range-key="{{'name'}}" range="{{payMethods}}">
+                        <view class="form-item">
+                        <view class="key">
+                            支付方式
+                        </view> 
+                        <view class="label" wx:if="{{!!payWay.name}}">
+                            {{payWay.name}} <image src="cloud://dev-cz0o8.6465-dev-cz0o8/icon/icon_order_more@3x.png"/>
+                        </view>
+                        <view class="label" wx:if="{{!payWay.name}}">
+                        请选择   <image src="cloud://dev-cz0o8.6465-dev-cz0o8/icon/icon_order_more@3x.png"/>
+                        </view>
+                        </view>
+                    </picker>
+                    <view class="form-item" bindtap="open">
+                        <view class="key">
+                            用券
+                        </view> 
+                        <view class="label">
+                            {{orderPrice.discountPrice > 0 ? '已减' + orderPrice.discountPrice : ''}} <image src="cloud://dev-cz0o8.6465-dev-cz0o8/icon/icon_order_more@3x.png"/>
+                        </view>
+                    </view>
+    </view>
+    <view class="btns-group {{ isIPhoneX ? 'upper' : '' }}">
+        <view class="money">
+            <view class="final">应付： <text>¥{{orderPrice.actPrice}}</text></view>
+            <view class="discount">优惠券已减： ¥{{orderPrice.discountPrice}}</view>
+        </view>
+        <view class="submit" bindtap="onSubmitOrder">提交订单</view>
+    </view>
+
+    <my-coupon-selector
+        id="coupon"
+        sku="{{ sku }}"
+        bindchange="onPickCoupon"
+    />
+</view>

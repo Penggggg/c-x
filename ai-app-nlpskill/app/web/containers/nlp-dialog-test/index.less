@@ -1,0 +1,85 @@
+.con-nlp-dialog-test {
+
+}
+
+.con-nlp-dialog-con {
+
+    display: flex;
+    height: 85vh;
+    flex-direction: column;
+
+    .action-block {
+        margin-bottom: 15px;
+    }
+
+    .chat-record-block {
+
+        flex: 1;
+        width: 100%;
+        margin-bottom: 20px;
+
+        .chat-list-con {
+
+            height: 70vh;
+            overflow-y: scroll;
+
+            .chat-list {
+            
+                padding: 0;
+    
+                .chat-line {
+                    
+                    text-align: left;
+    
+                    .chat-item {
+    
+                        max-width: 65%;
+                        padding: 10px;
+                        margin-bottom: 25px;
+                        border-radius: 3px;
+                        display: inline-block;
+                        border-left: 2px solid #69c0ff;
+                        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1 );       
+                        
+                        p {
+                            line-height: 1.5;
+                            margin-bottom: 0;
+                        }
+
+                        img {
+                            width: 100%;
+                            border-radius: 3px;
+                        }
+                    }
+                }
+    
+                .chat-line.right {
+                    
+                    text-align: right;
+    
+                    .chat-item {
+    
+                        border-left: none;
+                        border-right: 2px solid #69c0ff;
+                    }
+                }
+            }
+        }
+
+        .chat-list-con::-webkit-scrollbar {
+            display: none;
+        }
+        
+    }
+
+    .input-block {
+
+        display: flex;
+
+        .user-input {
+            flex: 1;
+        }
+    }
+
+    
+}

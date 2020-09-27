@@ -1,0 +1,42 @@
+.c-my-filter-modal {
+
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 200;
+    position: fixed;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .bg {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: rgba(0,0,0,0.7);
+        -webkit-filter: blur(3px);
+        -moz-filter: blur(3px);
+        -ms-filter: blur(3px);
+        -o-filter: blur(3px);
+        filter: blur(3px);
+    }
+
+    .content {
+        z-index: 10;
+    }
+}
+
+.fade-c-filter-modal-enter-active, .fade-c-filter-modal-leave-active {
+    transition: all 0.2s;
+}
+
+.fade-c-filter-modal-enter, .fade-c-filter-modal-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    // transform: translateX( 100% );
+    opacity: 0;
+}

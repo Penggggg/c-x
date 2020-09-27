@@ -1,0 +1,163 @@
+
+.list-item-meta-mixin {
+    display: flex;
+    position: relative;
+    padding-right: 15px;
+    margin-right: 15px;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.tips-line-mixin {
+    top: 50%;
+    content: '';
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.12);
+    transform: translateY( -50% ) scaleY( 0.5 );
+}
+
+.p-record-bodycheck {
+
+    .tips-block {
+
+        display: flex;
+        padding-top: 30px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        opacity: 0.5;
+
+        .my-icon {
+            width: 100px;
+            height: 100px;
+        }
+
+        .tips {
+            color: #666;
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+
+    .btn-block {
+        left: 0;
+        width: 100%;
+        padding: 0 15px;
+        position: fixed;
+        bottom: 20px;
+        z-index: 100;
+    }
+
+
+
+    /** 记录列表 */
+    .record-list {
+
+        margin: 0;
+        padding: 10px 15px;
+
+        .report{
+            background:linear-gradient(-145deg, #36c67d 13%, #fff 0);
+        }
+
+        li {
+            
+            color: #666;
+            display: flex;
+            list-style: none;
+            background: #fff;
+            align-items: center;
+            border-radius: 6px;
+            padding: 10px 15px;
+            margin-bottom: 15px;
+            position: relative;
+            justify-content: space-between;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05 );
+            background:linear-gradient(-135deg, #36c67d 11%, #fff 0);
+
+            .identity{
+                position: absolute;
+                right:0px;;
+                top:5px;
+                color:white;
+                margin:0;
+                font-weight: bold;
+            }
+
+            /** 信息栏 */
+            .info {
+
+                display: flex;
+                align-items: center;
+
+                /** 基本栏 */
+                .base {
+
+                    .list-item-meta-mixin( );
+                    width: 69px;
+
+                    .name {
+                        font-size: 16px;
+                        line-height: 22px;
+                        font-weight: bold;
+                        // white-space: pre-wrap;
+                    }
+
+                    .tips {
+                        color: #999;
+                    }
+
+                }
+
+                .base:after {
+                    top: 0;
+                    right: 0;
+                    width: 1px;
+                    height: 100%;
+                    content: '';
+                    position: absolute;
+                    transform: scaleX( 0.5);
+                    background: rgba(0, 0, 0, 0.12 );
+                }
+
+                /** 详情栏 */
+                .detail {
+
+                    .list-item-meta-mixin( );
+                    align-items: start;
+
+                }
+            }
+
+            .btn {
+                font-size: 14px;
+                color: #4caf50;
+                line-height: 20px;
+            }
+
+        }
+    }
+
+    /** 提示文字 */
+    .my-tips {
+        color: #999;
+        font-size: 12px;
+        margin-top: 20px;
+        text-align: center;
+        position: relative;
+    }
+
+    .my-tips:before {
+        left: 30px;
+        .tips-line-mixin( );
+    } 
+    
+    .my-tips:after {
+        right: 30px;
+        .tips-line-mixin( );
+    }
+
+}

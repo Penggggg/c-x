@@ -1,0 +1,52 @@
+<view class="p-login">
+
+    <image
+        class='pi-img'
+        mode="aspectFit"
+        lazy-load="{{ true }}"
+        src="cloud://dev-cz0o8.6465-dev-cz0o8-1300106651/background/bg-p-login-logo.png"
+    />
+
+    <view class="pi-action">
+        <image
+            class='pi-img-btn'
+            mode="aspectFit"
+            lazy-load="{{ true }}"
+            src="cloud://dev-cz0o8.6465-dev-cz0o8-1300106651/background/bg-p-login-main.png"
+        />
+        <form
+            report-submit="{{ true }}"
+            class="pi-btn-block"
+        >
+            <button
+                wx:if="{{ checked }}"
+                class="pi-btn small"
+                open-type="getPhoneNumber"
+                bindgetphonenumber="getPhoneAuth"
+            >
+                一键登陆
+            </button>
+            <button
+                wx:else
+                bindtap="noPass"
+                class="pi-btn small"
+            >
+                一键登陆
+            </button>
+        </form>
+
+        <view class="pi-tips">
+            <checkbox-group bindchange="onCheck">
+                <checkbox 
+                    color='#12C213'
+                    class="pi-radio"
+                    value="{{ checked ? false : true }}"
+                    checked="{{ checked }}"
+                />
+            </checkbox-group>
+            <view class="pi-text">
+                注册登陆即代表同意<view class="pi-blue" data-page="privacy" bindtap="jumpTo">隐私政策</view>和<view class="pi-blue" bindtap="jumpTo" data-page="userReg">用户协议</view>
+            </view>
+        </view>
+    </view>
+</view>

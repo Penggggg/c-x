@@ -1,0 +1,19 @@
+<!--pages/integral-shop/index.wxml-->
+<view class="warper">
+    <image class="back-img" src="cloud://dev-cz0o8.6465-dev-cz0o8/background/partner_back_img.png" lazy-load="{{ true }}"/>
+    <view class="content">
+        <view class="detail">
+            <view class="title">积分商城，由您定义</view>
+            <view class="text">
+                <view style="color: transparent">&nbsp; </view>
+                <view>您期待积分可以兑换什么样的礼品呢？</view>
+                <view style="color: transparent">&nbsp; </view>
+                <view>请把您的想法，告诉我们。</view>
+                <view style="color: transparent">&nbsp; </view>
+                <view>例如：价值5000元的体验券，商学院课程，购物卡...</view>
+            </view>
+        </view>
+    </view>
+    <button class="button" open-type="contact" >联系客服</button>
+</view>
+

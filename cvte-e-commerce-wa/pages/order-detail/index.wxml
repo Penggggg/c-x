@@ -1,0 +1,290 @@
+
+
+<view>
+    <view 
+        class="order-detail" 
+        wx:if="{{ showInvoice === '0' }}"
+    >
+        <view class="header">
+            <image src="cloud://dev-cz0o8.6465-dev-cz0o8/background/image_order_1@3x.png" />
+            <view 
+                class="content "
+            > 
+                <view wx:if="{{(od.state === 'WAIT_PAY' || od.state === 'PAY_APPROVAL') && od.hasWaterList === '0'}}">
+                    <view class="title ">{{od.state === 'PAY_APPROVAL' && od.hasWaterList === '0'? '待上传' : od$.state$ }}</view> 
+                    <view 
+                        class="time flex"
+                        wx:if="{{ countdown }}"
+                    >
+                        <wxc-countdown
+                            countdown="{{ countdown }}"
+                            num-style="font-size: 23rpx; color: #fff;"
+                            symbol-style="font-size: 23rpx; color: #fff;"
+                        /> 内需支付订单
+                    </view>
+                </view>
+                <view wx:else>
+                    <view class="title center">{{ (od.state === 'PAY_APPROVAL' && od.hasWaterList === '0')? '待上传' :od$.state$ }}</view> 
+                </view>
+            </view>
+        </view>
+
+        <view class="goods-detail">
+            <my-card 
+                title="订单商品"
+            >
+                <view 
+                    wx:key="{{ index }}"
+                    wx:for="{{ od$.items$ }}" 
+                >
+                    <goods-item 
+                        detail="{{ item }}"
+                    />
+                </view>
+                <view class="content">
+                    <view class="text">
+                        <text class="key">运费</text>
+                        <text class="label">{{ od.isFreeShipping === '1' ? '免邮' : od.postagePrice }}</text>
+                    </view>
+                    <view class="text">
+                        <text class="key">优惠券折扣</text>
+                        <text class="label">- {{ od.discountPrice }}</text>
+                    </view>
+                    <view class="text">
+                        <text class="key" style="color:rgba(51,51,51,1)">支付总额</text>
+                        <text class="label money">¥{{ od.actPrice }}</text>
+                    </view>
+                </view>
+            </my-card>
+        </view>
+
+        <view class="goods-detail">
+            <view
+                wx:key="{{ index }}"
+                wx:for="{{ od$.receivers }}"
+            >
+                <my-card 
+                    title="物流信息"
+                >
+                    <view class="info">
+                        <view class="address">
+                            {{ item.receiverProvinceName || '' }}{{ item.receiverCountyName || '' }}{{ item.receiverCityName || ''}}{{ item.receiverAddress || '' }}
+                        </view>
+                        <view>
+                            {{ item.receiverName || '' }} {{ item.receiverTelephone }}
+                        </view>
+                    </view>
+                    <view class="content">
+                        <view 
+                            class="text"
+                            bindtap="onCopy"
+                            data-clipboard="{{ od$.supplierName }}"
+                        >
+                            <text class="key">承运商</text>
+                            <text class="label fat">{{ od$.supplierName || '暂无' }}</text>
+                        </view>
+                        <view 
+                            class="text"
+                            bindtap="onCopy"
+                            data-clipboard="{{ od$.trackingNo }}"
+                        >
+                            <text class="key">物流单号</text>
+                            <text class="label">{{ od$.trackingNo || '暂无' }}</text>
+                        </view>
+                    </view>
+                </my-card>
+            </view>
+        </view>
+
+        <view class="goods-detail">
+            <my-card title="订单信息">
+                <view class="content no-border">
+                    <view 
+                        class="text"
+                        bindtap="onCopy"
+                        data-clipboard="{{ od$.orderNo }}"
+                    >
+                        <text class="key">订单号</text>
+                        <text class="label fat">{{ od$.orderNo }}</text>
+                    </view>
+                    <view class="text">
+                        <text class="key">下单时间</text>
+                        <text class="label fat">{{ od$.createTime$ }}</text>
+                    </view>
+                    <view class="text">
+                        <text class="key">支付方式</text>
+                        <text class="label fat">{{ od$.type$ }}</text>
+                    </view>
+                    <!-- <view class="text">
+                        <text class="key">汇款银行</text>
+                        <text class="label fat">广州农商银行</text>
+                    </view>
+                    <view class="text">
+                        <text class="key">汇款水号</text>
+                        <text class="label fat">3602 0907 0920 0131 619</text>
+                    </view> -->
+                    <view class="text">
+                        <text class="key">支付时间</text>
+                        <text class="label fat">{{ od$.payTime$ }}</text>
+                    </view>
+                    <view class="text">
+                        <text class="key">客服售后</text>
+                        <button class="label btn" open-type="contact" >联系客服</button>
+                    </view>
+                </view>
+                <view class="content" bindtap="onShowInvoice">
+                    <view class="text">
+                        <text class="key">开票信息</text>
+                        <!-- <view class="label"><image src="cloud://dev-cz0o8.6465-dev-cz0o8/icon/icon_order_more@3x.png"/></view> -->
+                        <view>
+                            <view
+                                class="inline-text"
+                                wx:if="{{ !od.invoiceInfo }}"
+                            >
+                                无需
+                            </view>
+                            <image 
+                                wx:else
+                                class="fat" 
+                                src="cloud://dev-cz0o8.6465-dev-cz0o8/icon/icon_order_more@3x.png"
+                            />
+                        </view>
+                    </view>
+                </view>
+                <!-- <view class="content">
+                    <view class="text">
+                        <text class="key">发票抬头</text>
+                        <text class="label fat">已开票</text>
+                    </view>
+                    <view class="text">
+                        <text class="key">发票类型</text>
+                        <text class="label fat">普通发票</text>
+                    </view>
+                    <view class="text">
+                        <text class="key">发票抬头</text>
+                        <text class="label fat">广州视源股份有限公司</text>
+                    </view>
+                </view> -->
+            </my-card>
+        </view>
+
+        <view class="goods-detail">
+            <my-card >
+                <view class="tips">
+                <image src="cloud://dev-cz0o8.6465-dev-cz0o8/background/warm_tips@3x.png"></image>
+                <view class="text">
+                    <view class="title">温馨提示：</view>
+                    <view class="content no-border">如需取消订单、退货等服务，请与我们联系。我们将在接到服务需求的24小时内为您处理。</view>
+                </view>
+                </view>
+            </my-card>
+        </view>
+
+        <view class="btns-group">
+            <view class="cancel" bindtap="onCancel" wx:if="{{ od.state === 'WAIT_PAY' }}">取消订单</view>
+            <!-- <view class="pay" bindtap="onPay" wx:if="{{od.state === 'WAIT_PAY'}}">去支付</view>
+            <view class="pay" bindtap="onPay" wx:if="{{od.state === 'PAY_APPROVAL'}}">上传凭证</view> -->
+        </view>
+
+        <view 
+            class="pay-btn fixed"
+            bindtap="onPay" 
+            wx:if="{{od.state === 'WAIT_PAY'}}"
+        >
+            去支付
+        </view>
+        <view 
+            class="pay-btn fixed"
+            bindtap="onPay" 
+            wx:if="{{od.state === 'PAY_APPROVAL'}}"
+        >
+            上传凭证
+        </view>
+
+    </view>
+
+    <view 
+        class="order-detail invoice" 
+        wx:if="{{ showInvoice === '1' }}"
+    >
+        <view class="goods-detail ">
+            <my-card 
+                title="开票信息"
+            >
+                <view class="content no-border">
+                    <view 
+                        class="text"
+                        wx:if="{{ od$.invoiceInfo$.type }}"
+                    >
+                        <text class="key">开票类型</text>
+                        <text class="label fat">{{ od$.invoiceInfo$.type }}</text>
+                    </view>
+                    <view 
+                        class="text"
+                        wx:if="{{ od$.invoiceInfo$.invoiceType }}"
+                    >
+                        <text class="key">普票/专票</text>
+                        <text class="label">{{ od$.invoiceInfo$.invoiceType }}</text>
+                    </view>
+                    <view 
+                        class="text"
+                        wx:if="{{ od$.invoiceInfo$.invoiceTitle }}"
+                    >
+                        <text class="key">发票抬头</text>
+                        <text class="label">{{ od$.invoiceInfo$.invoiceTitle }}</text>
+                    </view>
+                    <view 
+                        class="text"
+                        wx:if="{{ od$.invoiceInfo$.taxNo }}"
+                    >
+                        <text class="key">税号</text>
+                        <text class="label">{{ od$.invoiceInfo$.taxNo }}</text>
+                    </view>
+                </view>
+                <view class="content">
+                    <view 
+                        class="text"
+                        wx:if="{{ od$.invoiceInfo$.openingBank }}"
+                    >
+                        <text class="key">开户银行</text>
+                        <text class="label fat">{{ od$.invoiceInfo$.openingBank }}</text>
+                    </view>
+                    <view
+                        class="text"
+                        wx:if="{{ od$.invoiceInfo$.bankAccount }}"
+                    >
+                        <text class="key">银行账户</text>
+                        <text class="label">{{ od$.invoiceInfo$.bankAccount }}</text>
+                    </view>
+                    <view
+                        class="text"
+                        wx:if="{{ od$.invoiceInfo$.enterpriseAddress }}"
+                    >
+                        <text class="key">企业地址</text>
+                        <text class="label">{{ od$.invoiceInfo$.enterpriseAddress }}</text>
+                    </view>
+                    <view 
+                        class="text"
+                        wx:if="{{ od$.invoiceInfo$.enterpriseTelephone }}"
+                    >
+                        <text class="key">企业电话</text>
+                        <text class="label">{{ od$.invoiceInfo$.enterpriseTelephone }}</text>
+                    </view>
+                </view>
+            </my-card>
+        </view>
+        <view class="goods-detail ">
+            <my-card 
+                title="收票地址"
+                wx:if="{{ od$.invoiceInfo$.receiverProvinceName }}"
+            >
+                <view class="info">
+                    <view class="address">
+                        {{ od$.invoiceInfo$.receiverProvinceName || '' }}{{ od$.invoiceInfo$.receiverCityName || '' }}{{ od$.invoiceInfo$.receiverCountyName || '' }} {{ od$.invoiceInfo$.receiverAddress || '' }}
+                    </view>
+                    <view>{{ od$.invoiceInfo$.receiverProvinceName || '' }} {{ od$.invoiceInfo$.receiverTelephone || '' }}</view>
+                </view>
+            </my-card>
+        </view>
+    </view>
+</view>

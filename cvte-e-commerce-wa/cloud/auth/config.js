@@ -1,0 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var appConf = {
+    appid: 'wx4be0f7d28976a05b',
+    appSecret: '36281009cf4a8027d9617590965480d4'
+};
+exports.appConf = appConf;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiY29uZmlnLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsSUFBTSxPQUFPLEdBQUc7SUFDWixLQUFLLEVBQUUsb0JBQW9CO0lBQzNCLFNBQVMsRUFBRSxrQ0FBa0M7Q0FDaEQsQ0FBQztBQUVPLDBCQUFPIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgYXBwQ29uZiA9IHtcbiAgICBhcHBpZDogJ3d4NGJlMGY3ZDI4OTc2YTA1YicsXG4gICAgYXBwU2VjcmV0OiAnMzYyODEwMDljZjRhODAyN2Q5NjE3NTkwOTY1NDgwZDQnXG59O1xuXG5leHBvcnQgeyBhcHBDb25mIH07Il19

@@ -1,0 +1,25 @@
+.p-address-list {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.pal-content {
+    flex: 1;
+    overflow-y: scroll;
+}
+
+.pal-btn {
+    width: 100vw;
+    color: #fff;
+    padding: 25rpx 0;
+    font-size: 32rpx;
+    text-align: center;
+    background: #DDB97B;
+    letter-spacing: 0.05em;
+}
+
+
+.pal-btn.upper {
+    margin-bottom: 3vh;
+}

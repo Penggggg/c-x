@@ -1,0 +1,1 @@
+{"name":"@cvte/ai-wpp-easy","version":"1.0.17","description":"","main":"index.js","scripts":{"autopublish":"node publish.js","dev":"node index.js"},"repository":{"type":"git","url":"git@gitlab.gz.cvte.cn:hezhuopeng/ai-wpp-easy.git"},"author":"","license":"ISC","dependencies":{"axios":"^0.19.2","commander":"^5.1.0"},"bin":{"ai-wpp":"./index.js"}}

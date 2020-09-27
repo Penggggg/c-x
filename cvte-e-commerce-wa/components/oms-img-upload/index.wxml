@@ -1,0 +1,71 @@
+<view class='c-img-upload'>
+
+    <!-- 本次上传的照片 -->
+    <view
+        wx:for="{{ list }}"
+        wx:key="{{ index }}"
+        class="ciu-img-container {{ canAdjust && list.length > 1 ? 'big' : '' }}"
+    >
+
+        <image
+            src="{{ item }}"
+            class='ciu-img'
+            mode="aspectFill"
+            bindtap='preview'
+            data-url="{{ item }}"
+        />
+
+        <view
+            class='ciu-img-icon ciu-icon'
+            data-index="{{ index }}"
+            data-typee="newUploaded"
+            bindtap='deleteImg'
+        >
+            <wxc-icon
+                size="18"
+                type="close"
+                color="#fff"
+            />
+        </view>
+
+        <view
+            wx:if="{{ canAdjust && list.length > 1 }}"
+            class="ciu-img-adjust"
+        >
+            <view>
+                <wxc-icon
+                    size="18"
+                    color="#fff"
+                    type="arrow-left"
+                    wx:if="{{ index !== 0 }}"
+                    class="ciu-adjust-icon"
+                    data-direction="left"
+                    data-index="{{ index }}"
+                    bindtap="adjustPosition"
+                />
+            </view>
+            <view>
+                <wxc-icon
+                    size="18"
+                    color="#fff"
+                    type="arrow-right"
+                    class="ciu-adjust-icon"
+                    data-direction="right"
+                    data-index="{{ index }}"
+                    wx:if="{{ index !== list.length - 1 }}"
+                    bindtap="adjustPosition"
+                />
+            </view>
+        </view>
+
+    </view>
+    
+    <view
+        bindtap='upload'
+        wx:if="{{ showIcon }}"
+        class='ciu-upload-btn-container'
+    >
+        +
+    </view>
+
+</view>

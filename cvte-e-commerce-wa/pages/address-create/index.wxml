@@ -1,0 +1,25 @@
+<view class="p-address-create">
+    <view class="pac-content">
+        <view class="pac-form">
+            <my-active-form
+                id="form"
+                wx:if="{{ inited }}"
+                meta="{{ formMeta$ }}"
+                bindchange="onFormChange"
+            />
+        </view>
+    </view>
+    <view 
+        class="pac-btn two {{ isIPhoneX ? 'upper' : '' }}"
+        bindtap="onDelete"
+        wx:if="{{ !!id }}"
+    >
+        删除
+    </view>
+    <view 
+        class="pac-btn one {{ isIPhoneX ? 'upper' : '' }}"
+        bindtap="onSubmit"
+    >
+        保存
+    </view>
+</view>

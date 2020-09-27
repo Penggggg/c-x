@@ -1,0 +1,8 @@
+<!--pages/agreement/index.wxml-->
+<view class="page-body">
+  <view class="page-section">
+    <view class="rich-text-wrp">
+      <rich-text nodes="{{agreement}}" class="arg1"></rich-text>
+    </view>
+    </view>
+</view>

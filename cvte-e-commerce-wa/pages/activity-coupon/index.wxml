@@ -1,0 +1,54 @@
+<view class="p-activity-coupon">
+
+    <!-- 背景图 -->
+    <image
+        class='pac-bg'
+        mode="scaleToFill"
+        src="cloud://dev-cz0o8.6465-dev-cz0o8-1300106651/background/bg-p-activity-coupon.png"
+    />
+
+    <!-- 内容层 -->
+    <view class="pac-content">
+
+        <!-- 标题块 -->
+        <view class="pac-info-block">
+            <view class="pac-info-title">
+                {{ detail.subject }}
+            </view>
+            <view  class="pac-info-desc">
+                {{ detail.description }}
+            </view>
+            <view  class="pac-info-sub">
+                {{ detail.subSubject }}
+            </view>
+        </view>
+
+        <!-- 券列表 -->
+        <view class="pac-coupon-block">
+            <view class="pac-coupon-con">
+                <view 
+                    wx:key="{{ index }}"
+                    class="pac-coupon-item"
+                    wx:for="{{ coupons$ }}"
+                >
+                    <my-coupon-block
+                        data="{{ item }}"
+                        line="{{ true }}"
+                        labelColor="#0f0f0f"
+                        headColor="#0f0f0f"
+                    />
+                </view>
+            </view>
+        </view>
+
+        <!-- 按钮 -->
+        <view
+          class="pac-btn-block"
+          bindtap="getCoupon"
+        >
+            一键领取
+        </view>
+
+    </view>
+
+</view>

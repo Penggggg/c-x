@@ -1,0 +1,23 @@
+<view class="con-pop-up">
+
+    <!-- sku背景 -->
+    <view
+        bindtap="close"
+        class="coupon-bg {{ !open ? 'hide' : ''  }}"
+        animation="{{ animationSkuBg }}"
+    >
+    </view>
+
+    <!-- 弹窗 -->
+    <!-- catchtouchmove="preventTouchMove" -->
+    <view
+        class="coupon-contaienr-bg"
+        animation="{{ animationSku }}"
+    >
+        <view
+            class="coupon-container-block"
+        >
+            <slot></slot>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,5 @@
+<!--components/card/index.wxml-->
+<view class="c-card">
+    <view class="title" wx:if="{{title}}">{{title}}</view>
+    <slot></slot>
+</view>

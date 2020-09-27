@@ -1,0 +1,45 @@
+.con-coupon-inline {
+    color: #fff;
+    font-size: 24rpx;
+    display: inline-block;
+    border-radius: 2px;
+    padding: 8rpx 38rpx 8rpx 35rpx;
+    position: relative;
+    margin-right: 20rpx;
+}
+
+.con-coupon-inline:before {
+    top: 50%;
+    left: 0;
+    content: '';
+    width: 20rpx;
+    height: 20rpx;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    transform: translate( -50%, -50% );
+}
+
+.cci-round {
+    width: 10rpx;
+    height: 10rpx;
+    top: 0;
+    right: 0;
+    content: '';
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    transform: translate( 50%, -50% );
+}
+
+.cci-round.one {
+    top: 10rpx;
+}
+
+.cci-round.two {
+    top: 25rpx;
+}
+
+.cci-round.three {
+    top: 40rpx;
+}

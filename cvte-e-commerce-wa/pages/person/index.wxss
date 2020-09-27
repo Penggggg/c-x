@@ -1,0 +1,237 @@
+/* pages/person/index.wxss */
+.main-person{
+    
+}
+
+.main-person .header{
+    position: relative;
+    width: 750rpx;
+    height: 354rpx;
+    border-radius:  0 0 100% 100%/15%;
+}
+.main-person .no_vip_header{
+    position: relative;
+    width: 750rpx;
+    height: 282rpx;
+    border-radius:  0 0 100% 100%/15%;
+}
+
+.main-person .power{
+    position: relative;
+    width: 678rpx;
+    padding: 28rpx 36rpx 34rpx;
+}
+.main-person .ad{
+    width:710rpx;
+    height:208rpx;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 0px 20px 0px rgba(0,0,0,0.08);
+    border-radius:16rpx;
+    margin-left: 20rpx;
+}
+.ad image{
+    width:710rpx;
+    height:208rpx;
+}
+.main-person .services{
+    margin-top: 24rpx;
+    margin-left: 20rpx;
+    padding-top: 18rpx;
+    width:710rpx;
+    height:372rpx;
+    background:rgba(255,255,255,1);
+    box-shadow:0rpx 0rpx 20rpx 0rpx rgba(0,0,0,0.08);
+    border-radius:16rpx;
+}
+.services .title{
+    width:128rpx;
+    height:44rpx;
+    font-size:32rpx;
+    font-family:PingFang-SC;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    line-height:44rpx;
+    margin-left: 24rpx;
+}
+.services .list{
+    /* width:128rpx;
+    height:44rpx;
+    font-size:32rpx;
+    font-family:PingFang-SC;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    line-height:44rpx;
+    margin-left: 24rpx; */
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.power .title{
+    padding-bottom: 22rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height:44rpx;
+}
+.power .group{
+    border-top: 2rpx solid rgba(240,240,240,1);
+    padding-top: 30rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height:44rpx;
+}
+
+.group .item, .services .list  .item{
+    text-align: center;
+    /* padding: 0; */
+}
+
+.services .list .item{
+     box-sizing: border-box;
+     width: 33%;
+     margin-top: 40rpx ;
+}
+
+.services button.item{
+    background: white;
+    line-height: 46rpx;
+    padding: 0;
+}
+.services button.item::after{
+    border: none;
+}
+
+.group .item image, .services .list .item image{
+    width: 52rpx;
+    height:52rpx;
+}
+.group .item view, .services .list .item view{
+    height:34rpx;
+    font-size:24rpx;
+    font-family:PingFangSC;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:34rpx;
+}
+
+.power .title .name{
+    width:128rpx;
+    height:44rpx;
+    font-size:32rpx;
+    font-family:PingFang-SC;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    line-height:44rpx;
+}
+
+.power .title .action{
+    display: flex;
+    align-items: center;
+    height:34rpx;
+    font-size:24rpx;
+    font-family:PingFangSC;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    line-height:34rpx;
+}
+
+.power .title .action image{
+    width:14rpx;
+    height:26rpx;
+}
+
+.user{
+    position: absolute;
+    top: 68rpx;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 10000;
+}
+
+ .header-float{
+    position: absolute;
+    width: 750rpx;
+    height: 354rpx;
+}
+.header .header-float image{
+    width: 750rpx;
+    height: 354rpx;
+}
+.no_vip_header .header-float image{
+    width: 750rpx;
+    height: 282rpx;
+}
+
+ .score{
+    position: absolute;
+    bottom: 0;
+    left: 36rpx;
+    /* background:linear-gradient(90deg,rgba(2, 2, 2, .8) 0%,rgba(79 ,75 ,76,.7) 100%); */
+    height:134rpx;
+    width:678rpx;
+    border-radius:  26rpx 26rpx 100% 100%/26%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.score view{
+    display: flex;
+    align-items: center;
+}
+.score image{
+    width: 44rpx;
+    height: 44rpx;
+}
+.score .name{
+    margin-left: 10rpx;
+    height:40rpx;
+    font-size:28rpx;
+    font-family:PingFangSC;
+    font-weight:400;
+    color:rgba(233,197,111,1);
+    line-height:40rpx;
+}
+.score .number{
+    height:50rpx;
+    font-size:36rpx;
+    font-family:PingFang-SC;
+    font-weight:bold;
+    color:rgba(233,197,111,1);
+    line-height:50rpx;
+}
+
+ .user .avatar image{
+    width:108rpx;
+    height:108rpx;
+    margin-left: 36rpx;
+    border-radius: 50%;
+    border: none;
+}
+
+ .user .name{
+    margin-left: 28rpx;
+    height:44rpx;
+    font-size:32rpx;
+    font-family:PingFang-SC;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    line-height:44rpx;
+}
+
+ .user .level{
+    margin-left: 20rpx;
+    padding: 0 14rpx;
+    height:34rpx;
+    font-size:24rpx;
+    font-family:PingFangSC;
+    font-weight:400;
+    color:rgba(116,86,45,1);
+    line-height:34rpx;
+    background:linear-gradient(124deg,rgba(255,239,157,1) 0%,rgba(254,217,115,1) 100%);
+    border-radius:20rpx;
+    border:2rpx solid rgba(255,255,255,0.4);
+}

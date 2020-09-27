@@ -1,0 +1,165 @@
+2018-09-01 09:54:56,303 ERROR 52130 A client (::ffff:127.0.0.1:60570) error [ECONNRESET] occurred: read ECONNRESET
+2018-09-01 10:25:34,537 ERROR 54477 A client (::ffff:127.0.0.1:51029) error [ECONNRESET] occurred: read ECONNRESET
+2018-09-01 23:11:41,903 ERROR 64741 nodejs.ClusterClientNoResponseError: client no response in 43265539ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+name: "ClusterClientNoResponseError"
+pid: 64741
+hostname: hezhuopengdeMacBook-Pro.local
+
+2018-09-03 08:48:03,759 ERROR 64741 nodejs.ClusterClientNoResponseError: client no response in 120961811ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+name: "ClusterClientNoResponseError"
+pid: 64741
+hostname: hezhuopengdeMacBook-Pro.local
+
+2018-09-03 09:09:13,328 ERROR 59415 A client (::ffff:127.0.0.1:59894) error [ECONNRESET] occurred: read ECONNRESET
+2018-09-03 09:12:54,255 ERROR 59455 A client (::ffff:127.0.0.1:60724) error [ECONNRESET] occurred: read ECONNRESET
+2018-09-03 09:25:25,452 ERROR 60404 A client (::ffff:127.0.0.1:64239) error [ECONNRESET] occurred: read ECONNRESET
+2018-09-03 09:35:56,859 ERROR 61558 A client (::ffff:127.0.0.1:50755) error [ECONNRESET] occurred: read ECONNRESET
+2018-09-03 09:43:36,589 ERROR 62283 A client (::ffff:127.0.0.1:52566) error [ECONNRESET] occurred: read ECONNRESET
+2018-09-03 10:05:54,844 ERROR 64159 A client (::ffff:127.0.0.1:58281) error [ECONNRESET] occurred: read ECONNRESET
+2018-09-03 10:13:29,383 ERROR 64695 A client (::ffff:127.0.0.1:60332) error [ECONNRESET] occurred: read ECONNRESET
+2018-09-03 11:01:30,523 ERROR 64741 nodejs.ClusterClientNoResponseError: client no response in 1204573ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+name: "ClusterClientNoResponseError"
+pid: 64741
+hostname: hezhuopengdeMacBook-Pro.local
+
+2018-09-03 11:05:50,713 ERROR 64741 nodejs.ClusterClientNoResponseError: client no response in 240172ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+name: "ClusterClientNoResponseError"
+pid: 64741
+hostname: hezhuopengdeMacBook-Pro.local
+
+2018-09-03 11:30:00,494 ERROR 64741 nodejs.ClusterClientNoResponseError: client no response in 1449778ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+name: "ClusterClientNoResponseError"
+pid: 64741
+hostname: hezhuopengdeMacBook-Pro.local
+
+2018-09-03 14:36:25,271 ERROR 77380 [-/127.0.0.1/-/23ms POST /api/common/verifycode] nodejs.TypeError: Cannot destructure property `appId` of 'undefined' or 'null'.
+    at CommonService.getIAC (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/app/service/common/index.ts:12:54)
+    at CommonService.getVerifyCode (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/app/service/common/index.ts:18:32)
+    at CommonCrl.getVerifyCode (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/app/controller/common/index.ts:8:58)
+    at Object.callFn (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa-router/lib/router.js:346:16
+
+pid: 77380
+hostname: hezhuopengdeMacBook-Pro.local
+
+2018-09-03 14:37:35,112 ERROR 77518 [-/127.0.0.1/-/26ms POST /api/common/verifycode] nodejs.TypeError: Cannot destructure property `appId` of 'undefined' or 'null'.
+    at CommonService.getIAC (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/app/service/common/index.ts:12:54)
+    at CommonService.getVerifyCode (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/app/service/common/index.ts:18:32)
+    at CommonCrl.getVerifyCode (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/app/controller/common/index.ts:8:58)
+    at Object.callFn (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa-router/lib/router.js:346:16
+
+pid: 77518
+hostname: hezhuopengdeMacBook-Pro.local
+
+2018-09-03 14:39:00,838 ERROR 77669 [-/127.0.0.1/-/219ms POST /api/common/verifycode] nodejs.Error: non-error thrown: 40101: 该 app 不存在
+    at Object.app.context.onerror (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa-onerror/index.js:34:24)
+    at onerror (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa/lib/application.js:148:32)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 77669
+hostname: hezhuopengdeMacBook-Pro.local
+
+2018-09-03 14:40:31,130 ERROR 77791 [-/127.0.0.1/-/109ms POST /api/common/verifycode] nodejs.Error: non-error thrown: 40101: 该 app 不存在
+    at Object.app.context.onerror (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa-onerror/index.js:34:24)
+    at onerror (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa/lib/application.js:148:32)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 77791
+hostname: hezhuopengdeMacBook-Pro.local
+
+2018-09-03 14:41:19,316 ERROR 77877 [-/127.0.0.1/-/117ms POST /api/common/verifycode] nodejs.Error: non-error thrown: 40101: 该 app 不存在
+    at Object.app.context.onerror (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa-onerror/index.js:34:24)
+    at onerror (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa/lib/application.js:148:32)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 77877
+hostname: hezhuopengdeMacBook-Pro.local
+
+2018-09-03 14:44:24,816 ERROR 77877 [-/127.0.0.1/-/115ms POST /api/common/verifycode] nodejs.Error: non-error thrown: 40101: 该 app 不存在
+    at Object.app.context.onerror (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa-onerror/index.js:34:24)
+    at onerror (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa/lib/application.js:148:32)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 77877
+hostname: hezhuopengdeMacBook-Pro.local
+
+2018-09-03 14:46:20,138 ERROR 78236 [-/127.0.0.1/-/93ms POST /api/common/verifycode] nodejs.Error: non-error thrown: 40101: 该 app 不存在
+    at Object.app.context.onerror (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa-onerror/index.js:34:24)
+    at onerror (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa/lib/application.js:148:32)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 78236
+hostname: hezhuopengdeMacBook-Pro.local
+
+2018-09-03 14:46:33,474 ERROR 78236 [-/127.0.0.1/-/59ms POST /api/common/verifycode] nodejs.Error: non-error thrown: 40101: 该 app 不存在
+    at Object.app.context.onerror (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa-onerror/index.js:34:24)
+    at onerror (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa/lib/application.js:148:32)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 78236
+hostname: hezhuopengdeMacBook-Pro.local
+
+2018-09-03 14:48:06,359 ERROR 78365 [-/127.0.0.1/-/93ms POST /api/common/verifycode] nodejs.Error: non-error thrown: 40101: 该 app 不存在
+    at Object.app.context.onerror (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa-onerror/index.js:34:24)
+    at onerror (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa/lib/application.js:148:32)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 78365
+hostname: hezhuopengdeMacBook-Pro.local
+
+2018-09-03 14:49:12,748 ERROR 78466 [-/127.0.0.1/-/654ms POST /api/common/verifycode] nodejs.Error: non-error thrown: 40101: 该 app 不存在
+    at Object.app.context.onerror (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa-onerror/index.js:34:24)
+    at onerror (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa/lib/application.js:148:32)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 78466
+hostname: hezhuopengdeMacBook-Pro.local
+
+2018-09-03 14:49:45,436 ERROR 78536 [-/127.0.0.1/-/85ms POST /api/common/verifycode] nodejs.Error: non-error thrown: 40101: 该 app 不存在
+    at Object.app.context.onerror (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa-onerror/index.js:34:24)
+    at onerror (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa/lib/application.js:148:32)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 78536
+hostname: hezhuopengdeMacBook-Pro.local
+

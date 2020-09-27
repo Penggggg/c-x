@@ -1,0 +1,287 @@
+@px: 16rem;
+.container-block-minxin {
+  padding: 0 20px;
+  background: #fff;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+};
+
+.inline-text-container-mixin {
+  padding: 12px 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-doctors {
+  margin-bottom: 10px;
+  .red {
+      color: red;
+  }
+
+  .red.mr {
+      margin-right: 10px;
+  }
+
+  .time-select{
+    .doctor-introduce{
+        // &:after{
+        //     content: '';
+        //     clear: both;
+        // }
+        overflow: hidden;
+        width: 100%;
+        background: linear-gradient(45deg,#1AB0A0 0%,  #61E3CC 100%);
+        padding: 20/@px 20/@px;
+        // display: flex;
+        // justify-content: space-between;
+        // flex: auto;
+        .avatar{
+            margin-right: 14/@px;
+            float: left;
+        }
+        // .content{
+            // float: left;
+            
+            .line-one{
+                line-height: 1;
+                color: white;
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                p{
+                    margin: 0;
+                }
+                .name{
+                    font-weight: bold;
+                    font-size: 14/@px;
+                }
+                .price{
+                    font-size: 13/@px;
+                }
+            }
+            .line-two{
+                color: white;
+                margin:6/@px 0;
+                font-size: 13/@px;
+            }
+            .line-three{
+                height: 104/@px;
+                font-size: 10/@px;
+                color: white;
+                // width: 100%;
+                // display: -webkit-box;
+                // overflow: hidden;
+                // -webkit-box-orient: vertical;
+                // -webkit-line-clamp: 5;
+            }
+        // }
+    }
+    .schedule{
+        .__vev_calendar-wrapper .cal-wrapper .cal-body .dates  .today .date-num {
+            color: #00D0B9 !important;
+          }
+        .__vev_calendar-wrapper .cal-wrapper .cal-body .dates .today .is-today{
+              background-color: none !important;
+          }
+        .__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.active .date-num{
+            color: #00D0B9 !important;
+        }
+    }
+  }
+  
+  /** 基本体检信息 */
+  .base-info {
+      margin-top: 45px;
+      .mu-input-line.disabled{
+          border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important;
+      }
+      .mu-select-input{
+          color: #666;
+      }
+      .mu-select-action{
+          display: none;
+      }
+      .container-block-minxin( );
+
+      .no-border {
+
+          .mu-input-line {
+              display: none;
+          }
+      }
+
+      .tips {
+
+          margin: 0;
+          .inline-text-container-mixin( );
+
+          .placeholder {
+              color: #999;
+          }
+      }
+
+      .tips.small {
+          color: #999;
+          padding: 5px 0;
+          font-size: 12px;
+      }
+
+      .tips.time {
+          position: relative;
+          padding: 0px 0 5px;
+      }
+
+      .tips.xx {
+          height: 32px;
+      }
+
+      .tips.time:after {
+          left: 0;
+          bottom: 0;
+          content: '';
+          width: 100%;
+          height: 1px;
+          position: absolute;
+          background: rgba(0,0,0,.12);
+      }
+
+      .multiinput-block {
+          
+          .mu-text-field:after {
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              content: '';
+              height: 1px;
+              position: absolute;
+              background: rgba( 0, 0, 0, 0.12 );
+          }
+      }
+
+  }
+
+  /** 就诊人 */
+  .Visiting-person-block {
+
+      .container-block-minxin( );
+
+      .title {
+
+          .inline-text-container-mixin( );
+
+          .green {
+              color: #4caf50;
+          }
+      }
+
+      .info {
+
+          .inline-text-container-mixin( );
+
+          .item {
+              display: flex;
+          }
+
+      }
+  }
+
+  /** 图片上传 */ 
+  .my-upload-block {
+
+      .container-block-minxin( );
+      padding-bottom: 10px;
+
+      p {
+          margin: 0;
+          .inline-text-container-mixin( );
+      }
+
+      p.tips {
+          color: #999;
+          padding-top: 0;
+          font-size: 12px;
+      }
+
+  }
+
+  /** 按钮 */
+  .btn-block {
+      padding: 20px 20px 0;
+      font-weight: bold;
+      .mu-raised-button{
+        -webkit-box-shadow: none;
+        box-shadow: none;
+      }
+  }
+
+}
+
+.bottom-select{
+    .van-picker__columns{
+        height:420px !important;
+        .van-picker-column{
+            height:420px !important;
+        }
+    }
+}
+
+/** 日历控件 */
+.events-wrapper {
+  display: none;
+}
+
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item {
+  position: relative;
+}
+
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.cannot-select:after {
+  left: 50%;
+  bottom: -5px;
+  content: '';
+  font-size: 12px;
+  color: #d9d9d9;
+  position: absolute;
+  transform: translateX( -50% );
+}
+
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.cannot-select.pass:after {
+  width: 200%;
+  content: '已过期';
+}
+
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.cannot-select.unconfigured:after {
+  width: 200%;
+  content: '未开放';
+}
+
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.cannot-select.unavailable:after {
+  content: '已满';
+}
+
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.cannot-select .date-num {
+  color: #d9d9d9 !important;
+}
+
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.can-select .date-num {
+  color: #666 !important;
+}
+
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.active .date-num {
+  color: #fff !important;
+}
+
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.cannot-select.active .date-num {
+  color: #d9d9d9 !important;
+}
+
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item .is-event {
+  display: none;
+}
+
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.cannot-select.active .is-event {
+  display: none;
+}

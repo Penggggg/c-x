@@ -1,0 +1,38 @@
+<!--pages/partner/index.wxml-->
+<view class="warper">
+    <image class="back-img" src="cloud://dev-cz0o8.6465-dev-cz0o8/background/partner_back_img.png" lazy-load="{{ true }}"/>
+    <view class="content" >
+        <view class="header">成为会员</view>
+        <view class="detail">
+            <view class="title">会员权益</view>
+            <view class="text">
+                <view>加入成为CVTOUCH会员，与更多伙伴一起尽享高效会议！</view>
+                <view style="color: transparent">加 </view>
+                <view>除更优惠的购机价格外，当您推荐购买成功后，还将获得相应的积分奖励，积分可用于兑换高端体检券、品牌家电等专属礼品。</view>
+            </view>
+        </view>
+        <view class="btns-group" >
+            <view class="button done" bindtap="onBack" wx:if="{{useful === -1}}">返回首页</view>
+            <view class="button" bindtap="onBack" wx:if="{{useful === 1}}">忍痛割爱</view>
+            <view class="button done" bindtap="onConfirm" wx:if="{{useful === 1}}">成为会员</view>
+            <view class="button done" wx:if="{{useful === 0}}" bindtap="onInvite">发起邀请</view>
+            <view class="button done" wx:if="{{useful === 2}}" bindtap="onBack">恭喜您已成为会员</view>
+        </view>
+    </view>
+
+    <view class="agreement">
+    <!-- <view class="agreement" wx:if="{{useful === 1}}"> -->
+            <label class="checkbox" wx:for="{{items}}" wx:key="{{index}}">
+                <checkbox-group bindchange="onCheckboxChange">
+                    <checkbox value="{{item.name}}" checked="{{item.checked}}"/>
+                </checkbox-group>                 
+            </label> 
+            已阅读
+            <view bindtap="toAgree" data-page="userReg">
+                《用户协议》
+            </view>  和 
+            <view bindtap="toAgree" data-page="privacy">
+                《隐私政策》
+            </view> 
+    </view>
+</view>

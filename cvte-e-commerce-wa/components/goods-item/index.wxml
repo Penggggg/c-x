@@ -1,0 +1,15 @@
+<!--components/goods-item/index.wxml-->
+<view class="c-goods-item">
+        <image
+            lazy-load="{{ true }}"
+            src="{{ detail.image }}"
+        />
+        <view class="c-goods-item-desc">
+            <view class="name">{{ detail.name }}</view>
+            <!-- <view class="desc">{{ detail.desc }}</view> -->
+        </view>
+        <view class="c-goods-item-price">
+            <view class="price">¥{{detail.price}}</view>
+            <view class="count">共{{detail.count}}{{detail.unit || '件'}}</view>
+        </view>
+</view>

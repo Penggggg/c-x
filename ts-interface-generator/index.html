@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>interface生成器</title>
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif,
+ "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        .input-block {
+
+            display: flex;
+            padding: 20px;
+
+        }
+
+        .input-block > .transform-input,
+        .input-block > .transform-output {
+            flex: 1;
+        }
+
+        .input-block > .btn-block {
+            margin: 0 20px;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .input-block > .btn-block > .btn {
+            color: #fff;
+            border-radius: 6px;
+            padding: 8px 18px;
+            background: #3f90f7;
+            cursor: pointer;
+        }
+
+        .input-block > .transform-input > textarea,
+        .input-block > .transform-output > textarea {
+            height: 500px;
+            width: 100%;
+            resize: none;
+            outline: none;
+            color: #666;
+            font-size: 14px;
+            line-height: 20px;
+            padding: 10px 15px;
+            border-radius: 6px;
+            letter-spacing: 0.05em;
+            border: 1px solid #eee;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        转换器
+    </header>
+    <section  class="input-block">   
+        <div class="transform-input">
+            <textarea
+                cols="30"
+                rows="30"
+                id="input"
+                placeholder="请在此输入JSON格式的数据"
+            ></textarea>
+        </div>
+        <div class="btn-block">
+            <a class="btn" onclick="goTransform()">转换</a>
+        </div>
+        <div class="transform-output">
+            <!-- <pre
+                id="output"
+            ></pre> -->
+            <textarea
+                cols="30"
+                rows="30"
+                id="output"
+                placeholder="interface - result"
+            ></textarea>
+            <!-- <code id="output" /> -->
+        </div>
+    </section>
+    <!-- <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+
+    function transform( obj ) {
+        const result = { };
+        Object.keys( obj ).map( key => {
+            const type = typeof obj[ key ];
+            switch( type ) {
+                // null/object/array
+                case 'object': {
+
+                    if ( obj[ key ] === null ) {
+                        result[ key ] = 'null';
+
+                    } else if ( Array.isArray( obj[ key ])) {
+                        // array - undefined/boolean/number/string
+                        if ( typeof obj[ key ][ 0 ] !== 'object' ) {
+                            result[ key ] = `${typeof obj[ key ][ 0 ]}[ ]`
+                            // array - null
+                        } else if ( typeof obj[ key ][ 0 ] === 'object' && typeof obj[ key ][ 0 ] === 'null' ) {
+                            result[ key ] = `null[ ]`
+                            // array - array
+                        } else if ( typeof obj[ key ][ 0 ] === 'object' && Array.isArray( obj[ key ][ 0 ] )) {
+                            result[ key ] = `${transform( obj[ key ][ 0 ])}[ ]`
+                        } else {
+                            // array - object
+                            result[ key ] = `${JSON.stringify(transform( obj[ key ][ 0 ]))}[ ]`;
+                            // result[ key ] = transform( obj[ key ][ 0 ]) + '[ ]';
+                        }
+
+                    } else {
+                        result[ key ] = transform( obj[ key ]);
+                    }
+
+                    break;
+                }
+                default: {
+                    // undefined/boolean/number/string
+                    result[ key ] = type;
+                    break;
+                };
+            }
+        });
+
+        return result;
+
+    }
+
+    function goTransform( ) {
+        try {
+            const inputJSON = JSON.parse( $('#input').val( ));
+            const result = transform( inputJSON );
+            $('#output').val(
+                JSON.stringify( result )
+                    .replace(/\"/g, '')
+                    .replace(/\,/g, ',\n' )
+                    .replace(/\:/g, ': ' )
+                    .replace(/\{/g, '{\n' )
+                    .replace(/\}/g, '\n}' )
+                    .replace(/\\/g, '')
+            )
+            decorate( );
+        } catch ( e ) {
+            $('#output').val( e );
+        }
+    }
+
+    function decorate( ) {
+
+        const getRow = line => {
+            const text = $('#output').val( );
+            const arry = text.split('\n');
+            return arry[ line-1 ];
+        }
+
+        const setLine = ( line, text ) => {
+            const textt = $('#output').val( );
+            const arryy = textt.split('\n');
+            arryy.splice( line, 1, text );
+            $('#output').val( arryy.join('\n'))
+        }
+
+        const countSpace = text => {
+            let count = 0;
+            for( let i = 0; i < text.length; i++ ) {
+                if ( text[ i ] === ' ') {
+                    count++;
+                } else {
+                    return count;
+                }
+            }
+            return count;
+        };
+
+        const popSpace = ( text, count ) => {
+            for( let i = 0; i < count; i++ ) {
+                text = ` ${text}`;
+            }
+            return text;
+        }
+
+        const include = ( target, str ) => target.indexOf( str ) !== -1;
+
+        for( let i = 2; i < $('#output').val( ).split('\n').length; i++ ) {
+
+            let lastLine = getRow( i -1 );
+            let currentLine = getRow( i );
+    
+            /**
+             * 1. 上闭合标签（开） 下内容 ok
+             * 2. 上下都是内容 - 1 ok
+             * 3. 上下都是内容 - 2 ok 
+             * 3. 上下都是内容 - 3 ok
+             * 3. 上内容 下闭合标签（关）ok
+             * 4. 上闭合标签（关） 下内容
+             * 5. 上下都是关标签 ok 
+            */
+
+            if ( (!include( currentLine, '{' ) && !include( currentLine, '}' )) && include( lastLine, '{' )) {
+                setLine( i - 1, popSpace( currentLine, countSpace( lastLine ) + 4 )); 
+
+            } else if ((!include( currentLine, '{' ) && !include( currentLine, '}' )) && (!include( lastLine, '{' ) || !include( lastLine, '}' ))) {
+                setLine( i - 1, popSpace( currentLine, countSpace( lastLine ))); 
+
+            } else if ((!include( lastLine, '{' ) && !include( lastLine, '}' )) && include(currentLine, '{') ) {
+                setLine( i - 1, popSpace( currentLine, countSpace( lastLine ))); 
+
+            } else if ( include(lastLine, '{') && include(currentLine, '{') ) {
+                setLine( i - 1, popSpace( currentLine, countSpace( lastLine ) + 4 )); 
+
+            } else if ( (!include( lastLine, '{' ) && !include( lastLine, '}' )) && currentLine === '}' ) {
+                setLine( i - 1, popSpace( currentLine, countSpace( lastLine ) - 4 )); 
+
+            } else if ( (!include( lastLine, '{' ) && !include( lastLine, '}' )) && include( currentLine, '}' ) ) {
+                setLine( i - 1, popSpace( currentLine, countSpace( lastLine ) - 4 )); 
+
+            } else if ( include( lastLine, '}' ) && (include( currentLine, '{' ))) {
+                setLine( i - 1, popSpace( currentLine, countSpace( lastLine ))); 
+
+            } else if ( include( lastLine, '}' ) && include( currentLine, '}' ) ) {
+                setLine( i - 1, popSpace( currentLine, countSpace( lastLine ) - 4 )); 
+            }
+
+        }
+
+
+
+    }
+
+    function test( ) {
+        $('#output').val( $('#input').val( ))
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+// @global_padding: 0 0.3em;
+@global_border_radius: 5px;
+@global_margin: 0.5em 0.3em;
+
+// .main-page {
+//   background: #f5f5f5;
+//   font-size: 16px;
+//   color: #070707;
+  
+// }
+.component-group{
+  height: calc(100vh - 56px );
+  overflow: scroll;
+}
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  .container {
+    //   background:linear-gradient(#83DFCC, #3CC4B2);
+    padding: 0;
+    .mu-bottom-item-icon {
+      font-size: 1.3em;
+    }
+  }
+  .mu-bottom-item-active {
+    color: #16CCB9;
+  }
+}

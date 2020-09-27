@@ -1,0 +1,34 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const router_1 = require("./controller/common/router");
+const router_2 = require("./controller/render/router");
+const router_3 = require("./controller/account/router");
+const router_4 = require("./controller/personal/router");
+const router_5 = require("./controller/healthcard/router");
+const router_6 = require("./controller/healthCheck/router");
+const router_7 = require("./controller/record/router");
+const router_8 = require("./controller/bodySign/router");
+const router_9 = require("./controller/questionnaire/router");
+const router_10 = require("./controller/evaluation/router");
+const router_11 = require("./controller/appointment/router");
+const router_12 = require("./controller/healthService/router");
+exports.default = (app) => {
+    const { controller, router } = app;
+    router.get('/wx_o', controller.auth.index.qyOauth);
+    router.get('/clear_cookies', controller.auth.index.ck);
+    // router.get(/^.*(\/sw-.*)\.js$/, controller.common.index.getSw );
+    router.get('/service-worker', controller.common.index.getSw);
+    router_2.renderRouter(app);
+    router_1.commonRouter(app);
+    router_3.accountRouter(app);
+    router_4.personalRouter(app);
+    router_8.bodySignRouter(app);
+    router_5.healthCardRouter(app);
+    router_6.healthCheckRouter(app);
+    router_7.recordRouter(app);
+    router_10.evaluationRouter(app);
+    router_11.appointmentRouter(app);
+    router_12.healthServiceRouter(app);
+    router_9.questionnaireRouter(app);
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicm91dGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsicm91dGVyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQ0EsdURBQTBEO0FBQzFELHVEQUEwRDtBQUMxRCx3REFBNEQ7QUFDNUQseURBQThEO0FBQzlELDJEQUFrRTtBQUNsRSw0REFBb0U7QUFDcEUsdURBQTBEO0FBQzFELHlEQUE4RDtBQUM5RCw4REFBd0U7QUFDeEUsNERBQWtFO0FBQ2xFLDZEQUFvRTtBQUNwRSwrREFBd0U7QUFFeEUsa0JBQWUsQ0FBQyxHQUFnQixFQUFFLEVBQUU7SUFDbEMsTUFBTSxFQUFFLFVBQVUsRUFBRSxNQUFNLEVBQUUsR0FBRyxHQUFHLENBQUM7SUFFbkMsTUFBTSxDQUFDLEdBQUcsQ0FBQyxPQUFPLEVBQUUsVUFBVSxDQUFDLElBQUksQ0FBQyxLQUFLLENBQUMsT0FBTyxDQUFFLENBQUM7SUFDcEQsTUFBTSxDQUFDLEdBQUcsQ0FBQyxnQkFBZ0IsRUFBRSxVQUFVLENBQUMsSUFBSSxDQUFDLEtBQUssQ0FBQyxFQUFFLENBQUUsQ0FBQztJQUN4RCxtRUFBbUU7SUFDbkUsTUFBTSxDQUFDLEdBQUcsQ0FBQyxpQkFBaUIsRUFBRSxVQUFVLENBQUMsTUFBTSxDQUFDLEtBQUssQ0FBQyxLQUFLLENBQUUsQ0FBQztJQUU5RCxxQkFBWSxDQUFFLEdBQUcsQ0FBRSxDQUFDO0lBQ3BCLHFCQUFZLENBQUUsR0FBRyxDQUFFLENBQUM7SUFDcEIsc0JBQWEsQ0FBRSxHQUFHLENBQUUsQ0FBQztJQUNyQix1QkFBYyxDQUFFLEdBQUcsQ0FBRSxDQUFDO0lBQ3RCLHVCQUFjLENBQUUsR0FBRyxDQUFFLENBQUM7SUFDdEIseUJBQWdCLENBQUUsR0FBRyxDQUFFLENBQUM7SUFDeEIsMEJBQWlCLENBQUUsR0FBRyxDQUFFLENBQUM7SUFDekIscUJBQVksQ0FBRSxHQUFHLENBQUUsQ0FBQztJQUNwQiwwQkFBZ0IsQ0FBRSxHQUFHLENBQUUsQ0FBQztJQUN4QiwyQkFBaUIsQ0FBRSxHQUFHLENBQUUsQ0FBQztJQUN6Qiw2QkFBbUIsQ0FBRSxHQUFHLENBQUUsQ0FBQztJQUMzQiw0QkFBbUIsQ0FBRSxHQUFHLENBQUUsQ0FBQztBQUU3QixDQUFDLENBQUMifQ==

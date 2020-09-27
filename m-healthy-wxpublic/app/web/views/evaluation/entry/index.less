@@ -1,0 +1,208 @@
+.p-evaluation-entry {
+
+    min-height: 100vh;
+    background: #fff;
+    position: relative;
+    // padding-bottom: 15vh;
+    box-sizing: border-box;
+
+    .cover-img {
+
+        width: 100vw;
+        margin-bottom: 20px;
+    }
+
+    .title {
+
+        padding: 0 20px;
+        color: #333;
+        font-size: 16px;
+        text-align: center;
+        font-weight: bold;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+    }
+
+    .tips {
+
+        color: #999;
+        font-size: 14px;
+        padding: 0 20px;
+        text-align: center;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+    }
+
+    .info-block {
+
+        display: flex;
+        padding: 0 50px;
+        margin: 20px 0;
+        align-items: center;
+
+        .info {
+
+            flex: 1;
+            color: #666;
+            font-size: 14px;
+            text-align: center;
+            position: relative;
+        }
+
+        .info:not(:last-child):after {
+
+            top: 5%;
+            right: 0;
+            height: 90%;
+            width: 1px;
+            content: '';
+            position: absolute;
+            transform: scaleX( 0.5 );
+            background: rgba( 0, 0, 0, 0.1 );
+        }
+    }
+
+    .detail-block {
+
+        padding: 0 20px;
+
+        .title {
+
+            color: #666;
+            font-size: 14px;
+            text-align: center;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            margin-bottom: 5px;
+        }
+
+        .param {
+            color: #666;
+            font-size: 14px;
+            text-indent: 2em;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+            margin-bottom: 10px;
+        }
+    }
+
+    .fix-btn-container {
+        left: 50%;
+        bottom: 15%;
+        position: fixed;
+        transform: translate( -50%, 0 );
+    }
+
+    .fix-btn {
+        color: #fff;
+        font-size: 14px;
+        padding: 7px 16px;
+        border-radius: 3px;
+        background: rgb(26, 188, 156);
+        letter-spacing: 0.05em;
+    }
+
+    .fix-btn-container.normal {
+        left: 0;
+        bottom: 0;
+        margin: 50px 0 40px;
+        text-align: center;
+        position: relative;
+        transform: translate( 0, 0 );
+    }
+
+
+    .qrcode-contaier {
+
+        padding: 20px 20px;
+
+        // left: 0;
+        // bottom: 0;
+        // width: 100vw;
+        // position: fixed;
+        // box-sizing: border-box;
+
+        .qrcode-block {
+
+            display: flex;
+            align-items: center;
+            background: #d1d1d1;
+            justify-content: space-between;
+            padding: 12px 20px;
+
+
+            // display: flex;
+            // align-items: center;
+            // background: rgba( 0, 0, 0, 0.4 );
+            // justify-content: space-between;
+            // padding: 4px 20px 4px 40px;
+
+            .params-block {
+
+                color: #fff;
+                font-size: 14px;
+                margin-right: 20px;
+
+                .param {
+                    line-height: 22px;
+                    text-align: center;
+                    letter-spacing: 0.02em;
+                }
+            }
+
+            .qrcode {
+                width: 65px;
+                height: 65px;
+            }
+        }
+
+        
+    }
+}
+
+.pe-tips {
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.pe-info-drawer {
+
+    height: 100vh;
+    width: 100vw;
+    padding-top: 50px;
+    box-sizing: border-box;
+
+    .pe-info-block {
+
+        box-sizing: border-box;
+        padding: 50px 15vw 0;
+
+        .param {
+
+            color: #666;
+            font-size: 14px;
+            line-height: 22px;
+            margin-bottom: 20px;
+            letter-spacing: 0.04em;
+            text-indent: 2em;
+        }
+    }
+
+    .pe-info-btn {
+        width: 95vw;
+        display: block;
+        left: 50%;
+        bottom: 20px;
+        color: #fff;
+        font-size: 16px;
+        padding: 7px 16px;
+        position: fixed;
+        border-radius: 3px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        transform: translate( -50%, 0 );
+        background: rgb(26, 188, 156);
+    }
+}

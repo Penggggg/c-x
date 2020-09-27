@@ -1,0 +1,197 @@
+2019-10-24 09:43:56,141 ERROR 22714 A client (undefined:NaN) error [ECONNRESET] occurred: read ECONNRESET
+2019-10-24 10:14:29,002 ERROR 38952 [-/127.0.0.1/-/39ms GET /api/common/jssdk?url=http:%2F%2F127.0.0.1:7001%2Factivity%2Fgys%3Ff%3D0&apilist=scanQRCode] [Api] https://wmp.cvte.com/apis/c4003c0c-f522-45b3-a2ce-8e0cd382c656/jsconfig?url=http%3A%2F%2F127.0.0.1%3A7001%2Factivity%2Fgys%3Ff%3D0&apilist=scanQRCode error: "请求错误"
+2019-10-24 10:14:29,223 ERROR 38952 [-/127.0.0.1/-/10ms GET /api/account/system?appId=c4003c0c-f522-45b3-a2ce-8e0cd382c656&openId=o8t9E0UQ_V7xO2_8aKQLfKwXW6Gg] [Api] https://hmstest-wx-api.gz.cvte.cn/hms-wx/api/v1/wx_user?appId=c4003c0c-f522-45b3-a2ce-8e0cd382c656&openId=o8t9E0UQ_V7xO2_8aKQLfKwXW6Gg error: "请求错误"
+2019-10-24 10:44:37,426 ERROR 55039 A client (undefined:NaN) error [ECONNRESET] occurred: read ECONNRESET
+2019-10-24 12:45:51,337 ERROR 58333 nodejs.ClusterClientNoResponseError: client no response in 565191ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+name: "ClusterClientNoResponseError"
+pid: 58333
+hostname: hezhuopengdeMacBook-Pro.local
+
+2019-10-24 12:48:49,259 ERROR 58333 nodejs.ClusterClientNoResponseError: client no response in 157910ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+name: "ClusterClientNoResponseError"
+pid: 58333
+hostname: hezhuopengdeMacBook-Pro.local
+
+2019-10-24 12:59:06,213 ERROR 58333 nodejs.ClusterClientNoResponseError: client no response in 576933ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+name: "ClusterClientNoResponseError"
+pid: 58333
+hostname: hezhuopengdeMacBook-Pro.local
+
+2019-10-24 13:53:33,166 ERROR 58333 nodejs.ClusterClientNoResponseError: client no response in 3246936ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+name: "ClusterClientNoResponseError"
+pid: 58333
+hostname: hezhuopengdeMacBook-Pro.local
+
+2019-10-24 14:07:47,216 ERROR 58333 nodejs.ClusterClientNoResponseError: client no response in 854045ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+name: "ClusterClientNoResponseError"
+pid: 58333
+hostname: hezhuopengdeMacBook-Pro.local
+
+2019-10-24 15:38:16,318 ERROR 61759 [-/127.0.0.1/-/14ms GET /active-check/gys?cid=1fb22c73d2714bf8b01bff091ff2c4e8] nodejs.ResponseError: read ECONNRESET, GET https://wmp.cvte.com/apis/c4003c0c-f522-45b3-a2ce-8e0cd382c656/user/o8t9E0UQ_V7xO2_8aKQLfKwXW6Gg -1 (connected: true, keepalive socket: false, agent status: {"createSocketCount":5,"createSocketErrorCount":0,"closeSocketCount":4,"errorSocketCount":0,"timeoutSocketCount":4,"requestCount":4,"freeSockets":{},"sockets":{"wmp.cvte.com:443:::::::::":1},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+    at _errnoException (util.js:1022:11)
+    at TLSWrap.onread (net.js:628:25)
+code: "ECONNRESET"
+errno: "ECONNRESET"
+syscall: "read"
+name: "ResponseError"
+data: undefined
+path: "/apis/c4003c0c-f522-45b3-a2ce-8e0cd382c656/user/o8t9E0UQ_V7xO2_8aKQLfKwXW6Gg"
+status: -1
+headers: {}
+res: {"status":-1,"statusCode":-1,"headers":{},"size":0,"aborted":false,"rt":9,"keepAliveSocket":false,"requestUrls":["https://wmp.cvte.com/apis/c4003c0c-f522-45b3-a2ce-8e0cd382c656/user/o8t9E0UQ_V7xO2_8aKQLfKwXW6Gg"],"timing":null,"remoteAddress":"172.17.82.168","remotePort":443,"socketHandledRequests":1,"socketHandledResponses":0}
+pid: 61759
+hostname: hezhuopengdeMacBook-Pro.local
+
+2019-10-24 17:44:59,646 ERROR 30290 nodejs.ClusterClientNoResponseError: client no response in 572733ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+name: "ClusterClientNoResponseError"
+pid: 30290
+hostname: hezhuopengdeMacBook-Pro.local
+
+2019-10-24 18:01:37,977 ERROR 30290 nodejs.ClusterClientNoResponseError: client no response in 978320ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+name: "ClusterClientNoResponseError"
+pid: 30290
+hostname: hezhuopengdeMacBook-Pro.local
+
+2019-10-24 20:02:15,656 ERROR 30290 nodejs.ClusterClientNoResponseError: client no response in 7217669ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+name: "ClusterClientNoResponseError"
+pid: 30290
+hostname: hezhuopengdeMacBook-Pro.local
+
+2019-10-24 20:35:55,554 ERROR 30290 nodejs.ClusterClientNoResponseError: client no response in 2019895ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+name: "ClusterClientNoResponseError"
+pid: 30290
+hostname: hezhuopengdeMacBook-Pro.local
+
+2019-10-24 21:22:53,659 ERROR 30290 nodejs.ClusterClientNoResponseError: client no response in 2817794ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+name: "ClusterClientNoResponseError"
+pid: 30290
+hostname: hezhuopengdeMacBook-Pro.local
+
+2019-10-24 23:23:33,342 ERROR 30290 nodejs.ClusterClientNoResponseError: client no response in 7219549ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+name: "ClusterClientNoResponseError"
+pid: 30290
+hostname: hezhuopengdeMacBook-Pro.local
+
+2019-10-25 01:23:46,427 ERROR 30290 nodejs.ClusterClientNoResponseError: client no response in 7213061ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+name: "ClusterClientNoResponseError"
+pid: 30290
+hostname: hezhuopengdeMacBook-Pro.local
+
+2019-10-25 03:24:02,519 ERROR 30290 nodejs.ClusterClientNoResponseError: client no response in 7215901ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+name: "ClusterClientNoResponseError"
+pid: 30290
+hostname: hezhuopengdeMacBook-Pro.local
+
+2019-10-25 05:24:16,343 ERROR 30290 nodejs.ClusterClientNoResponseError: client no response in 7213776ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+name: "ClusterClientNoResponseError"
+pid: 30290
+hostname: hezhuopengdeMacBook-Pro.local
+
+2019-10-25 05:36:40,385 ERROR 30290 nodejs.ClusterClientNoResponseError: client no response in 744022ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+name: "ClusterClientNoResponseError"
+pid: 30290
+hostname: hezhuopengdeMacBook-Pro.local
+
+2019-10-25 08:51:31,325 ERROR 30290 nodejs.ClusterClientNoResponseError: client no response in 11690854ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+name: "ClusterClientNoResponseError"
+pid: 30290
+hostname: hezhuopengdeMacBook-Pro.local
+
+2019-10-25 14:07:46,053 ERROR 46295 [-/127.0.0.1/-/21ms GET /api/common/jssdk?url=http:%2F%2F127.0.0.1:7001%2Factivity%2Fgys%3Ff%3D1%26a%3D1%26r%3D0%26cid%3D1fb22c73d2714bf8b01bff091ff2c4e8%26u%3D1%26n_next%3D1&apilist=scanQRCode] [Api] https://wmp.cvte.com/apis/c4003c0c-f522-45b3-a2ce-8e0cd382c656/jsconfig?url=http%3A%2F%2F127.0.0.1%3A7001%2Factivity%2Fgys%3Ff%3D1%26a%3D1%26r%3D0%26cid%3D1fb22c73d2714bf8b01bff091ff2c4e8%26u%3D1%26n_next%3D1&apilist=scanQRCode error: "请求错误"
+2019-10-25 14:07:46,066 ERROR 46295 [-/127.0.0.1/-/69ms GET /api/common/wx-qrcode?q=f%3D1%26tt%3D3] nodejs.ENOTFOUNDError: getaddrinfo ENOTFOUND wmp.cvte.com wmp.cvte.com:443 (wmp.cvte.com)
+    at errnoException (dns.js:50:10)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:92:26)
+code: "ENOTFOUND"
+errno: "ENOTFOUND"
+syscall: "getaddrinfo"
+hostname: "wmp.cvte.com"
+host: "wmp.cvte.com"
+port: 443
+config: {"transformRequest":{},"transformResponse":{},"timeout":0,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN","maxContentLength":-1,"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"multipart/form-data; boundary=--------------------------943178251999974501366981","access-token":"","User-Agent":"axios/0.18.0"},"method":"post","data":{"_overheadLength":106,"_valueLength":8,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_boundary":"--------------------------943178251999974501366981","_events":{},"_eventsCount":0},"contentType":"multipart/form-data","url":"https://wmp.cvte.com/apis/c4003c0c-f522-45b3-a2ce-8e0cd382c656/create_tmp_qr_code"}
+request: {"_writableState":{"objectMode":false,"highWaterMark":16384,"finalCalled":false,"needDrain":false,"ending":false,"ended":false,"finished":false,"destroyed":false,"decodeStrings":true,"defaultEncoding":"utf8","length":0,"writing":false,"corked":0,"sync":true,"bufferProcessing":false,"writecb":null,"writelen":0,"bufferedRequest":null,"lastBufferedRequest":null,"pendingcb":0,"prefinished":false,"errorEmitted":false,"bufferedRequestCount":0,"corkedRequestsFree":{"next":null,"entry":null}},"writable":true,"domain":null,"_events":{},"_eventsCount":2,"_options":{"maxRedirects":21,"maxBodyLength":10485760,"protocol":"https:","path":"/apis/c4003c0c-f522-45b3-a2ce-8e0cd382c656/create_tmp_qr_code","method":"post","headers":{"Accept":"application/json, text/plain, */*","Content-Type":"multipart/form-data; boundary=--------------------------943178251999974501366981","access-token":"","User-Agent":"axios/0.18.0"},"hostname":"wmp.cvte.com","port":null,"nativeProtocols":{"http:":{"METHODS":["ACL","BIND","CHECKOUT","CONNECT","COPY","DELETE","GET","HEAD","LINK","LOCK","M-SEARCH","MERGE","MKACTIVITY","MKCALENDAR","MKCOL","MOVE","NOTIFY","OPTIONS","PATCH","POST","PROPFIND","PROPPATCH","PURGE","PUT","REBIND","REPORT","SEARCH","SOURCE","SUBSCRIBE","TRACE","UNBIND","UNLINK","UNLOCK","UNSUBSCRIBE"],"STATUS_CODES":{"100":"Continue","101":"Switching Protocols","102":"Processing","200":"OK","201":"Created","202":"Accepted","203":"Non-Authoritative Information","204":"No Content","205":"Reset Content","206":"Partial Content","207":"Multi-Status","208":"Already Reported","226":"IM Used","300":"Multiple Choices","301":"Moved Permanently","302":"Found","303":"See Other","304":"Not Modified","305":"Use Proxy","307":"Temporary Redirect","308":"Permanent Redirect","400":"Bad Request","401":"Unauthorized","402":"Payment Required","403":"Forbidden","404":"Not Found","405":"Method Not Allowed","406":"Not Acceptable","407":"Proxy Authentication Required","408":"Request Timeout","409":"Conflict","410":"Gone","411":"Length Required","412":"Precondition Failed","413":"Payload Too Large","414":"URI Too Long","415":"Unsupported Media Type","416":"Range Not Satisfiable","417":"Expectation Failed","418":"I'm a teapot","421":"Misdirected Request","422":"Unprocessable Entity","423":"Locked","424":"Failed Dependency","425":"Unordered Collection","426":"Upgrade Required","428":"Precondition Required","429":"Too Many Requests","431":"Request Header Fields Too Large","451":"Unavailable For Legal Reasons","500":"Internal Server Error","501":"Not Implemented","502":"Bad Gateway","503":"Service Unavailable","504":"Gateway Timeout","505":"HTTP Version Not Supported","506":"Variant Also Negotiates","507":"Insufficient Storage","508":"Loop Detected","509":"Bandwidth Limit Exceeded","510":"Not Extended","511":"Network Authentication Required"},"globalAgent":{"domain":null,"_events":{},"_eventsCount":1,"defaultPort":80,"protocol":"http:","options":{"path":null},"requests":{},"sockets":{},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256}},"https:":{"globalAgent":{"domain":null,"_events":{},"_eventsCount":1,"defaultPort":443,"protocol":"https:","options":{"path":null},"requests":{},"sockets":{"wmp.cvte.com:443:::::::::":[{"_tlsOptions":{"pipe":false,"secureContext":{"context":{},"singleUse":true},"isServer":false,"requestCert":true,"rejectUnauthorized":true},"_secureEstablished":false,"_securePending":false,"_newSessionPending":false,"_controlReleased":true,"_SNICallback":null,"servername":null,"npnProtocol":null,"alpnProtocol":null,"authorized":false,"authorizationError":null,"encrypted":true,"_events":{"close":[null,null,null,null],"end":[null,null],"connect":[null,null,null]},"_eventsCount":11,"connecting":false,"_hadError":true,"_handle":null,"_parent":null,"_host":"wmp.cvte.com","_readableState":{"objectMode":false,"highWaterMark":16384,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":true,"ended":false,"endEmitted":false,"reading":true,"sync":false,"needReadable":true,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":true,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":false,"domain":null,"_writableState":{"objectMode":false,"highWaterMark":16384,"finalCalled":false,"needDrain":false,"ending":false,"ended":false,"finished":false,"destroyed":true,"decodeStrings":false,"defaultEncoding":"utf8","length":519,"writing":true,"corked":0,"sync":false,"bufferProcessing":false,"writelen":450,"bufferedRequest":{"chunk":"3a","encoding":"latin1","isBuf":false,"next":{"chunk":"<Buffer 0d 0a>","encoding":"buffer","isBuf":true,"next":{"chunk":"\r\n----------------------------943178251999974501366981--\r\n","encoding":"utf8","isBuf":false,"next":{"chunk":"<Buffer 0d 0a>","encoding":"buffer","isBuf":true,"next":{"chunk":"0\r\n\r\n","encoding":"latin1","isBuf":false,"next":null}}}}},"lastBufferedRequest":"~_options~nativeProtocols~https:~globalAgent~sockets~wmp.cvte.com:443:::::::::~0~_writableState~bufferedRequest~next~next~next~next","pendingcb":14,"prefinished":false,"errorEmitted":true,"bufferedRequestCount":5,"corkedRequestsFree":{"next":null,"entry":null}},"writable":false,"allowHalfOpen":false,"_bytesDispatched":0,"_sockname":null,"_pendingData":[{"chunk":"POST /apis/c4003c0c-f522-45b3-a2ce-8e0cd382c656/create_tmp_qr_code HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nContent-Type: multipart/form-data; boundary=--------------------------943178251999974501366981\r\naccess-token: \r\nUser-Agent: axios/0.18.0\r\nHost: wmp.cvte.com\r\nConnection: close\r\nTransfer-Encoding: chunked\r\n\r\n68","encoding":"latin1","isBuf":false,"next":{"chunk":"<Buffer 0d 0a>","encoding":"buffer","isBuf":true,"next":{"chunk":"----------------------------943178251999974501366981\r\nContent-Disposition: form-data; name=\"sceneId\"\r\n\r\n","encoding":"utf8","isBuf":false,"next":{"chunk":"<Buffer 0d 0a>","encoding":"buffer","isBuf":true,"next":{"chunk":"8","encoding":"latin1","isBuf":false,"next":{"chunk":"<Buffer 0d 0a>","encoding":"buffer","isBuf":true,"next":{"chunk":"f=1&tt=3","encoding":"utf8","isBuf":false,"next":{"chunk":"<Buffer 0d 0a>","encoding":"buffer","isBuf":true,"next":null}}}}}}}},"~_options~nativeProtocols~https:~globalAgent~sockets~wmp.cvte.com:443:::::::::~0~_pendingData~0~next","~_options~nativeProtocols~https:~globalAgent~sockets~wmp.cvte.com:443:::::::::~0~_pendingData~0~next~next","~_options~nativeProtocols~https:~globalAgent~sockets~wmp.cvte.com:443:::::::::~0~_pendingData~0~next~next~next","~_options~nativeProtocols~https:~globalAgent~sockets~wmp.cvte.com:443:::::::::~0~_pendingData~0~next~next~next~next","~_options~nativeProtocols~https:~globalAgent~sockets~wmp.cvte.com:443:::::::::~0~_pendingData~0~next~next~next~next~next","~_options~nativeProtocols~https:~globalAgent~sockets~wmp.cvte.com:443:::::::::~0~_pendingData~0~next~next~next~next~next~next","~_options~nativeProtocols~https:~globalAgent~sockets~wmp.cvte.com:443:::::::::~0~_pendingData~0~next~next~next~next~next~next~next"],"_pendingEncoding":"","_server":null,"ssl":null,"_requestCert":true,"_rejectUnauthorized":true,"parser":null,"_httpMessage":{"domain":null,"_events":{},"_eventsCount":6,"output":[],"outputEncodings":[],"outputCallbacks":[],"outputSize":0,"writable":true,"_last":true,"upgrading":false,"chunkedEncoding":true,"shouldKeepAlive":false,"useChunkedEncodingByDefault":true,"sendDate":false,"_removedConnection":false,"_removedContLen":false,"_removedTE":false,"_contentLength":null,"_hasBody":true,"_trailer":"","finished":true,"_headerSent":true,"socket":"~_options~nativeProtocols~https:~globalAgent~sockets~wmp.cvte.com:443:::::::::~0","connection":"~_options~nativeProtocols~https:~globalAgent~sockets~wmp.cvte.com:443:::::::::~0","_header":"POST /apis/c4003c0c-f522-45b3-a2ce-8e0cd382c656/create_tmp_qr_code HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nContent-Type: multipart/form-data; boundary=--------------------------943178251999974501366981\r\naccess-token: \r\nUser-Agent: axios/0.18.0\r\nHost: wmp.cvte.com\r\nConnection: close\r\nTransfer-Encoding: chunked\r\n\r\n","agent":"~_options~nativeProtocols~https:~globalAgent","method":"POST","path":"/apis/c4003c0c-f522-45b3-a2ce-8e0cd382c656/create_tmp_qr_code","_ended":false,"res":null,"timeoutCb":null,"upgradeOrConnect":false,"parser":null,"maxHeadersCount":null,"_redirectable":"~"},"_consuming":true,"_idleNext":null,"_idlePrev":null,"_idleTimeout":-1}]},"freeSockets":{},"keepAliveMsecs":1000,"keepAlive":false,"maxSockets":null,"maxFreeSockets":256,"maxCachedSessions":100,"_sessionCache":{"map":{},"list":[]}}}},"pathname":"/apis/c4003c0c-f522-45b3-a2ce-8e0cd382c656/create_tmp_qr_code"},"_ended":true,"_ending":true,"_redirectCount":0,"_redirects":[],"_requestBodyLength":170,"_requestBodyBuffers":[{"data":"----------------------------943178251999974501366981\r\nContent-Disposition: form-data; name=\"sceneId\"\r\n\r\n"},{"data":"f=1&tt=3"},{"data":"\r\n----------------------------943178251999974501366981--\r\n"}],"_currentRequest":"~_options~nativeProtocols~https:~globalAgent~sockets~wmp.cvte.com:443:::::::::~0~_httpMessage","_currentUrl":"https://wmp.cvte.com/apis/c4003c0c-f522-45b3-a2ce-8e0cd382c656/create_tmp_qr_code"}
+response: undefined
+name: "ENOTFOUNDError"
+pid: 46295
+hostname: hezhuopengdeMacBook-Pro.local
+
+2019-10-25 14:07:46,078 ERROR 46295 nodejs.TypeError: Converting circular structure to JSON
+    at JSON.stringify (<anonymous>)
+    at Object.app.context.onerror (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa-onerror/index.js:85:24)
+    at onerror (/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/koa/lib/application.js:148:32)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 46295
+hostname: hezhuopengdeMacBook-Pro.local
+
+2019-10-25 14:07:46,252 ERROR 46295 [-/127.0.0.1/-/5ms GET /api/account/system?appId=c4003c0c-f522-45b3-a2ce-8e0cd382c656&openId=o8t9E0UQ_V7xO2_8aKQLfKwXW6Gg] [Api] https://hmstest-wx-api.gz.cvte.cn/hms-wx/api/v1/wx_user?appId=c4003c0c-f522-45b3-a2ce-8e0cd382c656&openId=o8t9E0UQ_V7xO2_8aKQLfKwXW6Gg error: "请求错误"
+2019-10-25 14:07:49,800 ERROR 46295 [-/127.0.0.1/-/10ms GET /api/common/jssdk?url=http:%2F%2F127.0.0.1:7001%2Factivity%2Fgys%3Ff%3D1%26a%3D1%26r%3D0%26cid%3D1fb22c73d2714bf8b01bff091ff2c4e8%26u%3D1%26n_next%3D1&apilist=scanQRCode] [Api] https://wmp.cvte.com/apis/c4003c0c-f522-45b3-a2ce-8e0cd382c656/jsconfig?url=http%3A%2F%2F127.0.0.1%3A7001%2Factivity%2Fgys%3Ff%3D1%26a%3D1%26r%3D0%26cid%3D1fb22c73d2714bf8b01bff091ff2c4e8%26u%3D1%26n_next%3D1&apilist=scanQRCode error: "请求错误"
+2019-10-25 14:07:50,006 ERROR 46295 [-/127.0.0.1/-/4ms GET /api/account/system?appId=c4003c0c-f522-45b3-a2ce-8e0cd382c656&openId=o8t9E0UQ_V7xO2_8aKQLfKwXW6Gg] [Api] https://hmstest-wx-api.gz.cvte.cn/hms-wx/api/v1/wx_user?appId=c4003c0c-f522-45b3-a2ce-8e0cd382c656&openId=o8t9E0UQ_V7xO2_8aKQLfKwXW6Gg error: "请求错误"
+2019-10-29 15:01:25,548 ERROR 95875 [-/127.0.0.1/-/270ms GET /api/common/jssdk?url=http:%2F%2F127.0.0.1:7001%2Fbooking%2Fhealth-card%2Fa7ea3d87aae04ea1be6a493ec73615ab%3Fu%3D1%26n_next%3D1&apilist=scanQRCode] [Api] https://wmp.cvte.com/apis/c4003c0c-f522-45b3-a2ce-8e0cd382c656/jsconfig?url=http%3A%2F%2F127.0.0.1%3A7001%2Fbooking%2Fhealth-card%2Fa7ea3d87aae04ea1be6a493ec73615ab%3Fu%3D1%26n_next%3D1&apilist=scanQRCode error: "40002: 访问频率频繁"
+2019-10-29 15:01:25,616 ERROR 95875 [-/127.0.0.1/-/351ms GET /api/health-card/detail/a7ea3d87aae04ea1be6a493ec73615ab] [Api] https://hmstest-wx-api.gz.cvte.cn/hms-wx/api/v1/card/a7ea3d87aae04ea1be6a493ec73615ab? error: "40002: 访问频率频繁"
+2019-11-04 14:46:19,685 ERROR 52300 A client (::ffff:127.0.0.1:52018) error [ECONNRESET] occurred: read ECONNRESET

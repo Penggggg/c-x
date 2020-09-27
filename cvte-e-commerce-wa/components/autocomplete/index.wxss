@@ -1,0 +1,53 @@
+.com-autocomplete {
+    width: 100%;
+    position: relative;
+}
+
+.ca-result-list {
+    left: 0;
+    top: 50rpx;
+    width: 100%;
+    z-index: 99;
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 999;
+    box-shadow: 0 0 15px rgba( 0, 0, 0, 0.15 );
+}
+
+.ca-result-item {
+    color: #666;
+    font-size: 24rpx;
+    line-height: 38rpx;
+    padding: 25rpx 40rpx;
+    letter-spacing: 0.03em;
+    background: #fff;
+    z-index: 999;
+    box-sizing: border-box;
+}
+
+.ca-text {
+    display: inline;
+    white-space: nowrap;
+}
+
+.ca-text.bold {
+    color: #333;
+    font-weight: bold;
+}
+
+.ca-result-text {
+    flex-wrap: nowrap;
+    overflow: hidden; 
+    display: flex; 
+    -webkit-line-clamp: 1;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    letter-spacing: 0.03em;
+}
+
+.ca-input {
+    color: #666;
+    font-size: 24rpx;
+    letter-spacing: 0.03em;
+}

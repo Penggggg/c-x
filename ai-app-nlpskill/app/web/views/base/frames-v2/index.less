@@ -1,0 +1,32 @@
+.p-base-frames-v2 {
+
+    height: 95vh;
+    display: flex;
+    overflow-y: scroll;
+
+    .tree-con {
+        // min-height: 90vh;
+        // padding-right: 20px;
+        // box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .frames-block {
+
+        width: 500px;
+        display: flex;
+        padding: 0 50px;
+        position: relative;
+        align-items: center;
+        flex-direction: column;
+    }    
+
+    .frames-block::before {
+        top: 0;
+        left: 50%;
+        width: 5px;
+        height: 100%;
+        content: '';
+        position: absolute;
+        border-left: 2px dashed #d9d9d9;
+    }
+}

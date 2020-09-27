@@ -1,0 +1,464 @@
+<!--components/active-form/index.wxml-->
+
+<view class='c-active-form'>
+
+  <form>
+    
+    <view
+      wx:for="{{ meta }}"
+      wx:key="{{ index }}"
+    >
+
+      <!-- 标题类型 -->
+      <view
+        class="caf-title"
+        wx:if="{{ item.title && item.hide !== true }}"
+      >
+        <text class='caf-title-big'>{{ item.title }}</text>
+        <text class='caf-title-desc'>{{ item.desc }}</text>
+      </view>
+      
+      <!-- 文本输入类型 -->
+      <view
+        class="caf-inputs caf-item {{ !!errData[ item.key ] ? 'error' : '' }} {{ index === meta.length - 1 ? 'noline' : '' }}"
+        wx:elif="{{ item.type === 'input' && item.hide !== true }}"
+      >
+        <view 
+          class='caf-item-label'
+          style="{{ item.width ? 'width:' + item.width : '' }}"
+        >
+          {{ item.label }}
+        </view>
+        <view class='caf-item-input'>
+          <view
+            class="error-tips {{ left ? 'left' : '' }}"
+            wx:if="{{errData[ item.key ]}}"
+          >
+            {{ errData[ item.key ] }}
+          </view>
+          <input
+            disabled="{{ item.disabled }}"
+            data-key="{{ item.key }}"
+            value="{{ formData[ item.key ]}}"
+            maxlength='{{ item.max || 99999 }}'
+            placeholder="{{ item.placeholder || '' }}"
+            bindinput='textInput'
+            class="{{ left ? 'left' : '' }}"
+          />
+        </view>
+      </view>
+
+      <!-- auto complete -->
+      <view
+        class="caf-inputs caf-item {{ !!errData[ item.key ] ? 'error' : '' }} {{ index === meta.length - 1 ? 'noline' : '' }}"
+        wx:elif="{{ item.type === 'autocomplete' && item.hide !== true }}"
+      >
+        <view 
+          class='caf-item-label'
+          style="{{ item.width ? 'width:' + item.width : '' }}"
+        >
+          {{ item.label }}
+        </view>
+        <view class='caf-item-input'>
+          <view
+            class="error-tips {{ left ? 'left' : '' }}"
+            wx:if="{{errData[ item.key ]}}"
+          >
+            {{ errData[ item.key ] }}
+          </view>
+          <my-autocomplete
+            data-key="{{ item.key }}"
+            disabled="{{ item.disabled }}"
+            query="{{ item.query }}"
+            showKey="{{ item.showKey }}"
+            fillKey="{{ item.fillKey }}"
+            url="{{ item.url }}"
+            defaultValue="{{ formData[ item.key ]}}"
+            placeholder="{{ item.placeholder || '' }}"
+            bindinput="textInput"
+            bindconfirm="autocompleteConfirm"
+          />
+        </view>
+      </view>
+
+      <!-- 多行文本 -->
+      <view
+        class="caf-inputs caf-item {{ !!errData[ item.key ] ? 'error' : '' }} {{ index === meta.length - 1 ? 'noline' : '' }}"
+        wx:elif="{{ item.type === 'textarea' && item.hide !== true }}"
+      >
+        <view 
+          class='caf-item-label'
+          style="{{ item.width ? 'width:' + item.width : '' }}"
+        >
+          {{ item.label }}
+        </view>
+        <view class='caf-item-input'>
+          <view
+              class="error-tips {{ left ? 'left' : '' }}"
+              wx:if="{{errData[ item.key ]}}"
+            >
+            {{ errData[ item.key ] }}
+          </view>
+          <textarea
+            auto-height
+            disabled="{{ item.disabled }}"
+            data-key="{{ item.key }}"
+            value="{{ formData[ item.key ]}}"
+            placeholder="{{ item.placeholder || '' }}"
+            bindinput='textInput'
+            class="my-textarea"
+          />
+        </view>
+        
+      </view>
+
+      <!-- 省市区 -->
+      <view
+        class="caf-inputs caf-item {{ !!errData[ item.key ] ? 'error' : '' }} {{ index === meta.length - 1 ? 'noline' : '' }}"
+        wx:elif="{{ item.type === 'area' && item.hide !== true }}"
+
+      >
+        <view 
+          class='caf-item-label'
+          style="{{ item.width ? 'width:' + item.width : '' }}"
+        >
+          {{ item.label }}
+        </view>
+        <view class='caf-item-input'>
+          <view
+            class="error-tips {{ left ? 'left' : '' }}"
+            wx:if="{{errData[ item.key ]}}"
+          >
+            {{ errData[ item.key ] }}
+          </view>
+          <my-address-picker
+            data-key="{{ item.key }}"
+            bindchange="onAreaChange"
+            placeholder="{{ item.placeholder }}"
+            defaultValue="{{ formData[ item.key ] || [ ] }}"
+            initData="{{ item.initData !== undefined ? item.initData : true }}"
+          />
+        </view>
+      </view>
+
+      <!-- 标签 -->
+      <view
+        class="caf-inputs caf-item  {{ !!errData[ item.key ] ? 'error' : '' }} {{ index === meta.length - 1 ? 'noline' : '' }}"
+        wx:elif="{{ item.type === 'tag' && item.hide !== true }}"
+      >
+        <view 
+          class='caf-item-label'
+          style="{{ item.width ? 'width:' + item.width : '' }}"
+        >
+          {{ item.label }}
+        </view>
+        <view class='caf-item-input'>
+          <view
+            class="error-tips {{ left ? 'left' : '' }}"
+            wx:if="{{errData[ item.key ]}}"
+          >
+            {{ errData[ item.key ] }}
+          </view>
+          <view
+            wx:for="{{ formData[ item.key ]}}"
+            wx:for-item="label"
+            wx:for-index="k"
+            wx:key="{{ k }}"
+            data-tagkey="{{ item.key }}"
+            data-tagindex="{{ k }}"
+            class='label inline'
+            bindtap='toogleTag'
+          >
+            <wxc-label
+              text="{{ label }}"
+            />
+          </view>
+          <view
+            class='label inline'
+            data-tagkey="{{ item.key }}"
+            bindtap='toogleTag'
+          >
+            <wxc-label
+              text="点我添加+"
+              class='label'
+              wx:if="{{ formData[ item.key ].length < item.max }}"
+            />
+          </view>
+        </view>
+      </view>
+
+      <!-- select -->
+      <view
+        class="caf-inputs caf-item {{ index === meta.length - 1 ? 'noline' : '' }}"
+        wx:elif="{{ item.type === 'select' && item.hide !== true }}"
+      >
+        <picker
+          class='picker'
+          range-key="label"
+          disabled="{{ item.disabled }}"
+          range="{{ item.options }}"
+          bindchange="selectChange"
+          data-formkey="{{ item.key }}"
+          value='{{ selectFormItemIndex[ item.key ] }}'
+        >
+          <view class="picker">
+            <text class="caf-item-label {{ !!errData[ item.key ] ? 'error' : '' }}">{{ item.label }}</text>
+            <view class="caf-item-input">
+                <view
+                  class="error-tips {{ left ? 'left' : '' }}"
+                  wx:if="{{errData[ item.key ]}}"
+                >
+                  {{ errData[ item.key ] }}
+              </view>
+              <text>{{ item.options[ selectFormItemIndex[ item.key ]].label }}</text>
+            </view>
+          </view>
+        </picker>
+      </view>
+
+      <!-- 图片上传 -->
+      <view 
+        class="caf-img-block  {{ !!errData[ item.key ] ? 'error' : '' }}"
+        wx:elif="{{ item.type === 'img' && item.hide !== true }}"
+      > 
+        <view
+            class="error-tips align {{ left ? 'left' : '' }}"
+            wx:if="{{errData[ item.key ]}}"
+        >
+          {{ errData[ item.key ] }}
+        </view>
+        <my-img-upload
+          data-key="{{ item.key }}"
+          max="{{ item.max || 9 }}"
+          hasBeenUploaded="{{ item.value }}"
+          bindchange="onImgChange"
+        />
+      </view>
+
+      <!-- 数字类 -->
+      <view
+        class="caf-inputs caf-item  {{ !!errData[ item.key ] ? 'error' : '' }} {{ index === meta.length - 1 ? 'noline' : '' }}"
+        wx:elif="{{ item.type === 'number' && item.hide !== true }}"
+      >
+        <view 
+          class='caf-item-label'
+          style="{{ item.width ? 'width:' + item.width : '' }}"
+        >
+          {{ item.label }}
+        </view>
+        <view class='caf-item-input'>
+          <view
+            class="error-tips {{ left ? 'left' : '' }}"
+            wx:if="{{errData[ item.key ]}}"
+          >
+            {{ errData[ item.key ] }}
+          </view>
+          <input
+            type="digit"
+            disabled="{{ item.disabled }}"
+            data-key="{{ item.key }}"
+            bindinput='textInput'
+            value="{{ formData[ item.key ]}}"
+            placeholder="{{ item.placeholder || '' }}"
+            class="{{ left ? 'left' : '' }}"
+          />
+        </view>
+      </view>
+
+      <!-- 单个选项类 true / false -->
+      <view
+        class="caf-inputs caf-item  {{ !!errData[ item.key ] ? 'error' : '' }} {{ index === meta.length - 1 ? 'noline' : '' }}"
+        wx:elif="{{ item.type === 'trueOrFalse' && item.hide !== true }}"
+      >
+        <view 
+          class='caf-item-label'
+          style="{{ item.width ? 'width:' + item.width : '' }}"
+        >
+          {{ item.label }}
+        </view>
+        <view class='caf-item-input right'>
+          <view
+            class="error-tips {{ left ? 'left' : '' }}"
+            wx:if="{{errData[ item.key ]}}"
+          >
+            {{ errData[ item.key ] }}
+          </view>
+          <checkbox-group
+            data-key="{{ item.key }}"
+            bindchange="onTrueOrFalseChange"
+            class="{{ left ? 'left' : '' }}"
+          >
+            <label
+              
+            >
+              <checkbox 
+                color='#DDB97B'
+                class="checkbox"
+                value="{{ false }}" 
+                class="checkbox-trueOrFalse" 
+                checked="{{ !!formData[ item.key ] ? true : false }}"
+              />
+            </label>
+          </checkbox-group>
+        </view>
+      </view>
+
+      <!-- 单行的多选 -->
+      <view
+        class="caf-inputs caf-item  {{ !!errData[ item.key ] ? 'error' : '' }} {{ index === meta.length - 1 ? 'noline' : '' }}"
+        wx:elif="{{ item.type === 'inline-mulselect' && item.hide !== true }}"
+      >
+        <view 
+          class='caf-item-label'
+          style="{{ item.width ? 'width:' + item.width : '' }}"
+        >
+          {{ item.label }}
+        </view>
+        <view class='caf-item-input right'>
+          <view
+            class="error-tips {{ left ? 'left' : '' }}"
+            wx:if="{{errData[ item.key ]}}"
+          >
+            {{ errData[ item.key ] }}
+          </view>
+          <checkbox-group
+            data-key="{{ item.key }}"
+            bindchange="onCheckBoxChange"
+            class="{{ left ? 'left' : '' }}"
+          >
+            <label
+              class="checkbox" 
+              wx:for="{{ item.options }}"
+              wx:for-item="i"
+              wx:for-index="k"
+              wx:key="{{ k }}"
+            >
+              <checkbox 
+                color='#DDB97B'
+                value="{{ i.value }}" 
+                checked="{{ !!item.value && item.value.includes( i.value )}}"
+              />{{ i.label }}
+            </label>
+          </checkbox-group>
+        </view>
+      </view>
+
+      <!-- 单行的单选 -->
+      <view
+        class="caf-inputs caf-item  {{ !!errData[ item.key ] ? 'error' : '' }} {{ index === meta.length - 1 ? 'noline' : '' }}"
+        wx:elif="{{ item.type === 'inline-singleselect' && item.hide !== true }}"
+      >
+        <view 
+          class='caf-item-label'
+          style="{{ item.width ? 'width:' + item.width : '' }}"
+        >
+          {{ item.label }}
+        </view>
+        <view class='caf-item-input right'>
+          <view
+            class="error-tips {{ left ? 'left' : '' }}"
+            wx:if="{{errData[ item.key ]}}"
+          >
+            {{ errData[ item.key ] }}
+          </view>
+          <radio-group 
+            data-key="{{ item.key }}"
+            bindchange="onCheckBoxChange"
+            class="{{ left ? 'left' : '' }}"
+          >
+            <label
+              class="checkbox" 
+              wx:for="{{ item.options }}"
+              wx:for-item="i"
+              wx:for-index="k"
+              wx:key="{{ k }}"
+            >
+              <radio 
+                color='#DDB97B'
+                value="{{ i.value }}"
+                checked="{{ i.value === formData[ item.key ]}}"
+                class="radio-acform {{ i.value === formData[ item.key ] ? 'checked' : '' }}"
+              />{{ i.label }}
+            </label>
+          </radio-group>
+        </view>
+      </view>
+      
+      <!-- switch类型 -->
+      <view
+        class="caf-inputs caf-item {{ !!errData[ item.key ] ? 'error' : '' }} {{ index === meta.length - 1 ? 'noline' : '' }}"
+        wx:elif="{{ item.type === 'switch' && item.hide !== true }}"
+      >
+        <view 
+          class='caf-item-label'
+          style="{{ item.width ? 'width:' + item.width : '' }}"
+        >
+          {{ item.label }}
+        </view>
+        <view class="caf-item-input right">
+          <view
+            class="error-tips {{ left ? 'left' : '' }}"
+            wx:if="{{errData[ item.key ]}}"
+          >
+            {{ errData[ item.key ] }}
+          </view>
+          <switch
+            data-key="{{ item.key }}"
+            color='#ff5777'
+            bindchange="textInput"
+            disabled="{{ item.disabled }}"
+            checked="{{ formData[ item.key ]}}"
+          />
+        </view>
+      </view>
+
+      <!-- 日期类型 -->
+      <view
+        class="caf-inputs caf-item no-padding {{ index === meta.length - 1 ? 'noline' : '' }}"
+        wx:elif="{{ item.type === 'date' && item.hide !== true }}"
+      >
+          <picker
+            mode="date"
+            disabled="{{ item.disabled }}"
+            start="{{ item.start }}"
+            bindchange="dateChange"
+            data-formkey="{{ item.key }}"
+            value="{{ formData[ item.key ]}}"
+            class="date-picker"
+          >
+            <view class="picker date">
+              <text class="caf-item-label {{ !!errData[ item.key ] ? 'error' : '' }}">{{ item.label }}</text>
+              <view class="caf-item-input {{ left ? 'left' : '' }}">
+                  <view
+                    class="error-tips"
+                    wx:if="{{errData[ item.key ]}}"
+                  >
+                      {{ errData[ item.key ] }}
+                  </view>
+                  <text>{{ formData[ item.key ] }}</text>
+              </view>
+            </view>
+          </picker>
+      </view>
+
+    </view>
+
+  </form>
+
+  <!-- 增加标签 -->
+  <i-modal
+    title="{{ selectingTagIndex !== null ? '编辑标签' : '新的标签' }} "
+    visible="{{ tagging }}"
+    actions="{{ actions }}"
+    bind:click="modalClick"
+  >
+    <wxc-input
+      mode="none"
+      type="text"
+      value="{{ selecingTag }}"
+      bind:input="editingTag"
+      placeholder="请输入新的标签名"
+    />
+  </i-modal>
+
+</view>

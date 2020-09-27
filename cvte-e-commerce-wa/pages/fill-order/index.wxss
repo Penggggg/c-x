@@ -1,0 +1,190 @@
+/* pages/fill-order/index.wxss */
+.fill-order{
+    min-height: 100vh;
+    background: #fafafa;
+}
+
+.bottom-line {
+    border-bottom: 2rpx solid rgba(229,229,229,1);
+}
+
+.fill-order .addresss-fill , .fill-order .addresss-not-fill{
+    width:750rpx;
+    height: 174rpx;
+    background:rgba(255,255,255,1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20rpx;
+}
+.addresss-not-fill  .tips {
+    display: flex;
+    align-items: center;
+    font-size:32rpx;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    font-family:PingFang-SC;
+    margin-left: 88rpx;
+}
+.addresss-not-fill  .tips image{
+    width:54rpx;
+    height:54rpx;
+    margin-right: 6rpx;
+}
+.fill-order .good-list{
+    background: white;
+    padding: 28rpx 32rpx;
+    margin-bottom: 20rpx;
+    margin-top: 20rpx;
+}
+.fill-order .form{
+    background: white;
+    /* padding: 28rpx 32rpx; */
+    padding-bottom: 116rpx;
+}
+.fill-order .form .form-item{
+    padding: 30rpx 32rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2rpx solid rgba(229,229,229,1);
+}
+.fill-order .form .warper{
+    /* border-bottom: 2rpx solid rgba(229,229,229,1); */
+}
+.fill-order .form .warper:last-child{
+    border-bottom: none;
+}
+.fill-order .form .form-item .key{
+    width:140rpx;
+    height:40rpx;
+    font-size:28rpx;
+    font-family:Helvetica;
+    color:rgba(51,51,51,1);
+    line-height:34rpx;
+}
+.fill-order .form .form-item .label{
+    height:40rpx;
+    font-size:28rpx;
+    font-family:PingFangSC;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:40rpx;
+    display: flex;
+    letter-spacing: 0.03em;
+    align-items: center;
+}
+.fill-order .form .form-item .label image{
+    width:30rpx;
+    height:30rpx;
+}
+.fill-order .addresss-fill .user{
+    width:76rpx;
+    margin-left: 38rpx;
+}
+.fill-order .addresss-fill .user .name{
+    width:76rpx;
+    height: 40rpx;
+    font-size:28rpx;
+    font-family:PingFang-SC;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    line-height:32rpx;
+}
+.fill-order .addresss-fill .user .isdefault{
+    text-align: center;
+    width:66rpx;
+    height:34rpx;
+    font-size:24rpx;
+    font-family:PingFangSC;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:34rpx;
+    background:linear-gradient(90deg,rgba(221,185,123,1) 0%,rgba(221,185,123,0.6) 100%);
+    border-radius:4rpx;
+    margin-top:8rpx;
+}
+.fill-order .addresss-fill .contact .pos{
+    width:494rpx;
+    height:40rpx;
+    font-size:28rpx;
+    font-family:Helvetica;
+    color:rgba(68,68,68,1);
+    line-height:34rpx;
+}
+.fill-order .addresss-fill .contact .phone{
+    width:162rpx;
+    height:40rpx;
+    font-size:28rpx;
+    font-family:PingFangSC;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:40rpx;
+    margin-top:4rpx;
+}
+.fill-order .addresss-fill .icon image, .fill-order .addresss-not-fill .icon image{
+    margin-right: 38rpx;
+    width:32rpx;
+    height:32rpx;
+}
+.fill-order .btns-group{
+    position: fixed;
+    bottom: 0;
+    width:750rpx;
+    height:96rpx;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.fill-order .btns-group.upper {
+    bottom: 3vh;
+}
+
+.fill-order .btns-group .money{
+    background: white;
+    width:375rpx;
+    height:96rpx;
+    padding-left: 32rpx;
+}
+.fill-order .btns-group .money .final{
+    height:40rpx;
+    font-size:28rpx;
+    font-family:Helvetica;
+    color:rgba(111,111,111,1);
+    line-height:34rpx;
+    padding-top: 12rpx;
+}
+.fill-order .btns-group .money .final text{
+    font-size:32rpx;
+    font-family:Helvetica;
+    color:rgba(221,25,34,1);
+    line-height:38rpx;
+}
+.fill-order .btns-group .money .discount{
+    height:34rpx;
+    font-size:24rpx;
+    font-family:PingFangSC;
+    font-weight:400;
+    color:rgba(153,153,144,1);
+    line-height:34rpx;
+}
+.fill-order .btns-group .submit{
+    width:375rpx;
+    height:96rpx;
+    background:rgba(217,51,63,1);
+    font-size:32rpx;
+    font-family:Helvetica;
+    color:rgba(255,255,255,1);
+    line-height:38rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text-overflow{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

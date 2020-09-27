@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var watch_1 = require("../../utils/watch");
+var Form = (function () {
+    function Form() {
+        this.orderInvoice = {};
+        this.lastCreateAddressId = '';
+    }
+    return Form;
+}());
+exports.default = watch_1.watch('Form', new Form());
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBLDJDQUEwQztBQVcxQztJQUFBO1FBR1csaUJBQVksR0FBRyxFQUFHLENBQUM7UUFHbkIsd0JBQW1CLEdBQUcsRUFBRSxDQUFDO0lBRXBDLENBQUM7SUFBRCxXQUFDO0FBQUQsQ0FBQyxBQVJELElBUUM7QUFFRCxrQkFBZSxhQUFLLENBQVEsTUFBTSxFQUFFLElBQUksSUFBSSxFQUFHLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGh0dHAgfSBmcm9tICcuLi8uLi91dGlscy9odHRwJztcbmltcG9ydCB7IHdhdGNoIH0gZnJvbSAnLi4vLi4vdXRpbHMvd2F0Y2gnO1xuaW1wb3J0IHsgY2xvdWRIdHRwIH0gZnJvbSAnLi4vLi4vdXRpbHMvY2xvdWRIdHRwJztcbmltcG9ydCBjb25maWcgZnJvbSAnLi4vLi4vY29uZmlnL2luZGV4JztcbmltcG9ydCB7IFN0b3JhZ2VLZXkgfSBmcm9tICcuLi8uLi91dGlscy9jb25zdGFudCc7XG5cblxuLyoqXG4gKiBAZGVwcmVjYXRlZFxuICog6KGo5Y2VXG4gKiBcbiAqL1xuY2xhc3MgRm9ybSB7XG5cbiAgICAvKiog5Yib5bu66K6i5Y2V5pe25YCZ55qE5Y+R56Wo5aGr5YaZICovXG4gICAgcHVibGljIG9yZGVySW52b2ljZSA9IHsgfTtcblxuICAgIC8qKiDliJvlu7rlnLDlnYDml7bnmoTlnLDlnYBpZO+8jOeUqOadpee7meWFtuS7luWcsOaWueWhq+WFhSAqL1xuICAgIHB1YmxpYyBsYXN0Q3JlYXRlQWRkcmVzc0lkID0gJyc7XG5cbn1cblxuZXhwb3J0IGRlZmF1bHQgd2F0Y2g8Rm9ybT4oICdGb3JtJywgbmV3IEZvcm0oICkpO1xuICJdfQ==

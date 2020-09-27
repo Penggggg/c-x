@@ -1,0 +1,40 @@
+.p-invoice-create {
+    min-height: 100vh;
+    background: #F4F4F4;
+    padding-bottom: 30rpx;
+}
+
+.pic-content {
+    padding: 35rpx;
+}
+
+.pic-block {
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 60rpx;
+}
+
+.pic-btn {
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    color: #fff;
+    padding: 25rpx 0;
+    font-size: 32rpx;
+    text-align: center;
+    background: #DDB97B;
+    letter-spacing: 0.05em;
+    position: fixed;
+}
+
+.pic-btn.upper {
+    bottom: 3vh;
+}
+
+.pic-shoupiao {
+    padding: 20rpx 40rpx 0;
+    color: #666;
+    font-size: 24rpx;
+    line-height: 38rpx;
+    letter-spacing: 0.03em;
+}

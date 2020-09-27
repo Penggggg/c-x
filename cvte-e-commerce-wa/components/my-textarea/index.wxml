@@ -1,0 +1,19 @@
+<view class="con-my-textarea">
+    <view 
+        wx:if="{{ hide }}"
+        class="my-textarea {{ count ? 'counting' : '' }}"
+    >
+        {{ value }}
+    </view>
+    <textarea
+        value="{{ value }}"
+        bindinput='onInput'
+        wx:if="{{ !hide }}"
+        class="my-textarea {{ count ? 'counting' : '' }}"
+        placeholder="{{ placeholder || '' }}"
+        placeholder-style="color:rgba(114,113,113,0.50);"
+    />
+    <view class="cmy-count">
+        {{ length }}/{{ max }}
+    </view>
+</view>

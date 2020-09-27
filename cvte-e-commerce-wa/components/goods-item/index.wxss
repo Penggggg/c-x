@@ -1,0 +1,76 @@
+/* components/goods-item/index.wxss */
+.c-goods-item{
+    width: 100%;
+    padding: 20rpx 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-goods-item image{
+    width:160rpx;
+    height:160rpx;
+    background:rgba(244,244,244,1);
+    border-radius: 8rpx;
+}
+
+.c-goods-item .c-goods-item-desc{
+    width:350rpx;
+}
+
+.c-goods-item .c-goods-item-price{
+    width:140rpx;
+}
+
+.c-goods-item .c-goods-item-price .price{
+    width:140rpx;
+    height:40rpx;
+    font-size:28rpx;
+    font-family:PingFang-SC;
+    font-weight:bold;
+    color:rgba(221,25,34,1);
+    line-height:40rpx;
+    text-align: right;
+}
+.c-goods-item .c-goods-item-price .count{
+    width:140rpx;
+    height:34rpx;
+    font-size:24rpx;
+    font-family:PingFang-SC;
+    font-weight:400;
+    color:rgba(68,68,68,1);
+    line-height:34rpx;
+    text-align: right;
+}
+
+.c-goods-item .c-goods-item-desc .name{
+    width:350rpx;
+    height:80rpx;
+    font-size:28rpx;
+    font-family:PingFangSC;
+    font-weight:400;
+    color:rgba(68,68,68,1);
+    /* line-height:80rpx; */
+    /* overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; */
+    display: -webkit-box ;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+    margin-bottom: 4rpx;
+}
+.c-goods-item .c-goods-item-desc .desc{
+    width:340rpx;
+    height:34rpx;
+    font-size:24rpx;
+    font-family:PingFang-SC;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    line-height:34rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

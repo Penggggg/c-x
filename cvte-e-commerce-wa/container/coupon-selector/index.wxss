@@ -1,0 +1,81 @@
+.ccs-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.red {
+    color: #D9333F;
+}
+
+.inline {
+    display: inline;
+}
+
+.ccs-header {
+    background: #fff;
+    box-sizing: border-box;
+    padding: 30rpx  30rpx 40rpx;
+    overflow: visible;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    /* margin-bottom: 20rpx; */
+}
+
+.ccs-title-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ccs-title {
+    color: #333;
+    font-size: 35rpx;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    margin-bottom: 15rpx;
+}
+
+.ccs-use-tips {
+    color: #67A3DA;
+    font-size: 24rpx;
+    text-decoration: underline;
+}
+
+.ccs-tips {
+    color: #666;
+    font-size: 24rpx;
+    letter-spacing: 0.03em;
+    line-height: 38rpx;
+}
+
+.ccs-body {
+    flex: 1;
+    background: #FAFAFA;
+    overflow-y: scroll;
+    padding: 0 20rpx 20rpx;
+}
+
+.ccs-btn {
+    text-align: center;
+    padding: 22rpx 20rpx;
+    font-size: 32rpx;
+    text-align: center;
+    color: #fff;
+    border-radius: 0;
+    letter-spacing: 0.08em;
+    text-shadow: 0 0 3px rgba( 0, 0, 0, 0.1 );
+    background: #D9333F;
+}
+
+.ccs-coupon-block {
+    position: relative;
+    margin: 30rpx 0;
+}
+
+.ccs-coupon-checkbox {
+
+    top: 50%;
+    right: 5rpx;
+    position: absolute;
+    transform: translate( 0, -50% ) scale( 0.75 );
+}

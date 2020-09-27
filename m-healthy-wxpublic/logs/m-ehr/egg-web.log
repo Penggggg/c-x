@@ -1,0 +1,931 @@
+2018-09-10 00:00:01,485 INFO 12823 [egg-logrotator] app logger reload: got log-reload message
+2018-09-10 08:38:58,019 INFO 41444 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 08:38:58,068 INFO 41444 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 08:38:58,069 INFO 41444 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 08:39:00,202 INFO 41444 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 08:39:00,206 INFO 41444 [egg-security] use csrf middleware
+2018-09-10 08:39:00,207 INFO 41444 [egg-security] use methodnoallow middleware
+2018-09-10 08:39:00,208 INFO 41444 [egg-security] use noopen middleware
+2018-09-10 08:39:00,209 INFO 41444 [egg-security] use nosniff middleware
+2018-09-10 08:39:00,210 INFO 41444 [egg-security] use xssProtection middleware
+2018-09-10 08:39:00,212 INFO 41444 [egg-security] use xframe middleware
+2018-09-10 08:39:00,213 INFO 41444 [egg-security] use dta middleware
+2018-09-10 08:39:00,213 INFO 41444 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 08:39:00,307 INFO 41444 [egg:core] dump config after load, 5ms
+2018-09-10 08:39:00,320 INFO 41444 [egg-watcher:app] watcher start success
+2018-09-10 08:39:00,327 INFO 41444 [egg:core] dump config after ready, 5ms
+2018-09-10 08:39:13,511 INFO 41470 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 08:39:13,569 INFO 41470 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 08:39:13,569 INFO 41470 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 08:39:13,709 INFO 41470 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 08:39:13,715 INFO 41470 [egg-security] use csrf middleware
+2018-09-10 08:39:13,716 INFO 41470 [egg-security] use methodnoallow middleware
+2018-09-10 08:39:13,717 INFO 41470 [egg-security] use noopen middleware
+2018-09-10 08:39:13,719 INFO 41470 [egg-security] use nosniff middleware
+2018-09-10 08:39:13,719 INFO 41470 [egg-security] use xssProtection middleware
+2018-09-10 08:39:13,720 INFO 41470 [egg-security] use xframe middleware
+2018-09-10 08:39:13,721 INFO 41470 [egg-security] use dta middleware
+2018-09-10 08:39:13,721 INFO 41470 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 08:39:13,811 INFO 41470 [egg:core] dump config after load, 5ms
+2018-09-10 08:39:13,822 INFO 41470 [egg-watcher:app] watcher start success
+2018-09-10 08:39:13,831 INFO 41470 [egg:core] dump config after ready, 7ms
+2018-09-10 08:39:37,275 INFO 41512 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 08:39:37,336 INFO 41512 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 08:39:37,336 INFO 41512 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 08:39:37,448 INFO 41512 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 08:39:37,462 INFO 41512 [egg-security] use csrf middleware
+2018-09-10 08:39:37,463 INFO 41512 [egg-security] use methodnoallow middleware
+2018-09-10 08:39:37,463 INFO 41512 [egg-security] use noopen middleware
+2018-09-10 08:39:37,464 INFO 41512 [egg-security] use nosniff middleware
+2018-09-10 08:39:37,465 INFO 41512 [egg-security] use xssProtection middleware
+2018-09-10 08:39:37,466 INFO 41512 [egg-security] use xframe middleware
+2018-09-10 08:39:37,466 INFO 41512 [egg-security] use dta middleware
+2018-09-10 08:39:37,466 INFO 41512 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 08:39:37,601 INFO 41512 [egg:core] dump config after load, 6ms
+2018-09-10 08:39:37,618 INFO 41512 [egg-watcher:app] watcher start success
+2018-09-10 08:39:37,634 INFO 41512 [egg:core] dump config after ready, 12ms
+2018-09-10 08:39:48,373 INFO 41516 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 08:39:48,440 INFO 41516 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 08:39:48,440 INFO 41516 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 08:39:48,585 INFO 41516 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 08:39:48,590 INFO 41516 [egg-security] use csrf middleware
+2018-09-10 08:39:48,591 INFO 41516 [egg-security] use methodnoallow middleware
+2018-09-10 08:39:48,592 INFO 41516 [egg-security] use noopen middleware
+2018-09-10 08:39:48,592 INFO 41516 [egg-security] use nosniff middleware
+2018-09-10 08:39:48,593 INFO 41516 [egg-security] use xssProtection middleware
+2018-09-10 08:39:48,594 INFO 41516 [egg-security] use xframe middleware
+2018-09-10 08:39:48,594 INFO 41516 [egg-security] use dta middleware
+2018-09-10 08:39:48,594 INFO 41516 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 08:39:48,711 INFO 41516 [egg:core] dump config after load, 10ms
+2018-09-10 08:39:48,729 INFO 41516 [egg-watcher:app] watcher start success
+2018-09-10 08:39:48,740 INFO 41516 [egg:core] dump config after ready, 9ms
+2018-09-10 08:39:50,898 INFO 41518 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 08:39:50,954 INFO 41518 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 08:39:50,954 INFO 41518 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 08:39:51,010 INFO 41518 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 08:39:51,012 INFO 41518 [egg-security] use csrf middleware
+2018-09-10 08:39:51,013 INFO 41518 [egg-security] use methodnoallow middleware
+2018-09-10 08:39:51,013 INFO 41518 [egg-security] use noopen middleware
+2018-09-10 08:39:51,014 INFO 41518 [egg-security] use nosniff middleware
+2018-09-10 08:39:51,014 INFO 41518 [egg-security] use xssProtection middleware
+2018-09-10 08:39:51,015 INFO 41518 [egg-security] use xframe middleware
+2018-09-10 08:39:51,015 INFO 41518 [egg-security] use dta middleware
+2018-09-10 08:39:51,015 INFO 41518 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 08:39:51,074 INFO 41518 [egg:core] dump config after load, 6ms
+2018-09-10 08:39:51,085 INFO 41518 [egg-watcher:app] watcher start success
+2018-09-10 08:39:51,093 INFO 41518 [egg:core] dump config after ready, 6ms
+2018-09-10 09:15:56,673 INFO 41881 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:15:56,726 INFO 41881 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:15:56,726 INFO 41881 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:15:56,863 INFO 41881 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:15:56,866 INFO 41881 [egg-security] use csrf middleware
+2018-09-10 09:15:56,868 INFO 41881 [egg-security] use methodnoallow middleware
+2018-09-10 09:15:56,868 INFO 41881 [egg-security] use noopen middleware
+2018-09-10 09:15:56,870 INFO 41881 [egg-security] use nosniff middleware
+2018-09-10 09:15:56,871 INFO 41881 [egg-security] use xssProtection middleware
+2018-09-10 09:15:56,872 INFO 41881 [egg-security] use xframe middleware
+2018-09-10 09:15:56,873 INFO 41881 [egg-security] use dta middleware
+2018-09-10 09:15:56,873 INFO 41881 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:15:59,301 INFO 41881 [egg:core] dump config after load, 7ms
+2018-09-10 09:15:59,324 INFO 41881 [egg-watcher:app] watcher start success
+2018-09-10 09:15:59,333 INFO 41881 [egg:core] dump config after ready, 6ms
+2018-09-10 09:16:27,961 INFO 41906 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:16:28,012 INFO 41906 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:16:28,012 INFO 41906 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:16:28,119 INFO 41906 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:16:28,122 INFO 41906 [egg-security] use csrf middleware
+2018-09-10 09:16:28,123 INFO 41906 [egg-security] use methodnoallow middleware
+2018-09-10 09:16:28,124 INFO 41906 [egg-security] use noopen middleware
+2018-09-10 09:16:28,125 INFO 41906 [egg-security] use nosniff middleware
+2018-09-10 09:16:28,125 INFO 41906 [egg-security] use xssProtection middleware
+2018-09-10 09:16:28,126 INFO 41906 [egg-security] use xframe middleware
+2018-09-10 09:16:28,127 INFO 41906 [egg-security] use dta middleware
+2018-09-10 09:16:28,127 INFO 41906 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:16:29,879 INFO 41906 [egg:core] dump config after load, 3ms
+2018-09-10 09:16:29,895 INFO 41906 [egg-watcher:app] watcher start success
+2018-09-10 09:16:29,902 INFO 41906 [egg:core] dump config after ready, 5ms
+2018-09-10 09:18:11,264 INFO 41946 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:18:11,358 INFO 41946 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:18:11,358 INFO 41946 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:18:11,515 INFO 41946 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:18:11,520 INFO 41946 [egg-security] use csrf middleware
+2018-09-10 09:18:11,521 INFO 41946 [egg-security] use methodnoallow middleware
+2018-09-10 09:18:11,522 INFO 41946 [egg-security] use noopen middleware
+2018-09-10 09:18:11,523 INFO 41946 [egg-security] use nosniff middleware
+2018-09-10 09:18:11,524 INFO 41946 [egg-security] use xssProtection middleware
+2018-09-10 09:18:11,525 INFO 41946 [egg-security] use xframe middleware
+2018-09-10 09:18:11,529 INFO 41946 [egg-security] use dta middleware
+2018-09-10 09:18:11,530 INFO 41946 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:18:11,674 INFO 41946 [egg:core] dump config after load, 11ms
+2018-09-10 09:18:11,689 INFO 41946 [egg-watcher:app] watcher start success
+2018-09-10 09:18:11,700 INFO 41946 [egg:core] dump config after ready, 8ms
+2018-09-10 09:18:13,302 INFO 41955 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:18:13,375 INFO 41955 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:18:13,375 INFO 41955 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:18:13,457 INFO 41955 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:18:13,460 INFO 41955 [egg-security] use csrf middleware
+2018-09-10 09:18:13,460 INFO 41955 [egg-security] use methodnoallow middleware
+2018-09-10 09:18:13,461 INFO 41955 [egg-security] use noopen middleware
+2018-09-10 09:18:13,461 INFO 41955 [egg-security] use nosniff middleware
+2018-09-10 09:18:13,462 INFO 41955 [egg-security] use xssProtection middleware
+2018-09-10 09:18:13,462 INFO 41955 [egg-security] use xframe middleware
+2018-09-10 09:18:13,462 INFO 41955 [egg-security] use dta middleware
+2018-09-10 09:18:13,462 INFO 41955 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:18:13,531 INFO 41955 [egg:core] dump config after load, 5ms
+2018-09-10 09:18:13,545 INFO 41955 [egg-watcher:app] watcher start success
+2018-09-10 09:18:13,553 INFO 41955 [egg:core] dump config after ready, 5ms
+2018-09-10 09:18:16,118 INFO 41957 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:18:16,159 INFO 41957 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:18:16,159 INFO 41957 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:18:16,222 INFO 41957 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:18:16,224 INFO 41957 [egg-security] use csrf middleware
+2018-09-10 09:18:16,225 INFO 41957 [egg-security] use methodnoallow middleware
+2018-09-10 09:18:16,225 INFO 41957 [egg-security] use noopen middleware
+2018-09-10 09:18:16,225 INFO 41957 [egg-security] use nosniff middleware
+2018-09-10 09:18:16,226 INFO 41957 [egg-security] use xssProtection middleware
+2018-09-10 09:18:16,226 INFO 41957 [egg-security] use xframe middleware
+2018-09-10 09:18:16,226 INFO 41957 [egg-security] use dta middleware
+2018-09-10 09:18:16,226 INFO 41957 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:18:16,292 INFO 41957 [egg:core] dump config after load, 10ms
+2018-09-10 09:18:16,304 INFO 41957 [egg-watcher:app] watcher start success
+2018-09-10 09:18:16,311 INFO 41957 [egg:core] dump config after ready, 5ms
+2018-09-10 09:18:23,501 INFO 41973 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:18:23,543 INFO 41973 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:18:23,543 INFO 41973 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:18:23,816 INFO 41973 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:18:23,819 INFO 41973 [egg-security] use csrf middleware
+2018-09-10 09:18:23,819 INFO 41973 [egg-security] use methodnoallow middleware
+2018-09-10 09:18:23,820 INFO 41973 [egg-security] use noopen middleware
+2018-09-10 09:18:23,821 INFO 41973 [egg-security] use nosniff middleware
+2018-09-10 09:18:23,822 INFO 41973 [egg-security] use xssProtection middleware
+2018-09-10 09:18:23,822 INFO 41973 [egg-security] use xframe middleware
+2018-09-10 09:18:23,822 INFO 41973 [egg-security] use dta middleware
+2018-09-10 09:18:23,822 INFO 41973 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:18:23,879 INFO 41973 [egg:core] dump config after load, 5ms
+2018-09-10 09:18:23,892 INFO 41973 [egg-watcher:app] watcher start success
+2018-09-10 09:18:23,897 INFO 41973 [egg:core] dump config after ready, 3ms
+2018-09-10 09:19:24,420 INFO 42013 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:19:24,482 INFO 42013 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:19:24,482 INFO 42013 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:19:24,613 INFO 42013 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:19:24,616 INFO 42013 [egg-security] use csrf middleware
+2018-09-10 09:19:24,617 INFO 42013 [egg-security] use methodnoallow middleware
+2018-09-10 09:19:24,618 INFO 42013 [egg-security] use noopen middleware
+2018-09-10 09:19:24,619 INFO 42013 [egg-security] use nosniff middleware
+2018-09-10 09:19:24,620 INFO 42013 [egg-security] use xssProtection middleware
+2018-09-10 09:19:24,621 INFO 42013 [egg-security] use xframe middleware
+2018-09-10 09:19:24,622 INFO 42013 [egg-security] use dta middleware
+2018-09-10 09:19:24,622 INFO 42013 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:19:24,705 INFO 42013 [egg:core] dump config after load, 6ms
+2018-09-10 09:19:24,717 INFO 42013 [egg-watcher:app] watcher start success
+2018-09-10 09:19:24,723 INFO 42013 [egg:core] dump config after ready, 4ms
+2018-09-10 09:19:42,556 INFO 42031 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:19:42,602 INFO 42031 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:19:42,603 INFO 42031 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:19:42,659 INFO 42031 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:19:42,661 INFO 42031 [egg-security] use csrf middleware
+2018-09-10 09:19:42,662 INFO 42031 [egg-security] use methodnoallow middleware
+2018-09-10 09:19:42,662 INFO 42031 [egg-security] use noopen middleware
+2018-09-10 09:19:42,662 INFO 42031 [egg-security] use nosniff middleware
+2018-09-10 09:19:42,663 INFO 42031 [egg-security] use xssProtection middleware
+2018-09-10 09:19:42,663 INFO 42031 [egg-security] use xframe middleware
+2018-09-10 09:19:42,663 INFO 42031 [egg-security] use dta middleware
+2018-09-10 09:19:42,663 INFO 42031 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:19:42,721 INFO 42031 [egg:core] dump config after load, 6ms
+2018-09-10 09:19:42,731 INFO 42031 [egg-watcher:app] watcher start success
+2018-09-10 09:19:42,737 INFO 42031 [egg:core] dump config after ready, 4ms
+2018-09-10 09:20:04,221 INFO 42051 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:20:04,273 INFO 42051 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:20:04,273 INFO 42051 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:20:04,380 INFO 42051 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:20:04,383 INFO 42051 [egg-security] use csrf middleware
+2018-09-10 09:20:04,384 INFO 42051 [egg-security] use methodnoallow middleware
+2018-09-10 09:20:04,385 INFO 42051 [egg-security] use noopen middleware
+2018-09-10 09:20:04,386 INFO 42051 [egg-security] use nosniff middleware
+2018-09-10 09:20:04,387 INFO 42051 [egg-security] use xssProtection middleware
+2018-09-10 09:20:04,388 INFO 42051 [egg-security] use xframe middleware
+2018-09-10 09:20:04,389 INFO 42051 [egg-security] use dta middleware
+2018-09-10 09:20:04,389 INFO 42051 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:20:04,470 INFO 42051 [egg:core] dump config after load, 6ms
+2018-09-10 09:20:04,483 INFO 42051 [egg-watcher:app] watcher start success
+2018-09-10 09:20:04,489 INFO 42051 [egg:core] dump config after ready, 4ms
+2018-09-10 09:40:02,820 INFO 42381 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:40:02,865 INFO 42381 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:40:02,865 INFO 42381 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:40:03,016 INFO 42381 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:40:03,020 INFO 42381 [egg-security] use csrf middleware
+2018-09-10 09:40:03,021 INFO 42381 [egg-security] use methodnoallow middleware
+2018-09-10 09:40:03,021 INFO 42381 [egg-security] use noopen middleware
+2018-09-10 09:40:03,022 INFO 42381 [egg-security] use nosniff middleware
+2018-09-10 09:40:03,023 INFO 42381 [egg-security] use xssProtection middleware
+2018-09-10 09:40:03,023 INFO 42381 [egg-security] use xframe middleware
+2018-09-10 09:40:03,024 INFO 42381 [egg-security] use dta middleware
+2018-09-10 09:40:03,024 INFO 42381 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:40:03,110 INFO 42381 [egg:core] dump config after load, 7ms
+2018-09-10 09:40:03,124 INFO 42381 [egg-watcher:app] watcher start success
+2018-09-10 09:40:03,132 INFO 42381 [egg:core] dump config after ready, 6ms
+2018-09-10 09:40:55,975 INFO 42404 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:40:56,029 INFO 42404 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:40:56,029 INFO 42404 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:40:56,182 INFO 42404 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:40:56,184 INFO 42404 [egg-security] use csrf middleware
+2018-09-10 09:40:56,185 INFO 42404 [egg-security] use methodnoallow middleware
+2018-09-10 09:40:56,186 INFO 42404 [egg-security] use noopen middleware
+2018-09-10 09:40:56,187 INFO 42404 [egg-security] use nosniff middleware
+2018-09-10 09:40:56,188 INFO 42404 [egg-security] use xssProtection middleware
+2018-09-10 09:40:56,188 INFO 42404 [egg-security] use xframe middleware
+2018-09-10 09:40:56,189 INFO 42404 [egg-security] use dta middleware
+2018-09-10 09:40:56,189 INFO 42404 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:40:56,270 INFO 42404 [egg:core] dump config after load, 6ms
+2018-09-10 09:40:56,283 INFO 42404 [egg-watcher:app] watcher start success
+2018-09-10 09:40:56,290 INFO 42404 [egg:core] dump config after ready, 5ms
+2018-09-10 09:41:10,599 INFO 42421 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:41:10,646 INFO 42421 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:41:10,646 INFO 42421 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:41:10,745 INFO 42421 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:41:10,748 INFO 42421 [egg-security] use csrf middleware
+2018-09-10 09:41:10,748 INFO 42421 [egg-security] use methodnoallow middleware
+2018-09-10 09:41:10,749 INFO 42421 [egg-security] use noopen middleware
+2018-09-10 09:41:10,750 INFO 42421 [egg-security] use nosniff middleware
+2018-09-10 09:41:10,750 INFO 42421 [egg-security] use xssProtection middleware
+2018-09-10 09:41:10,751 INFO 42421 [egg-security] use xframe middleware
+2018-09-10 09:41:10,752 INFO 42421 [egg-security] use dta middleware
+2018-09-10 09:41:10,752 INFO 42421 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:41:10,851 INFO 42421 [egg:core] dump config after load, 11ms
+2018-09-10 09:41:10,866 INFO 42421 [egg-watcher:app] watcher start success
+2018-09-10 09:41:10,873 INFO 42421 [egg:core] dump config after ready, 5ms
+2018-09-10 09:41:22,697 INFO 42442 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:41:22,816 INFO 42442 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:41:22,816 INFO 42442 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:41:23,008 INFO 42442 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:41:23,013 INFO 42442 [egg-security] use csrf middleware
+2018-09-10 09:41:23,015 INFO 42442 [egg-security] use methodnoallow middleware
+2018-09-10 09:41:23,016 INFO 42442 [egg-security] use noopen middleware
+2018-09-10 09:41:23,017 INFO 42442 [egg-security] use nosniff middleware
+2018-09-10 09:41:23,018 INFO 42442 [egg-security] use xssProtection middleware
+2018-09-10 09:41:23,022 INFO 42442 [egg-security] use xframe middleware
+2018-09-10 09:41:23,023 INFO 42442 [egg-security] use dta middleware
+2018-09-10 09:41:23,023 INFO 42442 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:41:23,258 INFO 42442 [egg:core] dump config after load, 11ms
+2018-09-10 09:41:23,276 INFO 42442 [egg-watcher:app] watcher start success
+2018-09-10 09:41:23,294 INFO 42442 [egg:core] dump config after ready, 15ms
+2018-09-10 09:41:25,570 INFO 42451 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:41:25,611 INFO 42451 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:41:25,611 INFO 42451 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:41:25,667 INFO 42451 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:41:25,670 INFO 42451 [egg-security] use csrf middleware
+2018-09-10 09:41:25,671 INFO 42451 [egg-security] use methodnoallow middleware
+2018-09-10 09:41:25,671 INFO 42451 [egg-security] use noopen middleware
+2018-09-10 09:41:25,672 INFO 42451 [egg-security] use nosniff middleware
+2018-09-10 09:41:25,672 INFO 42451 [egg-security] use xssProtection middleware
+2018-09-10 09:41:25,672 INFO 42451 [egg-security] use xframe middleware
+2018-09-10 09:41:25,672 INFO 42451 [egg-security] use dta middleware
+2018-09-10 09:41:25,672 INFO 42451 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:41:25,738 INFO 42451 [egg:core] dump config after load, 7ms
+2018-09-10 09:41:25,753 INFO 42451 [egg-watcher:app] watcher start success
+2018-09-10 09:41:25,760 INFO 42451 [egg:core] dump config after ready, 5ms
+2018-09-10 09:42:31,885 INFO 42492 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:42:31,944 INFO 42492 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:42:31,944 INFO 42492 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:42:32,068 INFO 42492 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:42:32,071 INFO 42492 [egg-security] use csrf middleware
+2018-09-10 09:42:32,072 INFO 42492 [egg-security] use methodnoallow middleware
+2018-09-10 09:42:32,072 INFO 42492 [egg-security] use noopen middleware
+2018-09-10 09:42:32,073 INFO 42492 [egg-security] use nosniff middleware
+2018-09-10 09:42:32,074 INFO 42492 [egg-security] use xssProtection middleware
+2018-09-10 09:42:32,075 INFO 42492 [egg-security] use xframe middleware
+2018-09-10 09:42:32,075 INFO 42492 [egg-security] use dta middleware
+2018-09-10 09:42:32,075 INFO 42492 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:42:32,160 INFO 42492 [egg:core] dump config after load, 6ms
+2018-09-10 09:42:32,174 INFO 42492 [egg-watcher:app] watcher start success
+2018-09-10 09:42:32,181 INFO 42492 [egg:core] dump config after ready, 5ms
+2018-09-10 09:43:30,955 INFO 42525 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:43:31,044 INFO 42525 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:43:31,044 INFO 42525 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:43:31,184 INFO 42525 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:43:31,190 INFO 42525 [egg-security] use csrf middleware
+2018-09-10 09:43:31,193 INFO 42525 [egg-security] use methodnoallow middleware
+2018-09-10 09:43:31,193 INFO 42525 [egg-security] use noopen middleware
+2018-09-10 09:43:31,194 INFO 42525 [egg-security] use nosniff middleware
+2018-09-10 09:43:31,195 INFO 42525 [egg-security] use xssProtection middleware
+2018-09-10 09:43:31,196 INFO 42525 [egg-security] use xframe middleware
+2018-09-10 09:43:31,197 INFO 42525 [egg-security] use dta middleware
+2018-09-10 09:43:31,197 INFO 42525 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:43:31,328 INFO 42525 [egg:core] dump config after load, 17ms
+2018-09-10 09:43:31,355 INFO 42525 [egg-watcher:app] watcher start success
+2018-09-10 09:43:31,369 INFO 42525 [egg:core] dump config after ready, 12ms
+2018-09-10 09:43:34,028 INFO 42534 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:43:34,113 INFO 42534 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:43:34,113 INFO 42534 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:43:34,227 INFO 42534 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:43:34,230 INFO 42534 [egg-security] use csrf middleware
+2018-09-10 09:43:34,232 INFO 42534 [egg-security] use methodnoallow middleware
+2018-09-10 09:43:34,233 INFO 42534 [egg-security] use noopen middleware
+2018-09-10 09:43:34,234 INFO 42534 [egg-security] use nosniff middleware
+2018-09-10 09:43:34,235 INFO 42534 [egg-security] use xssProtection middleware
+2018-09-10 09:43:34,237 INFO 42534 [egg-security] use xframe middleware
+2018-09-10 09:43:34,239 INFO 42534 [egg-security] use dta middleware
+2018-09-10 09:43:34,239 INFO 42534 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:43:34,311 INFO 42534 [egg:core] dump config after load, 6ms
+2018-09-10 09:43:34,322 INFO 42534 [egg-watcher:app] watcher start success
+2018-09-10 09:43:34,327 INFO 42534 [egg:core] dump config after ready, 4ms
+2018-09-10 09:43:55,024 INFO 42554 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:43:55,071 INFO 42554 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:43:55,071 INFO 42554 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:43:55,179 INFO 42554 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:43:55,182 INFO 42554 [egg-security] use csrf middleware
+2018-09-10 09:43:55,183 INFO 42554 [egg-security] use methodnoallow middleware
+2018-09-10 09:43:55,184 INFO 42554 [egg-security] use noopen middleware
+2018-09-10 09:43:55,186 INFO 42554 [egg-security] use nosniff middleware
+2018-09-10 09:43:55,188 INFO 42554 [egg-security] use xssProtection middleware
+2018-09-10 09:43:55,189 INFO 42554 [egg-security] use xframe middleware
+2018-09-10 09:43:55,190 INFO 42554 [egg-security] use dta middleware
+2018-09-10 09:43:55,190 INFO 42554 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:43:55,284 INFO 42554 [egg:core] dump config after load, 5ms
+2018-09-10 09:43:55,296 INFO 42554 [egg-watcher:app] watcher start success
+2018-09-10 09:43:55,304 INFO 42554 [egg:core] dump config after ready, 6ms
+2018-09-10 09:45:02,609 INFO 42582 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:45:02,661 INFO 42582 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:45:02,661 INFO 42582 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:45:02,850 INFO 42582 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:45:02,856 INFO 42582 [egg-security] use csrf middleware
+2018-09-10 09:45:02,857 INFO 42582 [egg-security] use methodnoallow middleware
+2018-09-10 09:45:02,858 INFO 42582 [egg-security] use noopen middleware
+2018-09-10 09:45:02,859 INFO 42582 [egg-security] use nosniff middleware
+2018-09-10 09:45:02,860 INFO 42582 [egg-security] use xssProtection middleware
+2018-09-10 09:45:02,860 INFO 42582 [egg-security] use xframe middleware
+2018-09-10 09:45:02,861 INFO 42582 [egg-security] use dta middleware
+2018-09-10 09:45:02,861 INFO 42582 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:45:02,992 INFO 42582 [egg:core] dump config after load, 12ms
+2018-09-10 09:45:03,008 INFO 42582 [egg-watcher:app] watcher start success
+2018-09-10 09:45:03,021 INFO 42582 [egg:core] dump config after ready, 12ms
+2018-09-10 09:46:43,870 INFO 42616 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:46:43,928 INFO 42616 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:46:43,928 INFO 42616 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:46:44,047 INFO 42616 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:46:44,051 INFO 42616 [egg-security] use csrf middleware
+2018-09-10 09:46:44,052 INFO 42616 [egg-security] use methodnoallow middleware
+2018-09-10 09:46:44,053 INFO 42616 [egg-security] use noopen middleware
+2018-09-10 09:46:44,054 INFO 42616 [egg-security] use nosniff middleware
+2018-09-10 09:46:44,055 INFO 42616 [egg-security] use xssProtection middleware
+2018-09-10 09:46:44,055 INFO 42616 [egg-security] use xframe middleware
+2018-09-10 09:46:44,056 INFO 42616 [egg-security] use dta middleware
+2018-09-10 09:46:44,056 INFO 42616 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:46:44,149 INFO 42616 [egg:core] dump config after load, 9ms
+2018-09-10 09:46:44,161 INFO 42616 [egg-watcher:app] watcher start success
+2018-09-10 09:46:44,170 INFO 42616 [egg:core] dump config after ready, 7ms
+2018-09-10 09:47:00,606 INFO 42637 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:47:00,650 INFO 42637 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:47:00,650 INFO 42637 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:47:00,706 INFO 42637 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:47:00,708 INFO 42637 [egg-security] use csrf middleware
+2018-09-10 09:47:00,709 INFO 42637 [egg-security] use methodnoallow middleware
+2018-09-10 09:47:00,709 INFO 42637 [egg-security] use noopen middleware
+2018-09-10 09:47:00,710 INFO 42637 [egg-security] use nosniff middleware
+2018-09-10 09:47:00,710 INFO 42637 [egg-security] use xssProtection middleware
+2018-09-10 09:47:00,711 INFO 42637 [egg-security] use xframe middleware
+2018-09-10 09:47:00,711 INFO 42637 [egg-security] use dta middleware
+2018-09-10 09:47:00,711 INFO 42637 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:47:00,773 INFO 42637 [egg:core] dump config after load, 6ms
+2018-09-10 09:47:00,784 INFO 42637 [egg-watcher:app] watcher start success
+2018-09-10 09:47:00,793 INFO 42637 [egg:core] dump config after ready, 7ms
+2018-09-10 09:47:34,312 INFO 42654 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:47:34,383 INFO 42654 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:47:34,385 INFO 42654 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:47:34,550 INFO 42654 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:47:34,553 INFO 42654 [egg-security] use csrf middleware
+2018-09-10 09:47:34,554 INFO 42654 [egg-security] use methodnoallow middleware
+2018-09-10 09:47:34,555 INFO 42654 [egg-security] use noopen middleware
+2018-09-10 09:47:34,556 INFO 42654 [egg-security] use nosniff middleware
+2018-09-10 09:47:34,556 INFO 42654 [egg-security] use xssProtection middleware
+2018-09-10 09:47:34,557 INFO 42654 [egg-security] use xframe middleware
+2018-09-10 09:47:34,558 INFO 42654 [egg-security] use dta middleware
+2018-09-10 09:47:34,558 INFO 42654 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:47:34,660 INFO 42654 [egg:core] dump config after load, 5ms
+2018-09-10 09:47:34,671 INFO 42654 [egg-watcher:app] watcher start success
+2018-09-10 09:47:34,678 INFO 42654 [egg:core] dump config after ready, 5ms
+2018-09-10 09:47:36,652 INFO 42662 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:47:36,781 INFO 42662 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:47:36,781 INFO 42662 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:47:36,914 INFO 42662 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:47:36,917 INFO 42662 [egg-security] use csrf middleware
+2018-09-10 09:47:36,918 INFO 42662 [egg-security] use methodnoallow middleware
+2018-09-10 09:47:36,918 INFO 42662 [egg-security] use noopen middleware
+2018-09-10 09:47:36,919 INFO 42662 [egg-security] use nosniff middleware
+2018-09-10 09:47:36,920 INFO 42662 [egg-security] use xssProtection middleware
+2018-09-10 09:47:36,920 INFO 42662 [egg-security] use xframe middleware
+2018-09-10 09:47:36,920 INFO 42662 [egg-security] use dta middleware
+2018-09-10 09:47:36,920 INFO 42662 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:47:37,007 INFO 42662 [egg:core] dump config after load, 10ms
+2018-09-10 09:47:37,028 INFO 42662 [egg-watcher:app] watcher start success
+2018-09-10 09:47:37,039 INFO 42662 [egg:core] dump config after ready, 9ms
+2018-09-10 09:47:38,148 INFO 42663 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:47:38,189 INFO 42663 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:47:38,189 INFO 42663 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:47:38,244 INFO 42663 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:47:38,247 INFO 42663 [egg-security] use csrf middleware
+2018-09-10 09:47:38,247 INFO 42663 [egg-security] use methodnoallow middleware
+2018-09-10 09:47:38,248 INFO 42663 [egg-security] use noopen middleware
+2018-09-10 09:47:38,248 INFO 42663 [egg-security] use nosniff middleware
+2018-09-10 09:47:38,249 INFO 42663 [egg-security] use xssProtection middleware
+2018-09-10 09:47:38,249 INFO 42663 [egg-security] use xframe middleware
+2018-09-10 09:47:38,249 INFO 42663 [egg-security] use dta middleware
+2018-09-10 09:47:38,249 INFO 42663 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:47:38,321 INFO 42663 [egg:core] dump config after load, 6ms
+2018-09-10 09:47:38,332 INFO 42663 [egg-watcher:app] watcher start success
+2018-09-10 09:47:38,341 INFO 42663 [egg:core] dump config after ready, 6ms
+2018-09-10 09:48:35,446 INFO 42680 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:48:35,538 INFO 42680 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:48:35,538 INFO 42680 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:48:35,664 INFO 42680 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:48:35,667 INFO 42680 [egg-security] use csrf middleware
+2018-09-10 09:48:35,667 INFO 42680 [egg-security] use methodnoallow middleware
+2018-09-10 09:48:35,667 INFO 42680 [egg-security] use noopen middleware
+2018-09-10 09:48:35,668 INFO 42680 [egg-security] use nosniff middleware
+2018-09-10 09:48:35,668 INFO 42680 [egg-security] use xssProtection middleware
+2018-09-10 09:48:35,668 INFO 42680 [egg-security] use xframe middleware
+2018-09-10 09:48:35,669 INFO 42680 [egg-security] use dta middleware
+2018-09-10 09:48:35,669 INFO 42680 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:48:35,730 INFO 42680 [egg:core] dump config after load, 6ms
+2018-09-10 09:48:35,744 INFO 42680 [egg-watcher:app] watcher start success
+2018-09-10 09:48:35,753 INFO 42680 [egg:core] dump config after ready, 7ms
+2018-09-10 09:49:02,519 INFO 42700 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:49:02,590 INFO 42700 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:49:02,590 INFO 42700 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:49:02,693 INFO 42700 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:49:02,696 INFO 42700 [egg-security] use csrf middleware
+2018-09-10 09:49:02,697 INFO 42700 [egg-security] use methodnoallow middleware
+2018-09-10 09:49:02,698 INFO 42700 [egg-security] use noopen middleware
+2018-09-10 09:49:02,699 INFO 42700 [egg-security] use nosniff middleware
+2018-09-10 09:49:02,699 INFO 42700 [egg-security] use xssProtection middleware
+2018-09-10 09:49:02,700 INFO 42700 [egg-security] use xframe middleware
+2018-09-10 09:49:02,701 INFO 42700 [egg-security] use dta middleware
+2018-09-10 09:49:02,701 INFO 42700 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:49:02,783 INFO 42700 [egg:core] dump config after load, 6ms
+2018-09-10 09:49:02,794 INFO 42700 [egg-watcher:app] watcher start success
+2018-09-10 09:49:02,800 INFO 42700 [egg:core] dump config after ready, 4ms
+2018-09-10 09:49:07,013 INFO 42708 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:49:07,051 INFO 42708 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:49:07,051 INFO 42708 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:49:07,101 INFO 42708 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:49:07,103 INFO 42708 [egg-security] use csrf middleware
+2018-09-10 09:49:07,104 INFO 42708 [egg-security] use methodnoallow middleware
+2018-09-10 09:49:07,104 INFO 42708 [egg-security] use noopen middleware
+2018-09-10 09:49:07,105 INFO 42708 [egg-security] use nosniff middleware
+2018-09-10 09:49:07,105 INFO 42708 [egg-security] use xssProtection middleware
+2018-09-10 09:49:07,105 INFO 42708 [egg-security] use xframe middleware
+2018-09-10 09:49:07,105 INFO 42708 [egg-security] use dta middleware
+2018-09-10 09:49:07,105 INFO 42708 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:49:07,162 INFO 42708 [egg:core] dump config after load, 8ms
+2018-09-10 09:49:07,173 INFO 42708 [egg-watcher:app] watcher start success
+2018-09-10 09:49:07,180 INFO 42708 [egg:core] dump config after ready, 6ms
+2018-09-10 09:49:32,727 INFO 42726 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:49:32,785 INFO 42726 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:49:32,785 INFO 42726 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:49:32,887 INFO 42726 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:49:32,891 INFO 42726 [egg-security] use csrf middleware
+2018-09-10 09:49:32,892 INFO 42726 [egg-security] use methodnoallow middleware
+2018-09-10 09:49:32,892 INFO 42726 [egg-security] use noopen middleware
+2018-09-10 09:49:32,893 INFO 42726 [egg-security] use nosniff middleware
+2018-09-10 09:49:32,894 INFO 42726 [egg-security] use xssProtection middleware
+2018-09-10 09:49:32,894 INFO 42726 [egg-security] use xframe middleware
+2018-09-10 09:49:32,895 INFO 42726 [egg-security] use dta middleware
+2018-09-10 09:49:32,895 INFO 42726 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:49:33,001 INFO 42726 [egg:core] dump config after load, 8ms
+2018-09-10 09:49:33,014 INFO 42726 [egg-watcher:app] watcher start success
+2018-09-10 09:49:33,021 INFO 42726 [egg:core] dump config after ready, 4ms
+2018-09-10 09:59:47,931 INFO 42842 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 09:59:48,039 INFO 42842 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 09:59:48,039 INFO 42842 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 09:59:48,151 INFO 42842 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 09:59:48,154 INFO 42842 [egg-security] use csrf middleware
+2018-09-10 09:59:48,155 INFO 42842 [egg-security] use methodnoallow middleware
+2018-09-10 09:59:48,155 INFO 42842 [egg-security] use noopen middleware
+2018-09-10 09:59:48,156 INFO 42842 [egg-security] use nosniff middleware
+2018-09-10 09:59:48,157 INFO 42842 [egg-security] use xssProtection middleware
+2018-09-10 09:59:48,157 INFO 42842 [egg-security] use xframe middleware
+2018-09-10 09:59:48,158 INFO 42842 [egg-security] use dta middleware
+2018-09-10 09:59:48,158 INFO 42842 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 09:59:48,248 INFO 42842 [egg:core] dump config after load, 8ms
+2018-09-10 09:59:48,262 INFO 42842 [egg-watcher:app] watcher start success
+2018-09-10 09:59:48,273 INFO 42842 [egg:core] dump config after ready, 8ms
+2018-09-10 10:00:03,776 INFO 42853 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:00:03,823 INFO 42853 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:00:03,823 INFO 42853 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:00:03,920 INFO 42853 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:00:03,923 INFO 42853 [egg-security] use csrf middleware
+2018-09-10 10:00:03,924 INFO 42853 [egg-security] use methodnoallow middleware
+2018-09-10 10:00:03,924 INFO 42853 [egg-security] use noopen middleware
+2018-09-10 10:00:03,926 INFO 42853 [egg-security] use nosniff middleware
+2018-09-10 10:00:03,926 INFO 42853 [egg-security] use xssProtection middleware
+2018-09-10 10:00:03,927 INFO 42853 [egg-security] use xframe middleware
+2018-09-10 10:00:03,928 INFO 42853 [egg-security] use dta middleware
+2018-09-10 10:00:03,928 INFO 42853 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:00:04,012 INFO 42853 [egg:core] dump config after load, 6ms
+2018-09-10 10:00:04,023 INFO 42853 [egg-watcher:app] watcher start success
+2018-09-10 10:00:04,030 INFO 42853 [egg:core] dump config after ready, 5ms
+2018-09-10 10:00:13,685 INFO 42869 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:00:13,796 INFO 42869 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:00:13,796 INFO 42869 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:00:13,874 INFO 42869 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:00:13,879 INFO 42869 [egg-security] use csrf middleware
+2018-09-10 10:00:13,880 INFO 42869 [egg-security] use methodnoallow middleware
+2018-09-10 10:00:13,880 INFO 42869 [egg-security] use noopen middleware
+2018-09-10 10:00:13,880 INFO 42869 [egg-security] use nosniff middleware
+2018-09-10 10:00:13,881 INFO 42869 [egg-security] use xssProtection middleware
+2018-09-10 10:00:13,881 INFO 42869 [egg-security] use xframe middleware
+2018-09-10 10:00:13,881 INFO 42869 [egg-security] use dta middleware
+2018-09-10 10:00:13,881 INFO 42869 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:00:13,947 INFO 42869 [egg:core] dump config after load, 5ms
+2018-09-10 10:00:13,959 INFO 42869 [egg-watcher:app] watcher start success
+2018-09-10 10:00:13,965 INFO 42869 [egg:core] dump config after ready, 5ms
+2018-09-10 10:00:18,424 INFO 42877 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:00:18,462 INFO 42877 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:00:18,462 INFO 42877 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:00:18,519 INFO 42877 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:00:18,522 INFO 42877 [egg-security] use csrf middleware
+2018-09-10 10:00:18,523 INFO 42877 [egg-security] use methodnoallow middleware
+2018-09-10 10:00:18,523 INFO 42877 [egg-security] use noopen middleware
+2018-09-10 10:00:18,524 INFO 42877 [egg-security] use nosniff middleware
+2018-09-10 10:00:18,524 INFO 42877 [egg-security] use xssProtection middleware
+2018-09-10 10:00:18,524 INFO 42877 [egg-security] use xframe middleware
+2018-09-10 10:00:18,524 INFO 42877 [egg-security] use dta middleware
+2018-09-10 10:00:18,524 INFO 42877 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:00:18,726 INFO 42877 [egg:core] dump config after load, 33ms
+2018-09-10 10:00:18,783 INFO 42877 [egg-watcher:app] watcher start success
+2018-09-10 10:00:18,801 INFO 42877 [egg:core] dump config after ready, 13ms
+2018-09-10 10:02:48,333 INFO 42912 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:02:48,536 INFO 42912 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:02:48,536 INFO 42912 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:02:48,751 INFO 42912 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:02:48,755 INFO 42912 [egg-security] use csrf middleware
+2018-09-10 10:02:48,756 INFO 42912 [egg-security] use methodnoallow middleware
+2018-09-10 10:02:48,757 INFO 42912 [egg-security] use noopen middleware
+2018-09-10 10:02:48,759 INFO 42912 [egg-security] use nosniff middleware
+2018-09-10 10:02:48,759 INFO 42912 [egg-security] use xssProtection middleware
+2018-09-10 10:02:48,760 INFO 42912 [egg-security] use xframe middleware
+2018-09-10 10:02:48,761 INFO 42912 [egg-security] use dta middleware
+2018-09-10 10:02:48,761 INFO 42912 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:02:48,982 INFO 42912 [egg:core] dump config after load, 67ms
+2018-09-10 10:02:49,019 INFO 42912 [egg-watcher:app] watcher start success
+2018-09-10 10:02:49,069 INFO 42912 [egg:core] dump config after ready, 9ms
+2018-09-10 10:02:50,641 INFO 42920 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:02:50,680 INFO 42920 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:02:50,680 INFO 42920 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:02:50,738 INFO 42920 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:02:50,740 INFO 42920 [egg-security] use csrf middleware
+2018-09-10 10:02:50,741 INFO 42920 [egg-security] use methodnoallow middleware
+2018-09-10 10:02:50,741 INFO 42920 [egg-security] use noopen middleware
+2018-09-10 10:02:50,741 INFO 42920 [egg-security] use nosniff middleware
+2018-09-10 10:02:50,742 INFO 42920 [egg-security] use xssProtection middleware
+2018-09-10 10:02:50,742 INFO 42920 [egg-security] use xframe middleware
+2018-09-10 10:02:50,742 INFO 42920 [egg-security] use dta middleware
+2018-09-10 10:02:50,742 INFO 42920 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:02:50,801 INFO 42920 [egg:core] dump config after load, 7ms
+2018-09-10 10:02:50,814 INFO 42920 [egg-watcher:app] watcher start success
+2018-09-10 10:02:50,821 INFO 42920 [egg:core] dump config after ready, 6ms
+2018-09-10 10:03:25,503 INFO 42944 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:03:25,574 INFO 42944 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:03:25,574 INFO 42944 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:03:25,814 INFO 42944 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:03:25,818 INFO 42944 [egg-security] use csrf middleware
+2018-09-10 10:03:25,819 INFO 42944 [egg-security] use methodnoallow middleware
+2018-09-10 10:03:25,824 INFO 42944 [egg-security] use noopen middleware
+2018-09-10 10:03:25,825 INFO 42944 [egg-security] use nosniff middleware
+2018-09-10 10:03:25,826 INFO 42944 [egg-security] use xssProtection middleware
+2018-09-10 10:03:25,827 INFO 42944 [egg-security] use xframe middleware
+2018-09-10 10:03:25,827 INFO 42944 [egg-security] use dta middleware
+2018-09-10 10:03:25,827 INFO 42944 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:03:25,936 INFO 42944 [egg:core] dump config after load, 7ms
+2018-09-10 10:03:25,976 INFO 42944 [egg-watcher:app] watcher start success
+2018-09-10 10:03:25,983 INFO 42944 [egg:core] dump config after ready, 5ms
+2018-09-10 10:04:41,889 INFO 42968 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:04:41,935 INFO 42968 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:04:41,935 INFO 42968 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:04:42,059 INFO 42968 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:04:42,063 INFO 42968 [egg-security] use csrf middleware
+2018-09-10 10:04:42,065 INFO 42968 [egg-security] use methodnoallow middleware
+2018-09-10 10:04:42,066 INFO 42968 [egg-security] use noopen middleware
+2018-09-10 10:04:42,067 INFO 42968 [egg-security] use nosniff middleware
+2018-09-10 10:04:42,068 INFO 42968 [egg-security] use xssProtection middleware
+2018-09-10 10:04:42,069 INFO 42968 [egg-security] use xframe middleware
+2018-09-10 10:04:42,070 INFO 42968 [egg-security] use dta middleware
+2018-09-10 10:04:42,070 INFO 42968 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:04:42,152 INFO 42968 [egg:core] dump config after load, 6ms
+2018-09-10 10:04:42,169 INFO 42968 [egg-watcher:app] watcher start success
+2018-09-10 10:04:42,178 INFO 42968 [egg:core] dump config after ready, 6ms
+2018-09-10 10:05:01,987 INFO 42991 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:05:02,071 INFO 42991 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:05:02,071 INFO 42991 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:05:02,194 INFO 42991 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:05:02,197 INFO 42991 [egg-security] use csrf middleware
+2018-09-10 10:05:02,199 INFO 42991 [egg-security] use methodnoallow middleware
+2018-09-10 10:05:02,199 INFO 42991 [egg-security] use noopen middleware
+2018-09-10 10:05:02,201 INFO 42991 [egg-security] use nosniff middleware
+2018-09-10 10:05:02,202 INFO 42991 [egg-security] use xssProtection middleware
+2018-09-10 10:05:02,203 INFO 42991 [egg-security] use xframe middleware
+2018-09-10 10:05:02,204 INFO 42991 [egg-security] use dta middleware
+2018-09-10 10:05:02,204 INFO 42991 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:05:02,384 INFO 42991 [egg:core] dump config after load, 9ms
+2018-09-10 10:05:02,397 INFO 42991 [egg-watcher:app] watcher start success
+2018-09-10 10:05:02,409 INFO 42991 [egg:core] dump config after ready, 8ms
+2018-09-10 10:05:03,773 INFO 42996 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:05:03,811 INFO 42996 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:05:03,811 INFO 42996 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:05:03,861 INFO 42996 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:05:03,863 INFO 42996 [egg-security] use csrf middleware
+2018-09-10 10:05:03,864 INFO 42996 [egg-security] use methodnoallow middleware
+2018-09-10 10:05:03,864 INFO 42996 [egg-security] use noopen middleware
+2018-09-10 10:05:03,865 INFO 42996 [egg-security] use nosniff middleware
+2018-09-10 10:05:03,865 INFO 42996 [egg-security] use xssProtection middleware
+2018-09-10 10:05:03,865 INFO 42996 [egg-security] use xframe middleware
+2018-09-10 10:05:03,865 INFO 42996 [egg-security] use dta middleware
+2018-09-10 10:05:03,865 INFO 42996 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:05:03,924 INFO 42996 [egg:core] dump config after load, 5ms
+2018-09-10 10:05:03,934 INFO 42996 [egg-watcher:app] watcher start success
+2018-09-10 10:05:03,940 INFO 42996 [egg:core] dump config after ready, 4ms
+2018-09-10 10:06:50,944 INFO 43022 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:06:51,035 INFO 43022 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:06:51,035 INFO 43022 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:06:51,157 INFO 43022 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:06:51,159 INFO 43022 [egg-security] use csrf middleware
+2018-09-10 10:06:51,160 INFO 43022 [egg-security] use methodnoallow middleware
+2018-09-10 10:06:51,161 INFO 43022 [egg-security] use noopen middleware
+2018-09-10 10:06:51,162 INFO 43022 [egg-security] use nosniff middleware
+2018-09-10 10:06:51,162 INFO 43022 [egg-security] use xssProtection middleware
+2018-09-10 10:06:51,163 INFO 43022 [egg-security] use xframe middleware
+2018-09-10 10:06:51,163 INFO 43022 [egg-security] use dta middleware
+2018-09-10 10:06:51,163 INFO 43022 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:06:51,286 INFO 43022 [egg:core] dump config after load, 10ms
+2018-09-10 10:06:51,304 INFO 43022 [egg-watcher:app] watcher start success
+2018-09-10 10:06:51,311 INFO 43022 [egg:core] dump config after ready, 5ms
+2018-09-10 10:07:30,200 INFO 43046 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:07:30,239 INFO 43046 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:07:30,239 INFO 43046 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:07:30,295 INFO 43046 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:07:30,297 INFO 43046 [egg-security] use csrf middleware
+2018-09-10 10:07:30,297 INFO 43046 [egg-security] use methodnoallow middleware
+2018-09-10 10:07:30,297 INFO 43046 [egg-security] use noopen middleware
+2018-09-10 10:07:30,298 INFO 43046 [egg-security] use nosniff middleware
+2018-09-10 10:07:30,298 INFO 43046 [egg-security] use xssProtection middleware
+2018-09-10 10:07:30,298 INFO 43046 [egg-security] use xframe middleware
+2018-09-10 10:07:30,299 INFO 43046 [egg-security] use dta middleware
+2018-09-10 10:07:30,299 INFO 43046 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:07:30,353 INFO 43046 [egg:core] dump config after load, 5ms
+2018-09-10 10:07:30,363 INFO 43046 [egg-watcher:app] watcher start success
+2018-09-10 10:07:30,369 INFO 43046 [egg:core] dump config after ready, 5ms
+2018-09-10 10:07:37,436 INFO 43061 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:07:37,474 INFO 43061 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:07:37,474 INFO 43061 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:07:37,524 INFO 43061 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:07:37,526 INFO 43061 [egg-security] use csrf middleware
+2018-09-10 10:07:37,526 INFO 43061 [egg-security] use methodnoallow middleware
+2018-09-10 10:07:37,527 INFO 43061 [egg-security] use noopen middleware
+2018-09-10 10:07:37,527 INFO 43061 [egg-security] use nosniff middleware
+2018-09-10 10:07:37,528 INFO 43061 [egg-security] use xssProtection middleware
+2018-09-10 10:07:37,528 INFO 43061 [egg-security] use xframe middleware
+2018-09-10 10:07:37,528 INFO 43061 [egg-security] use dta middleware
+2018-09-10 10:07:37,528 INFO 43061 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:07:37,621 INFO 43061 [egg:core] dump config after load, 16ms
+2018-09-10 10:07:37,646 INFO 43061 [egg-watcher:app] watcher start success
+2018-09-10 10:07:37,665 INFO 43061 [egg:core] dump config after ready, 10ms
+2018-09-10 10:08:16,144 INFO 43074 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:08:16,193 INFO 43074 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:08:16,193 INFO 43074 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:08:16,291 INFO 43074 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:08:16,294 INFO 43074 [egg-security] use csrf middleware
+2018-09-10 10:08:16,294 INFO 43074 [egg-security] use methodnoallow middleware
+2018-09-10 10:08:16,295 INFO 43074 [egg-security] use noopen middleware
+2018-09-10 10:08:16,296 INFO 43074 [egg-security] use nosniff middleware
+2018-09-10 10:08:16,296 INFO 43074 [egg-security] use xssProtection middleware
+2018-09-10 10:08:16,297 INFO 43074 [egg-security] use xframe middleware
+2018-09-10 10:08:16,297 INFO 43074 [egg-security] use dta middleware
+2018-09-10 10:08:16,298 INFO 43074 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:08:16,376 INFO 43074 [egg:core] dump config after load, 9ms
+2018-09-10 10:08:16,389 INFO 43074 [egg-watcher:app] watcher start success
+2018-09-10 10:08:16,396 INFO 43074 [egg:core] dump config after ready, 5ms
+2018-09-10 10:08:17,480 INFO 43082 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:08:17,525 INFO 43082 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:08:17,525 INFO 43082 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:08:17,573 INFO 43082 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:08:17,575 INFO 43082 [egg-security] use csrf middleware
+2018-09-10 10:08:17,575 INFO 43082 [egg-security] use methodnoallow middleware
+2018-09-10 10:08:17,576 INFO 43082 [egg-security] use noopen middleware
+2018-09-10 10:08:17,576 INFO 43082 [egg-security] use nosniff middleware
+2018-09-10 10:08:17,576 INFO 43082 [egg-security] use xssProtection middleware
+2018-09-10 10:08:17,577 INFO 43082 [egg-security] use xframe middleware
+2018-09-10 10:08:17,577 INFO 43082 [egg-security] use dta middleware
+2018-09-10 10:08:17,577 INFO 43082 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:08:17,628 INFO 43082 [egg:core] dump config after load, 4ms
+2018-09-10 10:08:17,640 INFO 43082 [egg-watcher:app] watcher start success
+2018-09-10 10:08:17,646 INFO 43082 [egg:core] dump config after ready, 5ms
+2018-09-10 10:08:24,233 INFO 43090 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:08:24,287 INFO 43090 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:08:24,287 INFO 43090 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:08:24,423 INFO 43090 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:08:24,426 INFO 43090 [egg-security] use csrf middleware
+2018-09-10 10:08:24,427 INFO 43090 [egg-security] use methodnoallow middleware
+2018-09-10 10:08:24,428 INFO 43090 [egg-security] use noopen middleware
+2018-09-10 10:08:24,429 INFO 43090 [egg-security] use nosniff middleware
+2018-09-10 10:08:24,429 INFO 43090 [egg-security] use xssProtection middleware
+2018-09-10 10:08:24,430 INFO 43090 [egg-security] use xframe middleware
+2018-09-10 10:08:24,430 INFO 43090 [egg-security] use dta middleware
+2018-09-10 10:08:24,430 INFO 43090 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:08:24,520 INFO 43090 [egg:core] dump config after load, 6ms
+2018-09-10 10:08:24,544 INFO 43090 [egg-watcher:app] watcher start success
+2018-09-10 10:08:24,556 INFO 43090 [egg:core] dump config after ready, 9ms
+2018-09-10 10:08:25,619 INFO 43092 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:08:25,652 INFO 43092 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:08:25,652 INFO 43092 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:08:25,700 INFO 43092 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:08:25,702 INFO 43092 [egg-security] use csrf middleware
+2018-09-10 10:08:25,703 INFO 43092 [egg-security] use methodnoallow middleware
+2018-09-10 10:08:25,703 INFO 43092 [egg-security] use noopen middleware
+2018-09-10 10:08:25,703 INFO 43092 [egg-security] use nosniff middleware
+2018-09-10 10:08:25,704 INFO 43092 [egg-security] use xssProtection middleware
+2018-09-10 10:08:25,704 INFO 43092 [egg-security] use xframe middleware
+2018-09-10 10:08:25,704 INFO 43092 [egg-security] use dta middleware
+2018-09-10 10:08:25,704 INFO 43092 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:08:25,757 INFO 43092 [egg:core] dump config after load, 5ms
+2018-09-10 10:08:25,767 INFO 43092 [egg-watcher:app] watcher start success
+2018-09-10 10:08:25,773 INFO 43092 [egg:core] dump config after ready, 4ms
+2018-09-10 10:10:30,467 INFO 43145 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:10:30,521 INFO 43145 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:10:30,521 INFO 43145 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:10:30,782 INFO 43145 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:10:30,784 INFO 43145 [egg-security] use csrf middleware
+2018-09-10 10:10:30,785 INFO 43145 [egg-security] use methodnoallow middleware
+2018-09-10 10:10:30,786 INFO 43145 [egg-security] use noopen middleware
+2018-09-10 10:10:30,787 INFO 43145 [egg-security] use nosniff middleware
+2018-09-10 10:10:30,787 INFO 43145 [egg-security] use xssProtection middleware
+2018-09-10 10:10:30,788 INFO 43145 [egg-security] use xframe middleware
+2018-09-10 10:10:30,788 INFO 43145 [egg-security] use dta middleware
+2018-09-10 10:10:30,788 INFO 43145 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:10:30,993 INFO 43145 [egg:core] dump config after load, 9ms
+2018-09-10 10:10:31,012 INFO 43145 [egg-watcher:app] watcher start success
+2018-09-10 10:10:31,022 INFO 43145 [egg:core] dump config after ready, 6ms
+2018-09-10 10:10:32,931 INFO 43168 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:10:32,977 INFO 43168 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:10:32,977 INFO 43168 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:10:33,047 INFO 43168 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:10:33,052 INFO 43168 [egg-security] use csrf middleware
+2018-09-10 10:10:33,052 INFO 43168 [egg-security] use methodnoallow middleware
+2018-09-10 10:10:33,053 INFO 43168 [egg-security] use noopen middleware
+2018-09-10 10:10:33,054 INFO 43168 [egg-security] use nosniff middleware
+2018-09-10 10:10:33,054 INFO 43168 [egg-security] use xssProtection middleware
+2018-09-10 10:10:33,054 INFO 43168 [egg-security] use xframe middleware
+2018-09-10 10:10:33,054 INFO 43168 [egg-security] use dta middleware
+2018-09-10 10:10:33,055 INFO 43168 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:10:33,140 INFO 43168 [egg:core] dump config after load, 6ms
+2018-09-10 10:10:33,155 INFO 43168 [egg-watcher:app] watcher start success
+2018-09-10 10:10:33,163 INFO 43168 [egg:core] dump config after ready, 6ms
+2018-09-10 10:24:21,207 INFO 43574 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:24:21,279 INFO 43574 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:24:21,279 INFO 43574 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:24:21,392 INFO 43574 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:24:21,395 INFO 43574 [egg-security] use csrf middleware
+2018-09-10 10:24:21,396 INFO 43574 [egg-security] use methodnoallow middleware
+2018-09-10 10:24:21,397 INFO 43574 [egg-security] use noopen middleware
+2018-09-10 10:24:21,398 INFO 43574 [egg-security] use nosniff middleware
+2018-09-10 10:24:21,399 INFO 43574 [egg-security] use xssProtection middleware
+2018-09-10 10:24:21,400 INFO 43574 [egg-security] use xframe middleware
+2018-09-10 10:24:21,401 INFO 43574 [egg-security] use dta middleware
+2018-09-10 10:24:21,401 INFO 43574 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:24:21,488 INFO 43574 [egg:core] dump config after load, 6ms
+2018-09-10 10:24:21,503 INFO 43574 [egg-watcher:app] watcher start success
+2018-09-10 10:24:21,510 INFO 43574 [egg:core] dump config after ready, 5ms
+2018-09-10 10:24:38,319 INFO 43581 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:24:38,360 INFO 43581 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:24:38,360 INFO 43581 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:24:38,413 INFO 43581 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:24:38,415 INFO 43581 [egg-security] use csrf middleware
+2018-09-10 10:24:38,416 INFO 43581 [egg-security] use methodnoallow middleware
+2018-09-10 10:24:38,416 INFO 43581 [egg-security] use noopen middleware
+2018-09-10 10:24:38,416 INFO 43581 [egg-security] use nosniff middleware
+2018-09-10 10:24:38,417 INFO 43581 [egg-security] use xssProtection middleware
+2018-09-10 10:24:38,417 INFO 43581 [egg-security] use xframe middleware
+2018-09-10 10:24:38,417 INFO 43581 [egg-security] use dta middleware
+2018-09-10 10:24:38,417 INFO 43581 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:24:38,479 INFO 43581 [egg:core] dump config after load, 6ms
+2018-09-10 10:24:38,492 INFO 43581 [egg-watcher:app] watcher start success
+2018-09-10 10:24:38,499 INFO 43581 [egg:core] dump config after ready, 5ms
+2018-09-10 10:24:50,847 INFO 43588 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:24:50,896 INFO 43588 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:24:50,896 INFO 43588 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:24:50,948 INFO 43588 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:24:50,951 INFO 43588 [egg-security] use csrf middleware
+2018-09-10 10:24:50,952 INFO 43588 [egg-security] use methodnoallow middleware
+2018-09-10 10:24:50,952 INFO 43588 [egg-security] use noopen middleware
+2018-09-10 10:24:50,953 INFO 43588 [egg-security] use nosniff middleware
+2018-09-10 10:24:50,953 INFO 43588 [egg-security] use xssProtection middleware
+2018-09-10 10:24:50,953 INFO 43588 [egg-security] use xframe middleware
+2018-09-10 10:24:50,953 INFO 43588 [egg-security] use dta middleware
+2018-09-10 10:24:50,953 INFO 43588 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:24:51,017 INFO 43588 [egg:core] dump config after load, 6ms
+2018-09-10 10:24:51,030 INFO 43588 [egg-watcher:app] watcher start success
+2018-09-10 10:24:51,035 INFO 43588 [egg:core] dump config after ready, 4ms
+2018-09-10 10:24:56,169 INFO 43593 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:24:56,215 INFO 43593 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:24:56,215 INFO 43593 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:24:56,272 INFO 43593 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:24:56,275 INFO 43593 [egg-security] use csrf middleware
+2018-09-10 10:24:56,276 INFO 43593 [egg-security] use methodnoallow middleware
+2018-09-10 10:24:56,276 INFO 43593 [egg-security] use noopen middleware
+2018-09-10 10:24:56,276 INFO 43593 [egg-security] use nosniff middleware
+2018-09-10 10:24:56,277 INFO 43593 [egg-security] use xssProtection middleware
+2018-09-10 10:24:56,277 INFO 43593 [egg-security] use xframe middleware
+2018-09-10 10:24:56,277 INFO 43593 [egg-security] use dta middleware
+2018-09-10 10:24:56,277 INFO 43593 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:24:56,339 INFO 43593 [egg:core] dump config after load, 6ms
+2018-09-10 10:24:56,356 INFO 43593 [egg-watcher:app] watcher start success
+2018-09-10 10:24:56,367 INFO 43593 [egg:core] dump config after ready, 9ms
+2018-09-10 10:24:59,222 INFO 43595 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:24:59,279 INFO 43595 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:24:59,279 INFO 43595 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:24:59,381 INFO 43595 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:24:59,384 INFO 43595 [egg-security] use csrf middleware
+2018-09-10 10:24:59,385 INFO 43595 [egg-security] use methodnoallow middleware
+2018-09-10 10:24:59,386 INFO 43595 [egg-security] use noopen middleware
+2018-09-10 10:24:59,386 INFO 43595 [egg-security] use nosniff middleware
+2018-09-10 10:24:59,387 INFO 43595 [egg-security] use xssProtection middleware
+2018-09-10 10:24:59,388 INFO 43595 [egg-security] use xframe middleware
+2018-09-10 10:24:59,388 INFO 43595 [egg-security] use dta middleware
+2018-09-10 10:24:59,388 INFO 43595 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:24:59,462 INFO 43595 [egg:core] dump config after load, 6ms
+2018-09-10 10:24:59,474 INFO 43595 [egg-watcher:app] watcher start success
+2018-09-10 10:24:59,480 INFO 43595 [egg:core] dump config after ready, 4ms
+2018-09-10 10:25:01,633 INFO 43597 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:25:01,677 INFO 43597 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:25:01,677 INFO 43597 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:25:01,737 INFO 43597 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:25:01,739 INFO 43597 [egg-security] use csrf middleware
+2018-09-10 10:25:01,740 INFO 43597 [egg-security] use methodnoallow middleware
+2018-09-10 10:25:01,740 INFO 43597 [egg-security] use noopen middleware
+2018-09-10 10:25:01,741 INFO 43597 [egg-security] use nosniff middleware
+2018-09-10 10:25:01,741 INFO 43597 [egg-security] use xssProtection middleware
+2018-09-10 10:25:01,742 INFO 43597 [egg-security] use xframe middleware
+2018-09-10 10:25:01,742 INFO 43597 [egg-security] use dta middleware
+2018-09-10 10:25:01,742 INFO 43597 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:25:01,800 INFO 43597 [egg:core] dump config after load, 5ms
+2018-09-10 10:25:01,812 INFO 43597 [egg-watcher:app] watcher start success
+2018-09-10 10:25:01,818 INFO 43597 [egg:core] dump config after ready, 5ms
+2018-09-10 10:26:53,481 INFO 43640 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:26:53,532 INFO 43640 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:26:53,532 INFO 43640 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:26:53,642 INFO 43640 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:26:53,645 INFO 43640 [egg-security] use csrf middleware
+2018-09-10 10:26:53,646 INFO 43640 [egg-security] use methodnoallow middleware
+2018-09-10 10:26:53,647 INFO 43640 [egg-security] use noopen middleware
+2018-09-10 10:26:53,648 INFO 43640 [egg-security] use nosniff middleware
+2018-09-10 10:26:53,649 INFO 43640 [egg-security] use xssProtection middleware
+2018-09-10 10:26:53,649 INFO 43640 [egg-security] use xframe middleware
+2018-09-10 10:26:53,650 INFO 43640 [egg-security] use dta middleware
+2018-09-10 10:26:53,650 INFO 43640 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:26:53,735 INFO 43640 [egg:core] dump config after load, 5ms
+2018-09-10 10:26:53,746 INFO 43640 [egg-watcher:app] watcher start success
+2018-09-10 10:26:53,752 INFO 43640 [egg:core] dump config after ready, 4ms
+2018-09-10 10:26:54,812 INFO 43642 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:26:54,855 INFO 43642 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:26:54,855 INFO 43642 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:26:54,909 INFO 43642 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:26:54,911 INFO 43642 [egg-security] use csrf middleware
+2018-09-10 10:26:54,912 INFO 43642 [egg-security] use methodnoallow middleware
+2018-09-10 10:26:54,912 INFO 43642 [egg-security] use noopen middleware
+2018-09-10 10:26:54,913 INFO 43642 [egg-security] use nosniff middleware
+2018-09-10 10:26:54,913 INFO 43642 [egg-security] use xssProtection middleware
+2018-09-10 10:26:54,913 INFO 43642 [egg-security] use xframe middleware
+2018-09-10 10:26:54,914 INFO 43642 [egg-security] use dta middleware
+2018-09-10 10:26:54,914 INFO 43642 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:26:54,970 INFO 43642 [egg:core] dump config after load, 6ms
+2018-09-10 10:26:54,986 INFO 43642 [egg-watcher:app] watcher start success
+2018-09-10 10:26:54,996 INFO 43642 [egg:core] dump config after ready, 7ms
+2018-09-10 10:27:27,714 INFO 43656 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:27:27,755 INFO 43656 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:27:27,755 INFO 43656 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:27:27,803 INFO 43656 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:27:27,805 INFO 43656 [egg-security] use csrf middleware
+2018-09-10 10:27:27,806 INFO 43656 [egg-security] use methodnoallow middleware
+2018-09-10 10:27:27,806 INFO 43656 [egg-security] use noopen middleware
+2018-09-10 10:27:27,806 INFO 43656 [egg-security] use nosniff middleware
+2018-09-10 10:27:27,807 INFO 43656 [egg-security] use xssProtection middleware
+2018-09-10 10:27:27,807 INFO 43656 [egg-security] use xframe middleware
+2018-09-10 10:27:27,807 INFO 43656 [egg-security] use dta middleware
+2018-09-10 10:27:27,807 INFO 43656 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:27:27,860 INFO 43656 [egg:core] dump config after load, 5ms
+2018-09-10 10:27:27,873 INFO 43656 [egg-watcher:app] watcher start success
+2018-09-10 10:27:27,879 INFO 43656 [egg:core] dump config after ready, 4ms
+2018-09-10 10:27:30,911 INFO 43659 [egg:logger] init all loggers with options: {"dir":"/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/logs/m-ehr","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"m-ehr-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-09-10 10:27:30,953 INFO 43659 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-09-10 10:27:30,953 INFO 43659 [egg-schedule]: register schedule /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-09-10 10:27:31,006 INFO 43659 [egg-static] starting static serve /public/ -> /Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/public
+2018-09-10 10:27:31,009 INFO 43659 [egg-security] use csrf middleware
+2018-09-10 10:27:31,009 INFO 43659 [egg-security] use methodnoallow middleware
+2018-09-10 10:27:31,010 INFO 43659 [egg-security] use noopen middleware
+2018-09-10 10:27:31,010 INFO 43659 [egg-security] use nosniff middleware
+2018-09-10 10:27:31,011 INFO 43659 [egg-security] use xssProtection middleware
+2018-09-10 10:27:31,011 INFO 43659 [egg-security] use xframe middleware
+2018-09-10 10:27:31,011 INFO 43659 [egg-security] use dta middleware
+2018-09-10 10:27:31,011 INFO 43659 [egg-security] compose 7 middlewares into one security middleware
+2018-09-10 10:27:31,073 INFO 43659 [egg:core] dump config after load, 6ms
+2018-09-10 10:27:31,084 INFO 43659 [egg-watcher:app] watcher start success
+2018-09-10 10:27:31,090 INFO 43659 [egg:core] dump config after ready, 4ms

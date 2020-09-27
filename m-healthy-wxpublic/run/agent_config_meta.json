@@ -1,0 +1,364 @@
+{
+  "sourceUrl": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/config/config.default.js",
+  "static": {
+    "prefix": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/config/config.default.js",
+    "dir": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/config/config.default.js",
+    "dynamic": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-static/config/config.default.js"
+  },
+  "keys": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/config/config.default.js",
+  "photoPath": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/config/config.default.js",
+  "appTitle": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/config/config.default.js",
+  "middleware": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/config/config.default.js",
+  "wmp": {
+    "qyOauth": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/config/config.default.js",
+    "wxOauth": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/config/config.default.js",
+    "local": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/config/config.default.js",
+    "host": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/config/config.default.js",
+    "appId": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/config/config.default.js"
+  },
+  "host": {
+    "node": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/config/config.default.js",
+    "jwtServer": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/config/config.default.js",
+    "qiyeServer": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/config/config.default.js",
+    "verify": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/config/config.default.js",
+    "push": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/config/config.default.js",
+    "server": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/config/config.default.js",
+    "localHost": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/config/config.default.js"
+  },
+  "iac": {
+    "appid": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/config/config.default.js",
+    "secret": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/config/config.default.js"
+  },
+  "security": {
+    "csrf": {
+      "enable": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/config/config.default.js",
+      "useSession": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js"
+    },
+    "domainWhiteList": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js",
+    "xframe": {
+      "enable": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "session": {
+    "maxAge": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-session/config/config.default.js"
+  },
+  "helper": {
+    "shtml": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "multipart": {
+    "autoFields": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-multipart/config/config.default.js"
+  },
+  "development": {
+    "watchDirs": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-development/config/config.default.js"
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "view": {
+    "root": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-view/config/config.default.js",
+    "mapping": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg-view/config/config.default.js"
+  },
+  "env": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+  "name": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "version": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "description": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "private": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "egg": {
+      "typescript": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js"
+    },
+    "scripts": {
+      "start": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "start:test": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "stop": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "dev": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "sw": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "debug": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "test-local": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "test": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "cov": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "tsc": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "ci": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "autod": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "lint": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "clean": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "dev:client": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "dev:tsc": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "dev:ts": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "fix": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "dev:c": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "dev:s": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "build": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "build:prod": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "build:test": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "build:cdev": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "build:sdev": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "build:c": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "build:s": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js"
+    },
+    "dependencies": {
+      "@cvte/ciac": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "@cvte/wuli-tools": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "axios": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "body-parser": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "echarts": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "egg": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "fast-xml-parser": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "form-data": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "formstream": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "html2canvas": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "jsonwebtoken": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "mobx": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "mobx-vue": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "muse-ui": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "muse-ui-loading": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "muse-ui-toast": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "vant": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "vconsole": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "vue": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "vue-event-calendar": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "vue-property-decorator": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "vue-router": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "xml2js": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "@types/mocha": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "@types/node": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "@types/supertest": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "autod": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "autod-egg": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "babel-core": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "babel-loader": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "babel-plugin-transform-remove-strict-mode": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "css-loader": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "egg-bin": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "egg-ci": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "egg-mock": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "egg-ts-helper": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "file-loader": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "gulp-remove-use-strict": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "less": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "less-loader": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "ts-loader": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "tslib": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "tslint": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "typescript": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "uglifyjs-webpack-plugin": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "vue-loader": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "vue-server-renderer": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "vue-style-loader": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "vue-template-compiler": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "webpack": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "webpack-bundle-analyzer": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "webpack-cli": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "webpack-merge": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "webpack-node-externals": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "yargs": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js"
+    },
+    "engines": {
+      "node": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js"
+    },
+    "ci": {
+      "version": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js"
+    },
+    "repository": {
+      "type": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "url": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js"
+    },
+    "eslintIgnore": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "author": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "license": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js"
+  },
+  "baseDir": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "strict": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "depth": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js"
+    }
+  },
+  "logger": {
+    "dir": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "env": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "level": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxAge": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "freeSocketKeepAliveTimeout": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "freeSocketKeepAliveTimeout": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "logging": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "port": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/hezhuopeng/Desktop/work/git-lab/m-healthy-wxpublic/node_modules/egg/config/config.default.js"
+}

@@ -1,0 +1,108 @@
+<view class="con-address-selector">
+
+    <view bindtap="openPop">
+        <!-- 为空的时候 -->
+        <view 
+            wx:if="{{ !selecting }}"
+            class="cas-empty-block"
+        >
+            <image
+                wx:if="{{ icon }}"
+                class='cas-icon'
+                mode="aspectFill"
+                lazy-load="{{ true }}"
+                src="cloud://dev-cz0o8.6465-dev-cz0o8/icon/icon_order_Logistics@3x.png"
+            />
+            <view class="cas-text cas-tips {{ icon ? 'ml' : '' }} ">
+                {{ placeholder }}
+            </view>
+            <image
+                class='cas-icon small'
+                mode="aspectFill"
+                lazy-load="{{ true }}"
+                src="cloud://dev-cz0o8.6465-dev-cz0o8-1300106651/icon/icon_order_more@3x.png"
+            />
+        </view>
+        <!-- 已经选择了的时候 -->
+        <view 
+            wx:else
+            class="cas-empty-block"
+        >
+            <view class="cas-selecting-tips">
+                <view class="cas-text cas-selecting-name">
+                    {{ selecting.name }}
+                </view>
+                <view
+                    class="cas-selecting-default"
+                    wx:if="{{ selecting.default }}"
+                >
+                    默认
+                </view>
+            </view>
+            <view class="cas-selecting-content">
+                <view class="cas-text cas-selecting-address">
+                    {{ selecting.provinceName }}{{ selecting.cityName }}{{ selecting.areaName }} {{ selecting.address }}
+                </view>
+                <view class="cas-text">
+                    {{ selecting.phone }}
+                </view>
+            </view>
+            <image
+                class='cas-icon small'
+                mode="aspectFill"
+                lazy-load="{{ true }}"
+                src="cloud://dev-cz0o8.6465-dev-cz0o8-1300106651/icon/icon_order_more@3x.png"
+            />
+        </view>
+    </view>
+
+    <!-- 弹框选择 -->
+    <my-pop-up
+        id="pop"
+    >
+        <view
+            class="cas-content"
+        >
+            <scroll-view
+                scroll-y
+                class="cas-list"
+            >
+                <view
+                    data-key="{{ index }}"
+                    data-data="{{ item }}"
+                    wx:key="{{ index }}"
+                    wx:for="{{ list }}"
+                    bindtap="onChoice"
+                    class="cas-address-item"
+                >
+                    <view
+                        class="cas-address-item-radio"
+                    >
+                        <radio 
+                            color='#DDB97B'
+                            class="cas-radio"
+                            checked="{{ item.id === selecting.id }}"
+                        />
+                    </view>
+                    <view
+                         class="cas-address-meta"
+                    >
+                        <my-address-item
+                            data="{{ item }}"
+                            line="{{ index < list.length - 1 }}"
+                        />
+                    </view>
+                </view>
+                <my-no-more
+                    wx:if="{{ list.length === 0 }}"
+                />
+            </scroll-view>
+            <view 
+                class="cas-btn"
+                bindtap="goCreate"
+            >
+                新增收货地址
+            </view>
+        </view>
+    </my-pop-up>
+</view>

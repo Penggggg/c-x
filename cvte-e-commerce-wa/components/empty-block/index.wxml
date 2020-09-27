@@ -1,0 +1,42 @@
+<view class="com-empty-block">
+    <image
+        class='emb-img'
+        mode="aspectFit"
+        lazy-load="{{ true }}"
+        src="{{ img }}"
+    />
+    <view
+        class="emb-tips-block"
+        wx:if="{{ tipsArr.length > 0 }}"
+    >
+        <view
+            wx:key="{{ index }}"
+            wx:for="{{ tipsArr }}"
+            class="emb-tips"
+        >
+            <view 
+                wx:key="{{ kk }}"
+                wx:for-index="kk"
+                wx:for="{{ item }}"
+                wx:for-item="textItem"
+                data-item="{{ textItem }}"
+                class="emb-text"
+            >
+                <view
+                    class="emb-text"
+                    wx:if="{{ textItem.type !== 'bold' }}"
+                >
+                    {{ textItem.text }}
+                </view>
+                <button
+                    open-type="contact"
+                    class="fix-btn emb-text bold"
+                    wx:else="{{ textItem.type === 'bold' && textItem.text === '咨询客服' }}"
+                >
+                    {{ textItem.text }}
+                </button>
+            </view>
+            
+        </view>
+    </view>
+</view>

@@ -1,0 +1,20 @@
+<!--container/my-order-list/index.wxml-->
+<view class="c-order-list" bindtap="onNavToDetail" data-orderNo="{{detail.orderNo}}">
+    <view class="title" >
+        <view class="state">{{detail.status}}</view>
+        <view class="time">{{detail.time}}</view>
+    </view>
+    <view wx:for="{{detail.items}}"  wx:key="{{index}}" class="item">
+        <goods-item detail="{{item}}" ></goods-item>
+    </view>
+    <view class="action">
+        <view class="price">共计:<text class="money"> ¥ {{detail.allPrice}}</text></view>
+        <view class="btns">
+            <view class="see">查看详情</view>
+            <view class="pay" catchtap="pay" id="pay_on" wx:if="{{detail.state === 'WAIT_PAY' }}">立即支付</view>
+            <view class="pay" catchtap="pay" id="pay_off" wx:if="{{ detail.state === 'PAY_APPROVAL'}}">上传凭证</view>
+        </view>
+    </view>
+</view>
+
+

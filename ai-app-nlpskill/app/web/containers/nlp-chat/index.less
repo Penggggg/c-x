@@ -1,0 +1,78 @@
+.con-nlp-chat {
+
+    flex: 1;
+    width: 100%;
+    margin-bottom: 20px;
+
+    .chat-list-con {
+
+        height: 70vh;
+        overflow-y: scroll;
+
+        .chat-list {
+        
+            padding: 0;
+
+            .chat-line {
+                
+                text-align: left;
+
+                .chat-item {
+
+                    padding: 10px;
+                    max-width: 65%;
+                    border-radius: 3px;
+                    margin-bottom: 25px;
+                    position: relative;
+                    display: inline-block;
+                    border-left: 2px solid #69c0ff;
+                    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1 );       
+                    
+                    p {
+                        line-height: 1.5;
+                        margin-bottom: 0;
+                    }
+
+                    img {
+                        width: 100%;
+                        border-radius: 3px;
+                    }
+
+                    .action {
+
+                        top: 10px;
+                        right: 10px;
+                        position: absolute;
+                    }
+                }
+            }
+
+            .chat-line.right {
+                
+                text-align: right;
+
+                .chat-item {
+
+                    border-left: none;
+                    border-right: 2px solid #69c0ff;
+                }
+            }
+
+            .chat-line.center {
+                text-align: center;
+
+                .chat-item {
+                    width: 100%;
+                    max-width: 100%;
+                    box-shadow: none;
+                    border-left: none;
+                }
+            }
+        }
+    }
+
+    .chat-list-con::-webkit-scrollbar {
+        display: none;
+    }
+    
+}

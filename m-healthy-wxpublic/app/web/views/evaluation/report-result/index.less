@@ -1,0 +1,281 @@
+.p-evaluation-report-result {
+
+    min-height: 100vh;
+    padding: 20px 0;
+    box-sizing: border-box;
+
+    .red {
+        color: red;
+    }
+
+    .green {
+        color: #16CCB9;
+    }
+
+    .green.mr {
+        margin-right: 10px;
+    }
+
+    .title,
+    .result {
+
+        padding: 0 20px;
+        color: #333;
+        font-size: 16px;
+        text-align: center;
+        font-weight: bold;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+    }
+
+    .result-table{
+        padding: 0 20px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        .item{
+            padding: 4px;
+            border: .5px solid #C6C6C6;
+            width:48%;
+            display: flex;
+            margin-right: 2%;
+            margin-top: 4px;
+            justify-content: flex-start;
+            .key{
+                width:60%;
+                border-right: .5px solid #C6C6C6;
+                text-align: center;
+            }
+            .value{
+                width:40%;
+                text-align: center;
+            }
+        }
+    }
+
+    .result.nc {
+        text-align: left;
+    }
+
+    .result.np {
+        padding: 0 20px 0 15px;
+    }
+
+    .time {
+
+        color: #999;
+        font-size: 14px;
+        padding: 0 20px;
+        text-align: center;
+        line-height: 22px;
+        margin: 10px 0 20px;
+        letter-spacing: 0.02em;
+    }
+
+    .latitudes-block {
+
+        padding-top: 20px;
+        padding-left: 15px;;
+
+        .latitude {
+
+            margin-bottom: 28px;
+
+            .latitude-title {
+
+                color: #666;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                margin-bottom: 5px;
+            }
+
+            .latitude-info {
+                color: #666;
+                line-height: 22px;
+                font-size: 14px;
+            }
+
+            .latitude-info.mt {
+                margin-top: 15px;
+            }
+
+            .latitude-title.inline {
+                display: inline;
+                margin-right: 15px;
+            }
+        }
+
+        .latitude.inline {
+            display: inline;
+        }
+    }
+
+    .btn-block {
+
+        text-align: right;
+        padding-right: 15px;
+
+        .btn {
+
+            color: #666;
+            font-size: 14px;
+            padding: 4px 12px;
+            border-radius: 3px;
+            margin-left: 10px;
+            display: inline-block;
+            border: 1px solid rgb(26, 188, 156);
+
+        }
+
+        .btn.active {
+            color: #fff;
+            background: rgb(26, 188, 156);
+        }
+    }
+
+    .action-block {
+
+        display: flex;
+        padding: 0 40px;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: space-around;
+
+        .action-btn {
+
+            color: #666;
+            font-size: 14px;
+            line-height: 24px;
+            border-radius: 3px;
+            padding: 5px 18px;
+            box-shadow: 3px 3px 25px rgba( 0, 0, 0, 0.1 );
+        }
+
+        .action-btn.green {
+            color: #fff;
+            background: rgb(26, 188, 156);
+            box-shadow: none;
+        }
+    }
+
+    .history-pop {
+
+        min-height: 100vh;
+        padding: 50px 0px 10px;
+        box-sizing: border-box;
+
+        .evaluation-list {
+            
+            .list-item {
+
+                margin-bottom: 25px;
+                border-radius: 5px;
+                box-shadow: 3px 3px 25px rgba( 0, 0, 0, 0.1 );
+
+                .title-block {
+
+                    display: flex;
+                    padding: 10px 15px 0;
+                    box-sizing: border-box;
+                    align-items: center;
+                    justify-content: space-between;
+                    position: relative;
+
+                    .title {
+                        flex: 1;
+                        color: #333;
+                        font-size: 14px;
+                        font-weight: bold;
+                        letter-spacing: 0.02em;
+                        overflow:hidden; 
+                        display:-webkit-box; 
+                        -webkit-line-clamp:1;
+                        word-break: break-all;
+                        text-overflow:ellipsis;
+                        -webkit-box-orient:vertical;
+                    }
+
+                    .status {
+                        font-size: 14px;
+                        color: rgb(51, 153, 255);
+                        position: absolute;
+                        right: 20px;
+                        top: 10px;
+                    }
+                }
+
+                .info-block {
+
+                    display: flex;
+                    padding: 0 15px 10px;
+                    box-sizing: border-box;
+                    align-items: center;
+
+                    .cover-img {
+                        width: 30%;
+                        border-radius: 3px;
+                        margin-right: 20px;
+                    }
+
+                    .tips {
+                        flex: 1;
+                        color: #666;
+                        font-size: 14px;
+                        letter-spacing: 0.02em;
+                        overflow:hidden; 
+                        display:-webkit-box; 
+                        -webkit-line-clamp:1;
+                        word-break: break-all;
+                        text-overflow:ellipsis;
+                        -webkit-box-orient:vertical;
+                    }
+
+                }
+
+                .time-block {
+                    color: #999;
+                    font-size: 12px;
+                    padding: 10px 15px;
+                    position: relative;
+                }
+
+                .time-block:after {
+                    top: 0;
+                    left: 5%;
+                    width: 90%;
+                    height: 1px;
+                    position: absolute;
+                    content: '';
+                    background: rgba( 0, 0, 0, 0.1 );
+                    transform: scaleY( 0.5 );
+                }
+            }
+        }
+    }
+
+    .base-all {
+        
+        box-sizing: border-box;
+        padding: 15px 15px 20px;
+
+        .latitude-info {
+            color: #666;
+            line-height: 22px;
+            font-size: 14px;
+        }
+
+        .latitude-info.mt {
+            margin-top: 15px;
+        }
+    }
+}
+
+.pe-tips {
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 200px;
+}

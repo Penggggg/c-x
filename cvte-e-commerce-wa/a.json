@@ -1,0 +1,61 @@
+{
+
+    "disabled": false,
+
+    "title": "CVTOUCH 65英寸会议平板套装",
+
+    "price": 13999,
+
+    "unit": "台",
+
+    "fadePrice": 11999,
+
+    "saled": 7000,
+
+    "bannerImgs": [
+        "cloud://dev-cz0o8.6465-dev-cz0o8/good/test-good.png",
+        "cloud://dev-cz0o8.6465-dev-cz0o8/good/test-good.png"
+    ],
+
+    "recommandTips": [
+        "触摸书写，随时开启批注模式",
+        "无线投屏，文稿演示便捷高效",
+        "视频会议，远程协作更省成本"
+    ],
+
+    "promiseTips": [
+        "官方发货",
+        "上门安排",
+        "7天无理由退货"
+    ],
+
+    "skus": [
+        {
+            "id": "9999",
+            "canSelect": true,
+            "title": "maxhub",
+            "price": 134,
+            "fadePrice": 345,
+            "stock": 5,
+            "gid": "111",
+            "img": "cloud://dev-cz0o8.6465-dev-cz0o8/good/test-good.png",
+            "limit": 2
+        }
+    ],
+
+    "coupons": [
+        {
+            "id": "123",
+            "type": "",
+            "typeLabel": "会员券",
+            "discountType": "",
+            "value": 5123,
+            "used": false,
+            "tips": "满399元,减500元",
+            "title": "CVTOUCH 会议平板指定优惠券",
+            "start": 1566996141811,
+            "end": 1566996141811,
+            "useTips": "使用说明：小程序专享，下单即可使用。"
+        }
+    ]
+}

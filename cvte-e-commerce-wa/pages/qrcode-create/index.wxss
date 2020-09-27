@@ -1,0 +1,39 @@
+.p-qrcode-create {
+    height: 100vh;
+    display: flex;
+    position: relative;
+    padding-top: 50rpx;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-between;
+    /* background: linear-gradient(to bottom, #fff, #f1f1f8);   */
+    background: #fff;
+}
+
+.page-loading {
+    color: #999;
+    font-size: 26rpx;
+    text-align: center;
+    padding-top: 200rpx;
+}
+
+.pqc-logo {
+    width: 300rpx;
+    height: 100rpx;
+}
+
+.pqc-bg {
+    width: 100vw;
+    height: 600rpx;
+}
+
+.qpc-qrcode {
+    left: 0;
+    top: 200rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+}

@@ -1,0 +1,25 @@
+<view class="p-qrcode-create">
+
+    <image
+        class="pqc-logo"
+        mode="aspectFill"
+        src="cloud://dev-cz0o8.6465-dev-cz0o8/background/logo_png@3x.png"
+    />
+
+    <view class="qpc-qrcode">
+        <my-qrcode-creator
+            page="{{ p }}"
+            scene="{{ s }}"
+            scale="{{ 0.4 }}"
+            shadow="{{ false }}"
+            wx:if="{{ !preLoading }}"
+            timeout="{{ timeout }}"
+        />
+    </view>
+
+    <image
+        class="pqc-bg"
+        mode="aspectFill"
+        src="cloud://dev-cz0o8.6465-dev-cz0o8/background/empty_png@3x.png"
+    />
+</view>

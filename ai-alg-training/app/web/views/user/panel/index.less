@@ -1,0 +1,55 @@
+.p-user-panel {
+
+    .spin {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .list-block {
+
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 0px 0 50px;
+
+        .item {
+            margin-top: 40px;
+
+            .card-container {
+                
+                width: 100%;
+                height: 180px;
+                position: relative;
+
+                img {
+
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .label {
+                    top: 0;
+                    right: 0;
+                    color: #fff;
+                    font-size: 12px;
+                    position: absolute;
+                    padding: 5px 10px;
+                    letter-spacing: 0.05em;
+                    background: rgba(0, 0, 0, 0.65);
+                }
+            }
+        }
+    }
+}
+
+.ant-card-meta-description {
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+
+}

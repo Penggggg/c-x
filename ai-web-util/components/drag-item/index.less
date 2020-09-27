@@ -1,0 +1,33 @@
+.com-drag-item {
+
+    z-index: 10;
+    cursor: pointer;
+    position: absolute !important;
+
+    .event-cover {
+        
+    }
+
+    .event-cover.stop {
+        pointer-events: none;
+    }
+
+    .linkPos {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        position: absolute;
+        background: #e8e8e8;
+        transform: translate( -50%, -50% );
+    }
+}
+
+.com-drag-item:hover {
+    border-radius: 5px;
+    border: 2px dotted #40a9ff;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.ant-popover-inner-content {
+    padding: 5px !important;
+}
